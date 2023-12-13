@@ -21,6 +21,15 @@ Os requisitos identificados durante o brainstorming foram:
 - O sistema deve permitir a visualização das imagens criadas
 - O sistema deve permitir a personalização das imagens criadas
 
+## Artefatos
+
+Como resultado desta técnica, foi gerado um mapa mental contendo os requisitos
+identificados durante o brainstorming. O mapa mental foi gerado utilizando a
+ferramenta [Miro](https://miro.com/). A imagem do mapa mental pode ser
+visualizada abaixo:
+
+![Mapa Mental](images/Mapa-Mental.png)
+
 ## Priorização dos Requisitos
 
 As tecnicas escolhidas foram a MoSCoW e First Things First.
