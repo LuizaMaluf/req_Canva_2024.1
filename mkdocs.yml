@@ -1,7 +1,6 @@
 site_name: req_Canva_2024.1
 
 repo_name: "req_Canva_2024.1"
-
 repo_url: https://github.com/LuizaMaluf/req_Canva_2024.1
 
 nav:
@@ -9,16 +8,15 @@ nav:
   - Pre-Rastreabilidade:
     - Rich Pictures: rich_picture.md
 
-
 theme:
-    name: material
-    nav_style: dark
-    language: pt
+  name: material
+  nav_style: dark
+  language: pt
 
-    font:
-        text: Roboto Mono 
-    
-    features:
+  font:
+    text: Roboto Mono 
+  
+  features:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
@@ -33,24 +31,22 @@ theme:
     - search.highlight
     - search.share
     - search.suggest  
-    plugins:
-        - typeset
-        - search
-    palette:
-        - scheme: slate
-          primary: black
-          accent: light blue
-          toggle:
-                icon: material/weather-night
-                name: Trocar para modo claro
-        
-        - scheme: default
-          primary: blue grey
-          accent: light blue
-          toggle:
-                icon: material/weather-sunny
-                name: Trocar para modo escuro
-
+  plugins:
+    - typeset
+    - search
+  palette:
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Trocar para modo claro
+    - scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Trocar para modo escuro
 
 markdown_extensions:
   - attr_list

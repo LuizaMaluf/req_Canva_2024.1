@@ -1,47 +1,74 @@
-#__Requisitos de Software__
+# Requisitos de Software
 
-##__Sobre a Disciplina__
-A disciplina de Requisitos de Software aborda o processo de definição, documentação e manutenção dos requisitos de um sistema de software. 
+## Sobre a Disciplina
 
-Seu principal objetivo é garantir que o software desenvolvido atenda às necessidades e expectativas dos stakeholders (partes interessadas). 
+A disciplina de Requisitos de Software aborda o processo de definição,
+documentação e manutenção dos requisitos de um sistema de software. Seu
+principal objetivo é garantir que o software desenvolvido atenda às necessidades
+e expectativas dos stakeholders (partes interessadas). 
 
 Os principais tópicos geralmente incluem:
 
-1. Elicitação de Requisitos: Técnicas e métodos para identificar e coletar requisitos de diferentes stakeholders, como entrevistas, questionários, workshops e observações.
+1. Elicitação de Requisitos: Técnicas e métodos para identificar e coletar
+   requisitos de diferentes stakeholders, como entrevistas, questionários,
+   workshops e observações.
 
-2. Análise de Requisitos: Processos para atender, analisar e negociar os requisitos coletados, garantindo que sejam viáveis, claros e completos.
+2. Análise de Requisitos: Processos para atender, analisar e negociar os
+   requisitos coletados, garantindo que sejam viáveis, claros e completos.
 
-3. Documentação de Requisitos: Criação de documentos que descrevem os requisitos de maneira estruturada e detalhada, como especificações de requisitos de software.
+3. Documentação de Requisitos: Criação de documentos que descrevem os requisitos
+   de maneira estruturada e detalhada, como especificações de requisitos de
+   software.
 
-4. Validação e Verificação de Requisitos: Métodos para garantir que os requitos estejam corretos, completos e testáveis, e que o software desenvolvido estejam em conformidade com esse requisitos.
+4. Validação e Verificação de Requisitos: Métodos para garantir que os requitos
+   estejam corretos, completos e testáveis, e que o software desenvolvido
+   estejam em conformidade com esse requisitos.
 
-5. Gerenciamento de Requisitos: Práticas para gerenciar mudanças nos requisitos estejam corretos, completos e testáveis, e que o software desenvolvido estejam em conformidade com esses requisitos.
+5. Gerenciamento de Requisitos: Práticas para gerenciar mudanças nos requisitos
+   estejam corretos, completos e testáveis, e que o software desenvolvido
+   estejam em conformidade com esses requisitos.
 
-6. Ferramentas e Técnicas: Uso de ferramentas e técnicas para apoiar as atividades de requisitos, como modelagem, prototipagem e ferramentas de gestão de requisitos.
+6. Ferramentas e Técnicas: Uso de ferramentas e técnicas para apoiar as
+   atividades de requisitos, como modelagem, prototipagem e ferramentas de
+   gestão de requisitos.
 
-## __Sobre o Canva__
+## Sobre o Canva
 
-O Canva é uma plataforma de design gráfico online que permite a usuários criar uma ampla variedade de conteúdos visuais de forma fácil e intuitiva. Lançada em 2013, a plataforma oferece uma interface de arrastar e soltar e uma vasta biblioteca de templates, imagens, ícones e fontes, facilitando o design mesmo para quem não possui experiência em design gráfico.
+O Canva é uma plataforma de design gráfico online que permite a usuários criar
+uma ampla variedade de conteúdos visuais de forma fácil e intuitiva. Lançada em
+2013, a plataforma oferece uma interface de arrastar e soltar e uma vasta
+biblioteca de templates, imagens, ícones e fontes, facilitando o design mesmo
+para quem não possui experiência em design gráfico.
 
-###Principais Características do Canva:
+### Principais Características do Canva:
 
-__Templates:__ Oferece milhares de templates prontos para diversas finalidades, como posts para redes sociais, apresentações, cartazes, cartões de visita, folhetos, entre outros.
+**Templates:** Oferece milhares de templates prontos para diversas finalidades,
+como posts para redes sociais, apresentações, cartazes, cartões de visita,
+folhetos, entre outros.
 
-__Recursos de Design:__ Inclui uma variedade de elementos gráficos, como formas, ícones, fotos e ilustrações, além de ferramentas de texto e edição de imagens.
+**Recursos de Design:** Inclui uma variedade de elementos gráficos, como formas,
+ícones, fotos e ilustrações, além de ferramentas de texto e edição de imagens.
 
-__Colaboração:__ Permite que equipes trabalhem juntas em projetos de design, com opções de compartilhamento e edição colaborativa em tempo real.
+**Colaboração:** Permite que equipes trabalhem juntas em projetos de design, com
+opções de compartilhamento e edição colaborativa em tempo real.
 
-__Acessibilidade:__ Disponível tanto em versão web quanto em aplicativos para dispositivos móveis, permitindo a criação e edição de designs em qualquer lugar.
+**Acessibilidade:** Disponível tanto em versão web quanto em aplicativos para
+dispositivos móveis, permitindo a criação e edição de designs em qualquer lugar.
 
-__Versatilidade:__ Atende a uma ampla gama de necessidades, desde uso pessoal e pequenas empresas até grandes organizações, com funcionalidades para criação de materiais de marketing, apresentações corporativas, material didático, entre outros.
+**Versatilidade:** Atende a uma ampla gama de necessidades, desde uso pessoal e
+pequenas empresas até grandes organizações, com funcionalidades para criação de
+materiais de marketing, apresentações corporativas, material didático, entre
+outros.
 
-__Recursos Gratuitos e Pagos:__ Oferece uma versão gratuita com muitos recursos disponíveis, mas também possui planos pagos (Canva Pro e Canva for Enterprise) que oferecem funcionalidades adicionais, como mais opções de templates, ferramentas avançadas de edição e maior espaço de armazenamento.
+**Recursos Gratuitos e Pagos:** Oferece uma versão gratuita com muitos recursos
+disponíveis, mas também possui planos pagos (Canva Pro e Canva for Enterprise)
+que oferecem funcionalidades adicionais, como mais opções de templates,
+ferramentas avançadas de edição e maior espaço de armazenamento.
 
-##__Equipe de trabalho__
+## Equipe de trabalho
 
-| Integrantes |  Matrícula | Nome | Usuário GitHub |
-|-------------|------------|------|----------------|
-|                                                  |
+| Integrantes                  | Matrícula | GitHub                                               |
+|------------------------------|-----------|------------------------------------------------------|
+| Caio Alexandre Ornelas Silva | 221007644 | [@bitterteriyaki](https://github.com/bitterteriyaki) |
 
-
-##__Ferramentas Utilizadas__
+## Ferramentas Utilizadas
