@@ -1,78 +1,47 @@
-# Rich Picture do Aplicativo Canva
+#__Requisitos de Software__
 
-## Componentes Principais do Rich Picture do Canva:
+##__Sobre a Disciplina__
+A disciplina de Requisitos de Software aborda o processo de definição, documentação e manutenção dos requisitos de um sistema de software. 
 
-### 1. Usuários do Canva:
+Seu principal objetivo é garantir que o software desenvolvido atenda às necessidades e expectativas dos stakeholders (partes interessadas). 
 
-#### 1.1 Designers Profissionais
-- **Necessidades**: Ferramentas avançadas de design, alta personalização, qualidade de exportação.
-- **Expectativas**: Alta performance, variedade de recursos, integração com outras ferramentas de design.
-- **Interações**: Utilizam intensivamente as ferramentas de edição, colaboram com equipes, exportam em formatos de alta qualidade.
+Os principais tópicos geralmente incluem:
 
-#### 1.2 Amadores/Estudantes
-- **Necessidades**: Facilidade de uso, templates prontos, recursos educacionais.
-- **Expectativas**: Interface intuitiva, suporte básico, possibilidade de uso gratuito.
-- **Interações**: Selecionam templates, fazem edições básicas, compartilham em redes sociais ou para projetos escolares.
+1. Elicitação de Requisitos: Técnicas e métodos para identificar e coletar requisitos de diferentes stakeholders, como entrevistas, questionários, workshops e observações.
 
-#### 1.3 Empresas/Organizações
-- **Necessidades**: Ferramentas de branding, colaboração em equipe, acesso a gráficos de dados.
-- **Expectativas**: Ferramentas de colaboração, integração com plataformas corporativas, segurança de dados.
-- **Interações**: Criam materiais de marketing, colaboram em tempo real, utilizam branding kit.
+2. Análise de Requisitos: Processos para atender, analisar e negociar os requisitos coletados, garantindo que sejam viáveis, claros e completos.
 
-#### 1.4 Professores
-- **Necessidades**: Templates educacionais, facilidade de uso, recursos para apresentações.
-- **Expectativas**: Acesso a materiais educacionais, integração com plataformas de ensino.
-- **Interações**: Criam apresentações e materiais educativos, compartilham com alunos, utilizam recursos visuais para ensinar.
+3. Documentação de Requisitos: Criação de documentos que descrevem os requisitos de maneira estruturada e detalhada, como especificações de requisitos de software.
 
-#### 1.5 Influenciadores de Mídia Social
-- **Necessidades**: Templates para redes sociais, facilidade de exportação, ferramentas de edição rápida.
-- **Expectativas**: Atualizações constantes com novas tendências, facilidade de integração com plataformas de redes sociais.
-- **Interações**: Criam posts, vídeos e stories, exportam diretamente para redes sociais, acompanham tendências de design.
+4. Validação e Verificação de Requisitos: Métodos para garantir que os requitos estejam corretos, completos e testáveis, e que o software desenvolvido estejam em conformidade com esse requisitos.
 
-### 2. Funcionalidades do Canva:
-- **Editor de Arrastar e Soltar**: Facilita a criação de designs.
-- **Modelos Pré-Definidos**: Disponíveis para diversas categorias.
-- **Banco de Imagens e Ilustrações**: Milhões de opções de mídia.
-- **Ferramentas de Texto**: Diversas fontes e estilos de texto.
-- **Colaboração em Tempo Real**: Permite que múltiplos usuários editem um projeto simultaneamente.
-- **Exportação/Compartilhamento**: Salva os designs em diferentes formatos e permite compartilhamento direto nas redes sociais.
-- **Integrações**: Conexão com outras plataformas (Google Drive, Dropbox, redes sociais).
+5. Gerenciamento de Requisitos: Práticas para gerenciar mudanças nos requisitos estejam corretos, completos e testáveis, e que o software desenvolvido estejam em conformidade com esses requisitos.
 
-### 3. Processos do Usuário:
-- **Criação de Conta/Login**: Acesso ao Canva.
-- **Seleção de Template ou Design do Zero**: Início do projeto.
-- **Edição e Personalização**: Utilização das ferramentas do Canva.
-- **Salvamento e Exportação**: Armazenamento do design final.
-- **Compartilhamento e Colaboração**: Trabalho em equipe e disseminação.
+6. Ferramentas e Técnicas: Uso de ferramentas e técnicas para apoiar as atividades de requisitos, como modelagem, prototipagem e ferramentas de gestão de requisitos.
 
-### 4. Interações e Feedback:
-- **Comunidade de Usuários**: Compartilhando designs e ideias.
-- **Suporte ao Cliente**: Feedback e resolução de problemas.
-- **Atualizações de Software**: Novas funcionalidades e correções de bugs.
+## __Sobre o Canva__
 
-### 5. Stakeholders:
+O Canva é uma plataforma de design gráfico online que permite a usuários criar uma ampla variedade de conteúdos visuais de forma fácil e intuitiva. Lançada em 2013, a plataforma oferece uma interface de arrastar e soltar e uma vasta biblioteca de templates, imagens, ícones e fontes, facilitando o design mesmo para quem não possui experiência em design gráfico.
 
-#### 5.1 Desenvolvedores
-- **Responsabilidades**: Construção e manutenção do aplicativo, implementação de novas funcionalidades.
-- **Necessidades**: Feedback claro dos usuários, ferramentas de desenvolvimento modernas, ambientes de teste.
-- **Expectativas**: Comunicação eficiente com equipes de design e suporte, acesso a dados de uso para melhorias.
+###Principais Características do Canva:
 
-#### 5.2 Equipe de Suporte ao Cliente
-- **Responsabilidades**: Ajudar os usuários com problemas técnicos, responder a perguntas e fornecer orientação.
-- **Necessidades**: Treinamento contínuo, acesso a documentação detalhada, ferramentas de suporte ao cliente.
-- **Expectativas**: Feedback positivo dos usuários, comunicação clara com equipes de desenvolvimento.
+__Templates:__ Oferece milhares de templates prontos para diversas finalidades, como posts para redes sociais, apresentações, cartazes, cartões de visita, folhetos, entre outros.
 
-#### 5.3 Equipe de Marketing
-- **Responsabilidades**: Promover o Canva, criar campanhas de marketing, analisar o mercado.
-- **Necessidades**: Dados de uso do aplicativo, colaboração com designers, recursos de publicidade.
-- **Expectativas**: Crescimento contínuo de usuários, boas avaliações do aplicativo, presença forte nas redes sociais.
+__Recursos de Design:__ Inclui uma variedade de elementos gráficos, como formas, ícones, fotos e ilustrações, além de ferramentas de texto e edição de imagens.
 
-#### 5.4 Parceiros de Conteúdo
-- **Responsabilidades**: Fornecimento de imagens, ilustrações, fontes e outros recursos.
-- **Necessidades**: Colaboração com a equipe de desenvolvimento, contratos claros, reconhecimento de conteúdo.
-- **Expectativas**: Pagamentos justos, uso adequado de seus recursos, visibilidade de seus conteúdos no aplicativo.
+__Colaboração:__ Permite que equipes trabalhem juntas em projetos de design, com opções de compartilhamento e edição colaborativa em tempo real.
 
-#### 5.5 Investidores
-- **Responsabilidades**: Fornecimento de capital para o crescimento do Canva.
-- **Necessidades**: Relatórios financeiros regulares, transparência nas operações, estratégias de crescimento claras.
-- **Expectativas**: Retorno sobre investimento, crescimento contínuo do usuário, inovação constante.
+__Acessibilidade:__ Disponível tanto em versão web quanto em aplicativos para dispositivos móveis, permitindo a criação e edição de designs em qualquer lugar.
+
+__Versatilidade:__ Atende a uma ampla gama de necessidades, desde uso pessoal e pequenas empresas até grandes organizações, com funcionalidades para criação de materiais de marketing, apresentações corporativas, material didático, entre outros.
+
+__Recursos Gratuitos e Pagos:__ Oferece uma versão gratuita com muitos recursos disponíveis, mas também possui planos pagos (Canva Pro e Canva for Enterprise) que oferecem funcionalidades adicionais, como mais opções de templates, ferramentas avançadas de edição e maior espaço de armazenamento.
+
+##__Equipe de trabalho__
+
+| Integrantes |  Matrícula | Nome | Usuário GitHub |
+|-------------|------------|------|----------------|
+|                                                  |
+
+
+##__Ferramentas Utilizadas__

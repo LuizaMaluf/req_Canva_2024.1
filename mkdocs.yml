@@ -6,6 +6,9 @@ repo_url: https://github.com/LuizaMaluf/req_Canva_2024.1
 
 nav:
   - Home: index.md
+  - Pre-Rastreabilidade:
+    - Rich Pictures: rich_picture.md
+
 
 theme:
     name: material
