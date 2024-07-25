@@ -1,24 +1,38 @@
-# Rich Picture do Aplicativo Canva
+# Rich Picture
 
-## Rich Picture Geral
+__HISTÓRICO DE REVISÃO__
 
-![Rich Picture Geral](images/rich_picture_Geral_Luiza.png)
+| Data       | Tipo de Rich Picture                 | Autor         | Versão   |
+|------------|--------------------------------------|---------------|----------|
+| 2024-07-24 | Rich Picture Geral                   | Luiza Maluf   | 0.0      |
 
-## Rich Picture Com Foco no Usuário
+## __INTRODUÇÃO__
 
-![Rich Picture Usuário](images/rich_picture_Usuario.png)
+Um **Rich Picture** é uma ferramenta visual utilizada para representar de forma holística e intuitiva um sistema complexo ou uma situação problemática. Originado na abordagem de Soft Systems Methodology (SSM) desenvolvida por Peter Checkland, o Rich Picture é caracterizado por ser uma representação gráfica que inclui pessoas, processos, fluxos de informação, relacionamentos e contextos.
 
-## Rich Picture Com Foco nas Funcionalidades
+### Características Principais
 
+- **Visual e Intuitivo**: Utiliza desenhos, símbolos, ícones e texto para capturar e comunicar aspectos importantes do sistema.
+- **Holístico**: Oferece uma visão abrangente do sistema ou problema, considerando múltiplas perspectivas e interações.
+- **Flexível**: Pode ser continuamente refinado e ajustado à medida que novas informações são obtidas.
+- **Colaborativo**: Frequentemente criado em grupos, promovendo a participação e a comunicação entre stakeholders.
 
+### Objetivos
 
+1. **Compreensão**: Ajudar a entender complexidades e dinâmicas de sistemas.
+2. **Comunicação**: Facilitar a comunicação entre diferentes partes interessadas.
+3. **Identificação de Problemas**: Destacar áreas problemáticas e oportunidades de melhoria.
+4. **Planejamento**: Apoiar na elaboração de estratégias e soluções.
 
-### 3. Funcionalidades do Canva:
-- **Editor de Arrastar e Soltar**: Facilita a criação de designs.
-- **Modelos Pré-Definidos**: Disponíveis para diversas categorias.
-- **Banco de Imagens e Ilustrações**: Milhões de opções de mídia.
-- **Ferramentas de Texto**: Diversas fontes e estilos de texto.
-- **Colaboração em Tempo Real**: Permite que múltiplos usuários editem um projeto simultaneamente.
-- **Exportação/Compartilhamento**: Salva os designs em diferentes formatos e permite compartilhamento direto nas redes sociais.
-- **Integrações**: Conexão com outras plataformas (Google Drive, Dropbox, redes sociais).
+### Utilização
+
+Rich Pictures são amplamente usados em diversas áreas, incluindo engenharia de sistemas, gestão de projetos, análise de negócios e desenvolvimento organizacional, devido à sua capacidade de simplificar e visualizar complexidades.
+
+Em resumo, um Rich Picture é uma ferramenta poderosa para explorar, comunicar e resolver problemas complexos de maneira visual e colaborativa.
+
+## __ARTEFATOS__
+
+1. __Fluxo Geral__
+    
+    1.1 Versão 0.0![Rich Picture Geral](images/rich_picture_geral.jpg)
 
