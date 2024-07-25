@@ -5,6 +5,7 @@ __HISTÓRICO DE REVISÃO__
 | Data       | Tipo de Rich Picture                 | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 2024-07-24 | Rich Picture Geral                   | Luiza Maluf   | 0.0      |
+| 2024-07-24 | Rich Picture Foco no Usuário         | Luiza Maluf   | 0.0      |
 
 ## __INTRODUÇÃO__
 
@@ -34,5 +35,8 @@ Em resumo, um Rich Picture é uma ferramenta poderosa para explorar, comunicar e
 
 1. __Fluxo Geral__
     
-    1.1 Versão 0.0![Rich Picture Geral](images/rich_picture_geral.jpg)
+    Versão 0.0![Rich Picture Geral](images/rich_picture_geral_00.jpg)
 
+2. __Fluxo do Usuário__
+
+    Versão 0.0![Rich Picture Usuario 00](images/rich_picture_usuario_00.jpg)
