@@ -11,6 +11,8 @@ nav:
     - Brainstorming: brainstorming.md
     - MoSCoW: moscow.md
     - First Things First: first_things.md
+  - Reuniões:
+    - Reunião 1: reuniao1.md
 
 theme:
   name: material
