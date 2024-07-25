@@ -95,7 +95,7 @@
 | 37 | Escalabilidade |
 | 38 | Internacionalização | 
 
-### Won't:
+### Would:
 
 |Nº|Requisito|
 |--|---------|
