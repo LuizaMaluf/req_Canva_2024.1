@@ -7,6 +7,10 @@ nav:
   - Home: index.md
   - Pre-Rastreabilidade:
     - Rich Pictures: rich_picture.md
+  - Elicitação:
+    - Brainstorming: brainstorming.md
+    - MoSCoW: moscow.md
+    - First Things First: first_things.md
 
 theme:
   name: material
