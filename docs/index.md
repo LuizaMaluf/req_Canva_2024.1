@@ -70,5 +70,6 @@ ferramentas avançadas de edição e maior espaço de armazenamento.
 | Integrantes                  | Matrícula | GitHub                                               |
 |------------------------------|-----------|------------------------------------------------------|
 | Caio Alexandre Ornelas Silva | 221007644 | [@bitterteriyaki](https://github.com/bitterteriyaki) |
+| Luiza Maluf Amorim           | 221008294 | [@LuizaMaluf](https://github.com/LuizaMaluf)
 
 ## Ferramentas Utilizadas
