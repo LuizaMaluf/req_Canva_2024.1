@@ -21,3 +21,13 @@ Quanto à navegação, funcionalidade, usabilidade e interface, o Canva se mostr
 - Participantes: Rodrigo Mattos (membro do grupo).
 - Dificuldades encontradas: Não foram encontradas dificuldades durante o uso do Canva pelo participante (talvez uma possível dificuldade encontrada por pessoas que nunca usaram o Canva seja a grande quantidade de modelos de templates, formas, modelos e cores, podendo levar o usuário a ficar um pouco perdido durante a navegação).
 - Comentários: “Achei o site bem simples e intuitivo de se usar”.
+
+## Vídeo da Análise
+
+</center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PhbHhE4zLfk?si=euhaDdX78kXw3IbC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+<center>
