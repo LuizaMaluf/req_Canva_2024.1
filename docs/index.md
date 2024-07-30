@@ -1,5 +1,7 @@
 # Requisitos de Software
 
+![Logo Canva](https://logosmarcas.net/wp-content/uploads/2020/01/Canva-Logo.png)
+
 ## Sobre a Disciplina
 
 A disciplina de Requisitos de Software aborda o processo de definição,
@@ -76,3 +78,12 @@ ferramentas avançadas de edição e maior espaço de armazenamento.
 | Gabriel Moura dos Santos | 221008060     | [@thegm445](https://github.com/thegm445)|
 
 ## Ferramentas Utilizadas
+
+| Ferramenta | Nome | Descrição |
+| :-- | :-- | :-- |
+| <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo do GitHub" width="100px"> | <strong>[GitHub](#anchor_1)</strong> | Versionamento de arquivos |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Logo do Teams" width="100px"> | <strong>[Microsoft Teams](#anchor_2)</strong> | Para gravações de reuniões |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo do WhatsApp" width="100px"> | <strong>[WhatsApp](#anchor_3)</strong> | Comunicação |
+| <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg" alt="Logo do Discord" width="100px"> | <strong>[Discord](#anchor_4)</strong> | Reuniões |
+| <img src="https://anthonyblackham.com/mkdocs-material/icons/logo.svg" alt="Logo do Mkdocs" width="100px"> | <strong>[Mkdocs](#anchor_5)</strong> | Documentação |
+| <img src="https://logowik.com/content/uploads/images/miro3962.jpg" alt="Logo do Miro" width="100px"> | <strong>[Miro](#anchor_6)</strong> | Criação de diagramas |
