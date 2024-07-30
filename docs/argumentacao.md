@@ -93,6 +93,9 @@ Abordar esses pontos pode ampliar o alcance e a eficácia da plataforma, tornand
     i3: Recursos Gráficos e Elementos Visuais
     i4: Colaboração em Tempo Real
     i5: Versatilidade de Exportação
+    i6: Limitações de Personalização Avançada
+    i7: Dependência de Conexão com a Internet
+    i8: Custo de Recursos Premium
 
 #### Inferências (iT)
 
@@ -107,3 +110,8 @@ Abordar esses pontos pode ampliar o alcance e a eficácia da plataforma, tornand
     C1: Personalização Limitada vs. Interface Intuitiva
     C2: Dependência de Internet vs. Colaboração em Tempo Real
     C3: Custo de Recursos Premium vs. Acessibilidade dos Recursos
+
+#### Grafo de Argumentação
+
+
+![Grafo argumentação 1](images/argumentacao_1.jpg)
