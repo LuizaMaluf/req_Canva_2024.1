@@ -27,25 +27,13 @@ theme:
     code: "Source Code Pro"
 
   palette:
-    - scheme: slate
-      primary: indigo
-      accent: teal
-      toggle:
-        icon: material/weather-night
-        name: Trocar para modo claro
-    - scheme: default
       primary: white
-      accent: teal
-      toggle:
-        icon: material/weather-sunny
-        name: Trocar para modo escuro
 
   features:
     - navigation.top
     - navigation.tabs
     - navigation.sections
     - navigation.indexes
-    - navigation.footer
     - content.code.copy
     - content.tabs.link
     - header.autohide

@@ -36,7 +36,7 @@ Os principais tópicos geralmente incluem:
 
 ## Sobre o Canva
 
-O Canva é uma plataforma de design gráfico online que permite a usuários criar
+O [Canva](https://www.canva.com/pt_br/) é uma plataforma de design gráfico online que permite a usuários criar
 uma ampla variedade de conteúdos visuais de forma fácil e intuitiva. Lançada em
 2013, a plataforma oferece uma interface de arrastar e soltar e uma vasta
 biblioteca de templates, imagens, ícones e fontes, facilitando o design mesmo
