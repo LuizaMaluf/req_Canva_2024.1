@@ -14,6 +14,7 @@ nav:
     - First Things First: first_things.md
   - Reuniões:
     - Reunião 1: reuniao1.md
+    - Reunião 2: reuniao2.md
 
 theme:
   name: material
