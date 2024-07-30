@@ -70,6 +70,9 @@ ferramentas avançadas de edição e maior espaço de armazenamento.
 | Integrantes                  | Matrícula | GitHub                                               |
 |------------------------------|-----------|------------------------------------------------------|
 | Caio Alexandre Ornelas Silva | 221007644 | [@bitterteriyaki](https://github.com/bitterteriyaki) |
-| Luiza Maluf Amorim           | 221008294 | [@LuizaMaluf](https://github.com/LuizaMaluf)
+| Luiza Maluf Amorim           | 221008294 | [@LuizaMaluf](https://github.com/LuizaMaluf)         |
+| Rodrigo Mattos de F. Ayres Bezerra |     | [@Rodrigomfab88](https://github.com/Rodrigomfab88)|
+| Henrique Camelo Quenino | 221008098      | [@henriquecq](https://github.com/henriquecq)|
+| Gabriel Moura dos Santos | 221008060     | [@thegm445](https://github.com/thegm445)|
 
 ## Ferramentas Utilizadas
