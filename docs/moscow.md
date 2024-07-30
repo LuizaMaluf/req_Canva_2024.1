@@ -99,4 +99,4 @@
 
 |Nº|Requisito|
 |--|---------|
-|  |  (Nenhum requisito foi classificado como Won't nesta versão) |  
+|  |  (Nenhum requisito foi classificado como Would nesta versão) |  
