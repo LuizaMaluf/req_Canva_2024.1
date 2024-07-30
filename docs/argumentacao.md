@@ -1,7 +1,7 @@
 
 |    Data    | Versão | Descrição | Responsável por documentar |
 |------------|--------|-----------|-------|
-| 29/07/2024 |  0.0   | Primeiras discursões em grupo da plataforma Canva | Luiza Maluf |
+| 29/07/2024 |  0.0   | Primeiras discussões em grupo da plataforma Canva | Luiza Maluf |
 
 
 #__INTRODUÇÃO__

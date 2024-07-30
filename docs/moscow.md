@@ -1,4 +1,32 @@
-## Análise MoSCoW dos Requisitos do Canva (Criação e Design):
+## Análise MoSCoW dos Requisitos do Canva (Criação e Design)
+
+|    Data    | Versão | Descrição | Responsável por documentar |
+|------------|--------|-----------|-------|
+| 29/07/2024 |  1.0   | Primeira versão da análise | Gabriel Moura |
+
+### Introdução
+
+A análise MoSCoW é uma técnica de priorização de requisitos amplamente utilizada em gerenciamento de projetos, especialmente em metodologias ágeis. Ela auxilia na tomada de decisão sobre quais funcionalidades devem ser implementadas primeiro, categorizando os requisitos em quatro níveis de prioridade: Must, Should, Could e Would. 
+
+Essa técnica é fundamental para garantir que os recursos sejam alocados de forma eficiente, focando nos requisitos que trazem maior valor para o projeto, dentro do tempo e do orçamento disponíveis.
+
+### Objetivo
+
+O objetivo da análise MoSCoW é, em conjunto com o que foi aprendido em sala de aula,  definir quais funcionalidades serão priorizadas no desenvolvimento da plataforma Canva. Priorizando as funcionalidades que são essenciais para o funcionamento básico da ferramenta, para posteriormente categorizar as funcionalidades que agregam valor à experiência do usuário e podem ser implementadas em versões futuras.
+
+### Metodologia
+
+A análise MoSCoW se baseia em quatro categorias:
+
+* **Must (Essencial):**  Requisitos **absolutamente essenciais** para o sistema funcionar. Se um requisito "Must" não for atendido, o projeto é considerado um fracasso.
+* **Should (Importante):**  Requisitos importantes, mas **não essenciais** para o lançamento da versão inicial.  Podem ser implementados posteriormente, se necessário.
+* **Could (Desejável):**  Requisitos desejáveis que agregam valor, mas **não são críticos**. A implementação deles depende de tempo e recursos disponíveis.
+* **Would (Opcional):** Requisitos de menor prioridade que podem ser considerados em versões futuras.
+
+A equipe analisa cada requisito e o classifica em uma dessas categorias, com base em seu impacto no projeto, valor para o usuário, custo de implementação e risco. 
+
+
+## Análise MoSCoW dos Requisitos V1.0:
 
 |Nº|Requisito|MoSCoW|
 |--|---------|------|
@@ -40,7 +68,6 @@
 | 36 | Acessibilidade | Should |
 | 37 | Escalabilidade | Could |
 | 38 | Internacionalização | Could |
-
 
 ### Must:
 
