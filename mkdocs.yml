@@ -6,17 +6,17 @@ repo_url: https://github.com/LuizaMaluf/req_Canva_2024.1
 nav:
   - Início: index.md
   - Pre-Rastreabilidade:
-    - Rich Pictures: rich_picture.md
-    - Argumentação: argumentacao.md
+    - Rich Pictures: pre-rastreabilidade/rich_picture.md
+    - Argumentação: pre-rastreabilidade/argumentacao.md
   - Elicitação:
-    - Brainstorming: brainstorming.md
-    - MoSCoW: moscow.md
-    - First Things First: first_things.md
-    - Análise de Protocolo: analise_protocolo.md
+    - Brainstorming: elicitacao/brainstorming.md
+    - MoSCoW: elicitacao/moscow.md
+    - First Things First: elicitacao/first_things.md
+    - Análise de Protocolo: elicitacao/analise_protocolo.md
   - Reuniões:
-    - Reunião 1: reuniao1.md
-    - Reunião 2: reuniao2.md
-    - Reunião 3: reuniao3.md
+    - Reunião 1: atas/reuniao1.md
+    - Reunião 2: atas/reuniao2.md
+    - Reunião 3: atas/reuniao3.md
 
 theme:
   name: material
