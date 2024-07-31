@@ -17,6 +17,8 @@ nav:
     - Reunião 1: atas/reuniao1.md
     - Reunião 2: atas/reuniao2.md
     - Reunião 3: atas/reuniao3.md
+  - Entregas:
+    - Entrega 1: entregas/entrega1.md
 
 theme:
   name: material
