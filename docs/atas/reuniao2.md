@@ -31,6 +31,6 @@ Decidimos usar o Framework ACE como framework de argumentação e para represent
 
 ## Observação
 
-A reunião foi feita pelo Teams para que pudesse ser gravada de forma adequada, contudo, tivemos uma dificuldade na utilização da ferramenta de gravação, nos prejudigando no armazenamento desse artefato. 
+A reunião foi feita pelo Teams para que pudesse ser gravada de forma adequada, contudo, tivemos uma dificuldade na utilização da ferramenta de gravação, nos prejudicando no armazenamento desse artefato. 
 
 As proximas reuniões terão gravação ou gravação de aúdio anexadas de forma adequada.

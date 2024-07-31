@@ -35,8 +35,8 @@ Em resumo, um Rich Picture é uma ferramenta poderosa para explorar, comunicar e
 
 1. __Fluxo Geral__
     
-    Versão 0.0![Rich Picture Geral](images/rich_picture_geral_00.jpg)
+    Versão 0.0![Rich Picture Geral](../images/rich_picture_geral_00.jpg)
 
 2. __Fluxo do Usuário__
 
-    Versão 0.0![Rich Picture Usuario 00](images/rich_picture_usuario_00.jpg)
+    Versão 0.0![Rich Picture Usuario 00](../images/rich_picture_usuario_00.jpg)
