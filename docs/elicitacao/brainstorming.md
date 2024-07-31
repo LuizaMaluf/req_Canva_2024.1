@@ -28,7 +28,7 @@ identificados durante o brainstorming. O mapa mental foi gerado utilizando a
 ferramenta [Miro](https://miro.com/). A imagem do mapa mental pode ser
 visualizada abaixo:
 
-![Mapa Mental](images/Mapa-Mental.png)
+![Mapa Mental](../images/Mapa-Mental.png)
 
 ## Priorização dos Requisitos
 
