@@ -1,8 +1,37 @@
-## Análise First Things First dos Requisitos do Canva (Criação e Design):
+## Análise First Things First dos Requisitos do Canva (Criação e Design)
 
+|    Data    | Versão | Descrição | Responsável por documentar |
+|------------|--------|-----------|-------|
+| 29/07/2024 |  1.0   | Primeira versão da análise FTF | Gabriel Moura |
 
+### Introdução
 
-### Gabriel Moura
+A técnica First Things First é um método de priorização que visa classificar os requisitos com base na relação entre seu valor e o custo/risco envolvido em sua implementação. Essa técnica é especialmente útil para determinar a ordem de desenvolvimento das funcionalidades, garantindo que as de maior valor e menor custo/risco sejam priorizadas.
+
+### Objetivo
+
+O objetivo da análise First Things First é definir a ordem ideal de implementação dos requisitos elicitados para a plataforma Canva, considerando o benefício proporcionado ao usuário em relação ao custo e risco de desenvolvimento. 
+
+### Metodologia
+
+A metodologia First Things First se baseia em uma tabela onde cada requisito é avaliado em quatro critérios, utilizando uma escala de 1 a 9:
+
+1.  **Benefício Relativo:**  Representa o quão benéfico o requisito é para o usuário, caso seja implementado. 
+2.  **Penalidade Relativa:**  Indica o quão prejudicial seria para o usuário caso o requisito não fosse implementado.
+3.  **Custo Relativo:**  Reflete o custo estimado (em tempo, esforço e recursos) para implementar o requisito.
+4.  **Risco Relativo:**  Avalia o risco potencial de encontrar problemas ou dificuldades na implementação do requisito.
+
+Com base nessas avaliações, são calculados os seguintes valores:
+
+* **Valor Total:** Soma do Benefício Relativo e da Penalidade Relativa.
+* **Valor %:** Porcentagem que o Valor Total de um requisito representa em relação à soma de todos os Valores Totais.
+* **Custo %:** Porcentagem que o Custo Relativo de um requisito representa em relação à soma de todos os Custos Relativos.
+* **Risco %:** Porcentagem que o Risco Relativo de um requisito representa em relação à soma de todos os Riscos Relativos.
+* **Prioridade:** Calculada pela fórmula: Valor % / (Custo % + Risco %).
+
+Os requisitos são então ordenados de forma decrescente de acordo com o valor de Prioridade. Aqueles com maior prioridade devem ser implementados primeiro.
+
+### Requisitos tabelados
 | Nº | Requisito | Benefício Relativo | Penalidade Relativa | Valor Total | Valor % | Custo Relativo | Custo % | Risco Relativo | Risco % | Prioridade |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Diversidade de formatos de design (posts, banners, apresentações, etc.) | 9 | 9 | 18 | 8.87% | 8 | 9.09% | 2 | 2.63% | **0.70** |
