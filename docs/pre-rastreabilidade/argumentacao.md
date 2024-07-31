@@ -114,4 +114,4 @@ Abordar esses pontos pode ampliar o alcance e a eficácia da plataforma, tornand
 #### Grafo de Argumentação
 
 
-![Grafo argumentação 1](images/argumentacao_1.jpg)
+![Grafo argumentação 1](../images/argumentacao_1.jpg)
