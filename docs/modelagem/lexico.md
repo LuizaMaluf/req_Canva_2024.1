@@ -1,15 +1,28 @@
 # **Léxicos**
 
-| Nome |  |
+
+
+
+## Adicionar {#Adicionar}
+
+| Nome | Adicionar|
 |------|---------|
-|**Sinônimos**|  |
-| **Noção** | |
-| **Impacto** | |
-| **Classificação** | |
+|**Sinônimos**| Incluir, Inserir |
+| **Noção** | Inserir novos elementos, como texto, imagens, ou gráficos, em um design.|
+| **Impacto** | Enriquecer o design com novos conteúdos, aumentando sua complexidade e valor visual. |
+| **Classificação** | Verbo. |
 
-## __A__
+## Agrupar {#Agrupar}
 
-#### Alinhamento {#Alinhamento}
+| Nome | Agrupar|
+|------|---------|
+|**Sinônimos**| Unir, Combinar |
+| **Noção** | Combinar múltiplos elementos em uma única unidade para facilitar a movimentação e edição. |
+| **Impacto** | Simplifica a manipulação de múltiplos elementos, permitindo edições simultâneas e coordenação visual. |
+| **Classificação** | Verbo. |
+
+
+## Alinhamento {#Alinhamento}
 
 | Nome | Alinhamento |
 |------|---------|
@@ -18,7 +31,7 @@
 | **Impacto** | Arranjo dos elementos gráficos e textuais em relação ao layout. |
 | **Classificação** | Substantivo. |
 
-#### Animação {#Animação}
+## Animação {#Animação}
 
 | Nome | Animação |
 |------|---------|
@@ -27,7 +40,16 @@
 | **Impacto** | Adiciona dinamismo aos designs, especialemnte em apresentações e vídeos. |
 | **Classificação** | Substantivo. |
 
-#### Arquivo {#Arquivo}
+## Aplicar {#Aplicar}
+
+| Nome | Aplicar |
+|------|---------|
+|**Sinônimos**| Usar, Implementar |
+| **Noção** | Colocar efeitos, filtros ou estilos em um elemento ou design. |
+| **Impacto** | Transforma a aparência dos elementos, adicionando camadas de estilo e profundidade ao design.|
+| **Classificação** | Verbo.|
+
+## Arquivo {#Arquivo}
 
 | Nome | Arquivo |
 |------|---------|
@@ -36,7 +58,7 @@
 | **Impacto** | Refere-se ao documento salvo que contém o design criado. |
 | **Classificação** | Substantivo.|
 
-#### Arrastar e Soltar {#Arrastar e Soltar}
+## Arrastar e Soltar {#Arrastar e Soltar}
 
 | Nome | Arrastar e Soltar |
 |------|---------|
@@ -45,7 +67,7 @@
 | **Impacto** | Método de interação que permite mover elementos pelo design apenas arrastando-os com o cursor. |
 | **Classificação** | Substantivo.|
 
-#### Apresentação {#Apresentação}
+## Apresentação {#Apresentação}
 
 | Nome | Apresentação |
 |------|---------|
@@ -54,9 +76,10 @@
 | **Impacto** | Conjunto de slides criado para comunicar ideias de forma estruturada. |
 | **Classificação** | Substantivo.|
 
-## __B__
+---
 
-#### Banco de Imagens {#Banoo de Imagens}
+
+## Banco de Imagens {#Banoo de Imagens}
 
 | Nome | Banco de Imagens |
 |------|---------|
@@ -65,7 +88,7 @@
 | **Impacto** | Repositório de imagens que os [usuários](#Usuário) podem utilizar em seus designs. |
 | **Classificação** | Substantivo.|
 
-#### Biclioteca de Elementos {# Biblioteca de Elementos}
+## Biclioteca de Elementos {# Biblioteca de Elementos}
 
 | Nome | Biclioteca de Elementos |
 |------|---------|
@@ -74,9 +97,9 @@
 | **Impacto** | Conjunto de recursos gráficos disponíveis para uso em designs. |
 | **Classificação** | Substantivo.|
 
-## __C__
+---
 
-#### Camadas {#Camadas}
+## Camadas {#Camadas}
 
 | Nome | Camadas |
 |------|---------|
@@ -85,7 +108,7 @@
 | **Impacto** | Controlam a ordem e sobreposição dos elementos em um design. |
 | **Classificação** | Substantivo.|
 
-#### Colaboração {#Colaboração}
+##Colaboração {#Colaboração}
 
 | Nome | Colaboração |
 |------|---------|
@@ -94,7 +117,7 @@
 | **Impacto** | Permite que múltiplos [usuários](#Usuário) trabalhem juntos em um design ao mesmo tempo. |
 | **Classificação** | Substantivo.|
 
-#### Comentário {#Comentário}
+## Comentário {#Comentário}
 
 | Nome | Comentário |
 |------|---------|
@@ -103,7 +126,7 @@
 | **Impacto** | Permitem que os [usuários](#Usuário) compartilhem opiniões e sugestões dentro de um design colaborativo.|
 | **Classificação** | Substantivo.|
 
-#### Compartilhamento {#Compartilhamento}
+## Compartilhamento {#Compartilhamento}
 
 | Nome | Compartilhamento |
 |------|---------|
@@ -112,7 +135,7 @@
 | **Impacto** | Mecanismo que permite aos [usuário](#Usuário) distribuir seus designs para outras pessoas ou plataformas.|
 | **Classificação** | Substantivo. |
 
-#### Corte {#Corte}
+## Corte {#Corte}
 
 | Nome | Corte |
 |------|---------|
@@ -121,9 +144,18 @@
 | **Impacto** | Função que permite remover partes indesejadas de uma imagem ou elemento gráfico.|
 | **Classificação** | Substantivo. |
 
-## __D__
+---
 
-#### Design {#Design}
+##Desfazer {#Desfazer}
+
+| Nome | Desfazer |
+|------|---------|
+|**Sinônimos**| Reverter, Anular |
+| **Noção** | Voltar ao estado anterior de um design antes da última ação realizada.|
+| **Impacto** | Fornece segurança ao [usuário](#Usuário), permitindo correções rápidas de erros ou mudanças de decisão.|
+| **Classificação** | Verbo.|
+
+## Design {#Design}
 
 | Nome | Design |
 |------|---------|
@@ -132,9 +164,10 @@
 | **Impacto** | Representa o principal produto criado e manipulado pelos [usuário](#Usuário) na plataforma.|
 | **Classificação** | Substantivo.|
 
-## __E__
+---
 
-#### Edição {#Edição}
+
+## Edição {#Edição}
 
 | Nome | Edição |
 |------|---------|
@@ -143,7 +176,7 @@
 | **Impacto** | Processo pelo qual o [usuário](#Usuário) altera um design, incluindo adição de texto, imagens e gráficos.|
 | **Classificação** | Substantivo. |
 
-#### Efeito {#Efeito}
+## Efeito {#Efeito}
 
 | Nome | Efeito |
 |------|---------|
@@ -152,16 +185,25 @@
 | **Impacto** | Alteração aplicada a um elemento para criar uma aparência ou sensação específica.|
 | **Classificação** | Substantivo. |
 
-#### Elementos Gráficos {#Elementos Gráficos}
+## Elementos Gráficos {#Elementos Gráficos}
 
 | Nome | Elementos Gráficos |
 |------|---------|
 |**Sinônimos**| Ícones, Ilustrações, Formas |
 | **Noção** | Itens visuais disponíveis na biblioteca do Canva, utilizados para melhorar a aparência e a comunicação visual dos designs.|
-| **Impacto** | Componente visual que pode ser adicionado aos designs apra enriquecer o conteúdo. |
+| **Impacto** | Componente visual que pode ser [adicionado](#Adicionar) aos designs apra enriquecer o conteúdo. |
 | **Classificação** | Substantivo.|
 
-#### Exportação {#Exportação}
+## Excluir {#Excluir}
+
+| Nome | Excluir |
+|------|---------|
+|**Sinônimos**| Apagar, Remover |
+| **Noção** | Remover elementos indesejados de um design. |
+| **Impacto** | Simplifica o design, eliminando o que é desnecessário ou indesejado. |
+| **Classificação** | Verbo.|
+
+## Exportação {#Exportação}
 
 | Nome | Exportação |
 |------|---------|
@@ -170,9 +212,9 @@
 | **Impacto** | Processo de salvar o design criado em diferentes formatos de [arquivo](#Arquivo).|
 | **Classificação** | Substantivo.|
 
-## __F__
+---
 
-#### Fonte {#Fonte}
+## Fonte {#Fonte}
 
 | Nome | Fonte |
 |------|---------|
@@ -181,7 +223,7 @@
 | **Impacto** | Determina o estilo visual do texto em um design.|
 | **Classificação** | Substantivo.|
 
-#### Formatação {#Formatação}
+## Formatação {#Formatação}
 
 | Nome | Formatação |
 |------|---------|
@@ -190,9 +232,10 @@
 | **Impacto** |  Processo de ajustar o estilo e a aparência de texto e outros elementos em um design.|
 | **Classificação** | Substantivo.|
 
-## __G__
+---
 
-#### Grade {#Grade}
+
+## Grade {#Grade}
 
 | Nome | Grade |
 |------|---------|
@@ -201,12 +244,11 @@
 | **Impacto** | Sistema de linhas que ajuda a alinhar e organizar os elementos em um design.|
 | **Classificação** | Substantivo.|
 
+---
 
-## __H__
+---
 
-## __I__
-
-#### Integração {#Integração}
+## Integração {#Integração}
 
 | Nome |Integração|
 |------|---------|
@@ -215,15 +257,17 @@
 | **Impacto** | Capacidade do Canva de se conectar com outras ferramentas e plataformas, como redes sociais, serviços de armazenamento em nuvem e sistemas de email marketing.|
 | **Classificação** | Substantivo.|
 
-## __J__
+---
 
-## __K__
+---
 
-## __L__
+---
 
-## __M__
+---
 
-#### Marca d'Água {#Marca d' Água}
+---
+
+## Marca d'Água {#Marca d' Água}
 
 | Nome |Marca d'Água|
 |------|---------|
@@ -232,31 +276,33 @@
 | **Impacto** | Protege a autoria do design, garantindo que o criador seja reconhecido.|
 | **Classificação** | Substantivo.|
 
-#### Moldura {#Moldura}
+---
+
+## Moldura {#Moldura}
 
 | Nome |Moldura|
 |------|---------|
 |**Sinônimos**| Bordas, Quadro |
 | **Noção** | As molduras ajudam a focar a atenção em um conteúdo específico ou a melhorar a composição do design.|
-| **Impacto** | Elemento decorativo que circunda uma imagem ou texto, adicionando um contorno visual.|
+| **Impacto** | Elemento decorativo que circunda uma imagem ou texto, [adicionando](#Adicionar) um contorno visual.|
 | **Classificação** | Substantivo.|
 
-## __N__
+---
 
-## __O__
+---
 
-## __P__
+---
 
-#### Padrão {#Padrão}
+## Padrão {#Padrão}
 
 | Nome | Padrão |
 |------|---------|
 |**Sinônimos**| Textura, Molde, Exemplo |
-| **Noção** | Os padrões adicionam profundidade e interesse visual a um design, podendo ser usados para criar temas ou destacar partes específicas de um projeto. |
+| **Noção** | Os padrões [adicionam](#Adicionar) profundidade e interesse visual a um design, podendo ser usados para criar temas ou destacar partes específicas de um projeto. |
 | **Impacto** | Desenho repetitivo usado como fundo ou elemento decorativo em um design. |
 | **Classificação** | Substantivo.|
 
-#### Página {#Página}
+## Página {#Página}
 
 | Nome | Página |
 |------|---------|
@@ -265,7 +311,7 @@
 | **Impacto** | Unidade básica de um design multipágina, como um documento ou [apresentação](#Apresentação).|
 | **Classificação** | Substantivo. |
 
-#### Paleta de Cores {#Paleta de Cores}
+## Paleta de Cores {#Paleta de Cores}
 
 | Nome | Paleta de Cores |
 |------|---------|
@@ -274,8 +320,17 @@
 | **Impacto** | Conjunto de cores selecionadas que guiam a estética de um design. |
 | **Classificação** | Substantivo. |
 
+## Personalizar {#Personalizar}
 
-#### Plano de Assinatura {#Plano de Assinatura}
+| Nome | Personalizar |
+|------|---------|
+|**Sinônimos**| Customizar, Ajustar |
+| **Noção** | Modificar elementos para atender a necessidades ou preferências específicas. |
+| **Impacto** | Permite que o design reflita a identidade ou requisitos específicos do [usuário](#Usuário). |
+| **Classificação** | Verbo. |
+
+
+## Plano de Assinatura {#Plano de Assinatura}
 
 | Nome | Plano de Assinatura |
 |------|---------|
@@ -284,7 +339,7 @@
 | **Impacto** | Define o nível de acesso do [usuário](#Usuário) a recursos avançados e templates exclusivos.|
 | **Classificação** | Substantivo. |
 
-#### Plano de Fundo {#Plano de Fundo}
+## Plano de Fundo {#Plano de Fundo}
 
 | Nome | Plano de Fundo |
 |------|---------|
@@ -293,7 +348,7 @@
 | **Impacto** | Define o nível de acesso do [usuário](#Usuário) a recursos avançados e templates exclusivos.|
 | **Classificação** | Substantivo. |
 
-#### Protótipo {#Protótipo}
+## Protótipo {#Protótipo}
 
 | Nome | Protótipo |
 |------|---------|
@@ -302,7 +357,7 @@
 | **Impacto** |  Representação visual inicial de um design, usado para validação e ajustes antes do produto final. |
 | **Classificação** | Substantivo. |
 
-#### Publicação {#Publicação}
+## Publicação {#Publicação}
 
 | Nome | Publicação |
 |------|---------|
@@ -311,11 +366,11 @@
 | **Impacto** | Ato de disponibilizar o design finalizado em uma plataforma online, como redes sociais ou websites.|
 | **Classificação** | Substantivo. |
 
-## __Q__
+---
 
-## __R__
+---
 
-#### Responsividade {#Responsividade}
+## Responsividade {#Responsividade}
 
 | Nome | Responsividade |
 |------|---------|
@@ -324,9 +379,18 @@
 | **Impacto** | Permite que o design seja adaptado para diferentes formatos e proporções sem perder qualidade.|
 | **Classificação** | Substantivo. |
 
-## __S__
+## Rotacionar {#Rotacionar}
 
-#### Sobreposição {#Sobreposição}
+| Nome | Rotacionar |
+|------|---------|
+|**Sinônimos**| Girar, Virar |
+| **Noção** | Mudar a orientação de um elemento ao redor de um ponto central. |
+| **Impacto** |Permite criar efeitos dinâmicos e ajustar a perspectiva dos elementos dentro do design.|
+| **Classificação** | Verbo. |
+
+---
+
+## Sobreposição {#Sobreposição}
 
 | Nome | Sobreposição |
 |------|---------|
@@ -335,10 +399,9 @@
 | **Impacto** | [Efeito](#Efeito) visual onde um elemento é colocado sobre outro, criando profundidade ou ênfase. |
 | **Classificação** | Substantivo. |
 
+---
 
-## __T__
-
-#### Template {#Template}
+## Template {#Template}
 
 | Nome | Template |
 |------|---------|
@@ -347,9 +410,9 @@
 | **Impacto** | Serve como base para a criação de novos designs, acelerando o processo  criativo. |
 | **Classificação** | Substantivo. |
 
-## __U__
+---
 
-#### Usuário {#Usuário}
+## Usuário {#Usuário}
 
 | Nome | Usuário |
 |------|---------|
@@ -358,15 +421,18 @@
 | **Impacto** | Interage com a plataforma Canva para criar designs.
 | **Classificação** | Substantivo|
 
-## __V__
+---
 
-## __W__
+---
 
-## __X__
+---
 
-## __Y__
+---
 
-## __Z__
+---
+
+
+
 
 
 
