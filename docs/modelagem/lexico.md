@@ -330,7 +330,7 @@
 | **Classificação** | Verbo. |
 
 
-## Plano de Assinatura {#Plano de Assinatura}
+## Plano de Assinatura {#Assinatura}
 
 | Nome | Plano de Assinatura |
 |------|---------|
