@@ -1,4 +1,4 @@
-# **Especificação de Casos de Uso do Aplicativo Canva**
+# **Especificação de Casos de Uso**
 
 **1. Casos de Uso**
 
