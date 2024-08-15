@@ -16,6 +16,7 @@ nav:
   - Modelagem:
     - Léxicos: modelagem/lexico.md
     - Cenários: modelagem/cenarios/cenarios.md
+    - iStar: modelagem/iStar.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
