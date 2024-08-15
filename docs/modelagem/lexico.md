@@ -1,8 +1,5 @@
 # **Léxicos**
 
-
-
-
 ## Adicionar {#Adicionar}
 
 | Nome | Adicionar|

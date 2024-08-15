@@ -16,7 +16,7 @@ nav:
   - Modelagem:
     - Léxicos: modelagem/lexico.md
     - Cenários: modelagem/cenarios/cenarios.md
-    - Diagrama de Casos de Uso: modelagem/diagrama_casos_de_uso.md
+    - Casos de Uso: modelagem/casos_de_uso.md
     - Especificação Suplementar: modelagem/especificacao_suplementar.md
   
   - Reuniões:
