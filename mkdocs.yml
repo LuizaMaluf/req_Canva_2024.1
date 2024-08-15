@@ -18,6 +18,7 @@ nav:
     - Cenários: modelagem/cenarios/cenarios.md
     - Especificação de Casos de Uso: modelagem/casos_de_uso.md
     - Especificação Suplementar: modelagem/especificacao_suplementar.md
+    - iStar: modelagem/istar.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
