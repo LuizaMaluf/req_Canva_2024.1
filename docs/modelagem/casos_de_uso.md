@@ -2,7 +2,7 @@
 
 **1. Casos de Uso**
 
-A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalidades do sistema. Esses casos de uso incluem a criação de um novo design, a edição de um design existente, o compartilhamento e o download de um design, o acesso a templates prontos, a exploração de recursos premium, a adaptação do design para diferentes formatos, bem como o login e logout da plataforma Canva.
+A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalidades do sistema. Esses casos de uso incluem a criação de um novo design, a edição de um design existente, o compartilhamento e o download de um design, o acesso a templates prontos, a exploração de recursos premium, a adaptação do design para diferentes formatos, bem como o login e logout da plataforma Canva, o gerenciamento de pastas e projetos, a colaboração em tempo real e a utilização de recursos de inteligência artificial.
 
 **1.1. UC-01: Criar um Novo Design**
 
@@ -19,6 +19,8 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     * 3b. O usuário pode iniciar um design a partir de um template vazio.
 * **Exceções:**
     * Falha na conexão com a internet durante o processo.
+    * Formato ou modelo selecionado não está disponível.
+    * Limite de designs atingido para Usuários Gratuitos.
 
 **1.2. UC-02: Editar um Design Existente**
 
@@ -47,6 +49,8 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     * 5a.  O usuário pode definir permissões de acesso ao compartilhar (visualizar, editar, comentar).
 * **Exceções:**
     * Falha na conexão com a internet durante o processo.
+    * Limite de compartilhamentos atingido para Usuários Gratuitos.
+    * Compartilhamento em redes sociais requer autenticação adicional.
 
 **1.4. UC-04: Baixar um Design**
 
@@ -76,6 +80,8 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     4. O sistema abre o template na interface de edição. 
 * **Exceções:**
     *  Falha na conexão com a internet durante o processo.
+    * Template não disponível ou removido.
+    * Limite de templates acessados atingido para Usuários Gratuitos.
 
 **1.6. UC-06: Exploração de Recursos Premium**
 
@@ -118,7 +124,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
 * **Fluxos Alternativos (Logar):**
     * 2a. O usuário pode optar por "Esqueci minha senha" para recuperar o acesso.
     * 4a. O sistema pode solicitar autenticação de dois fatores.
-* **Fluxo Básico de Eventos (Desligar):** 
+* **Fluxo Básico de Eventos (Deslogar):** 
     1.  O usuário clica na foto de perfil ou ícone de usuário.
     2. O usuário seleciona a opção "Sair".
     3. O sistema encerra a sessão do usuário.
@@ -178,6 +184,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     4. O usuário aceita ou rejeita as sugestões.
 * **Exceções:**
     * Falha na conexão com o internet durante o processo.
+
 **2. Modelo de Casos de Uso:**
 
 **2.1. Atores:**
