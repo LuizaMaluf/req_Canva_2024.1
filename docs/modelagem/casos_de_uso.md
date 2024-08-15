@@ -90,3 +90,91 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     * 3b. Usuário Pro utiliza o recurso Premium.
 * **Exceções:**
     * Falha na conexão com a internet durante o processo.
+
+**1.7. UC-07: Adaptação do Design para diversos formatos**
+
+* **Descrição:** Este caso de uso descreve a funcionalidade de redimensionamento de um design existente para diferentes formatos, como redes sociais, banners, cartões de visita, entre outros, garantindo a consistência visual e a qualidade do projeto.
+* **Ator:** Usuário Canva
+* **Fluxo Básico de Eventos:**
+    1. O usuário abre um design existente.
+    2. O usuário utiliza a função "Redimensionar" (botão ou menu).
+    3. O sistema apresenta opções de formatos pré-definidos. 
+    4. O usuário seleciona o novo formato.
+    5. O sistema redimensiona o design automaticamente, ajustando os elementos.
+* **Fluxos Alternativos:**
+    * 4a. O usuário pode optar por redimensionar manualmente, definindo dimensões personalizadas.
+* **Exceções:**
+    * Distorção de elementos visuais após o redimensionamento automático, necessitando ajustes manuais.
+
+**1.8. UC-08: Logar e Deslogar da plataforma Canva**
+
+* **Descrição:** Este caso de uso descreve o processo de login e logout da plataforma Canva, permitindo que os usuários acessem suas contas de forma segura e realizem o logout quando necessário, garantindo a privacidade de suas informações.
+* **Ator:** Usuário Anônimo, Usuário Canva
+* **Fluxo Básico de Eventos (Logar):**
+    1. O usuário acessa a tela inicial do aplicativo.
+    2. O usuário informa seus dados de login (e-mail e senha) ou utiliza credenciais de redes sociais.
+    3. O sistema valida as informações.
+    4. O usuário é redirecionado para a página inicial da plataforma.
+* **Fluxos Alternativos (Logar):**
+    * 2a. O usuário pode optar por "Esqueci minha senha" para recuperar o acesso.
+    * 4a. O sistema pode solicitar autenticação de dois fatores.
+* **Fluxo Básico de Eventos (Desligar):** 
+    1.  O usuário clica na foto de perfil ou ícone de usuário.
+    2. O usuário seleciona a opção "Sair".
+    3. O sistema encerra a sessão do usuário.
+* **Exceções:**
+    * Falha na conexão com a internet durante o processo.
+    * Dados de login inválidos.
+
+**1.9. UC-09: Gerenciar Pastas e projetos**
+
+* **Descrição:** Este caso de uso descreve a funcionalidade de gerenciamento de pastas e projetos no Canva, permitindo que os usuários organizem seus designs em pastas, criem novas pastas, movam designs entre pastas e excluam pastas e designs.
+* **Ator:** Usuário Canva
+* **Fluxo Básico de Eventos:**
+    1. O usuário acessa a seção "Pastas e Projetos".
+    2. O sistema exibe a lista de pastas existentes e designs associados.
+    3. O usuário cria uma nova pasta.
+    4. O usuário move designs para a nova pasta.
+    5. O usuário exclui uma pasta e seus designs associados.
+* **Fluxos Alternativos:**
+    * 3a. O usuário pode renomear uma pasta existente.
+    * 4a. O usuário pode mover designs entre pastas existentes.
+    * 5a. O usuário pode restaurar designs excluídos da lixeira.
+* **Exceções:**
+    * Falha na conexão com a internet durante o processo.
+    * Exclusão acidental de designs sem possibilidade de recuperação.
+    * Limite de pastas ou designs atingido.
+    * O usuário tenta criar uma pasta com um nome já existente no mesmo nível da estrutura de pastas.
+    * O usuário tenta realizar uma ação em uma pasta/projeto sem a devida permissão (ex: deletar um projeto compartilhado onde ele possui apenas permissão de visualização).
+
+**1.10. UC-10: Colaborar em tempo real**
+
+* **Descrição:** Este caso de uso descreve a funcionalidade de colaboração em tempo real no Canva, permitindo que os usuários trabalhem em um design simultaneamente, visualizando as alterações em tempo real e interagindo com outros colaboradores.
+* **Ator:** Usuário Canva
+* **Fluxo Básico de Eventos:**
+    1. O usuário abre um design existente.
+    2. O usuário clica no botão "Compartilhar para Colaboração".
+    3. O sistema gera um link de colaboração.
+    4. O usuário compartilha o link com outros colaboradores.
+    5. Os colaboradores acessam o link e visualizam o design em tempo real.
+    6. Os colaboradores podem editar, comentar ou visualizar o design.
+* **Fluxos Alternativos:**
+    * 4a. O usuário pode definir permissões de colaboração (visualizar, editar, comentar).
+    * 6a. O usuário pode encerrar a colaboração a qualquer momento.
+* **Exceções:**
+    * Falha na conexão com a internet durante o processo.
+    * Limite de colaboradores atingido.
+    * Conflitos de edição entre colaboradores.
+
+**1.11. UC-11: Utilizar Recursos de Inteligência Artificial**
+
+* **Descrição:** Este caso de uso descreve a utilização de recursos de inteligência artificial no Canva, como sugestões de design, detecção de cores, recomendações de fontes e outros recursos automatizados que auxiliam os usuários na criação de designs visualmente atraentes.
+
+* **Ator:** Usuário Canva
+* **Fluxo Básico de Eventos:**
+    1. O usuário acessa a seção de edição de um design.
+    2. O sistema identifica elementos visuais e texto no design.
+    3. O sistema sugere cores, fontes, imagens ou elementos gráficos com base no conteúdo do design.
+    4. O usuário aceita ou rejeita as sugestões.
+* **Exceções:**
+    * Falha na conexão com o internet durante o processo.
