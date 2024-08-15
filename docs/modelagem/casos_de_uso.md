@@ -178,3 +178,26 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     4. O usuário aceita ou rejeita as sugestões.
 * **Exceções:**
     * Falha na conexão com o internet durante o processo.
+**2. Modelo de Casos de Uso:**
+
+**2.1. Atores:**
+
+* Usuário Anônimo: Qualquer pessoa que acessa o aplicativo Canva sem estar logado.
+* Usuário Canva: Pessoa cadastrada na plataforma, podendo ser um Usuário Gratuito ou Usuário Pro (assinante).
+
+**2.2. Fluxo Básico de Eventos:**
+
+Descrito em cada caso de uso (UC-XX).
+
+**2.3. Fluxos Alternativos e Excepcionais:**
+
+Descritos em cada caso de uso (UC-XX).
+
+**3. Considerações Finais:**
+
+**3.1. Benefícios da Especificação de Casos de Uso:**
+
+* Define o comportamento esperado do sistema do ponto de vista do usuário.
+* Facilita a comunicação entre desenvolvedores, designers e stakeholders.
+* Auxilia na identificação de requisitos funcionais e não funcionais.
+* Serve como base para testes e validação do sistema.
