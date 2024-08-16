@@ -28,7 +28,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
 
 
 
-**1.1. UC-01: Criar um Novo Design**
+## **1.1. UC-01: Criar um Novo Design**
 
 * **Descrição:** Este caso de uso descreve o processo de criação de um novo design no aplicativo Canva, incluindo a seleção de um formato ou modelo, a adição de elementos visuais, texto e outros recursos, bem como a customização do design de acordo com as preferências do usuário.
 * **Ator:** Usuário Canva
@@ -46,7 +46,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Formato ou modelo selecionado não está disponível.
     3. Limite de designs atingido para Usuários Gratuitos.
 
-**1.2. UC-02: Editar um Design Existente**
+## **1.2. UC-02: Editar um Design Existente**
 
 * **Descrição:** Este caso de uso descreve a ação de editar um design existente no Canva, permitindo ao usuário modificar elementos visuais, texto, cores, fontes e outros aspectos do design de forma intuitiva e prática.
 * **Ator:** Usuário Canva
@@ -63,7 +63,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Design inexistente ou sem permissão de edição.
     2. Falha na conexão com a internet durante o processo.
 
-**1.3. UC-03: Compartilhar um Design**
+## **1.3. UC-03: Compartilhar um Design**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de compartilhamento de design no Canva, permitindo que os usuários compartilhem seus projetos com outras pessoas através de diferentes métodos, como links, redes sociais ou download direto.
 * **Ator:** Usuário Canva
@@ -84,7 +84,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Limite de compartilhamentos atingido para Usuários Gratuitos.
     3. Compartilhamento em redes sociais requer autenticação adicional.
 
-**1.4. UC-04: Baixar um Design**
+## **1.4. UC-04: Baixar um Design**
 
 * **Descrição:** Este caso de uso descreve o processo de download de um design criado no Canva, possibilitando que os usuários salvem seus trabalhos em diferentes formatos, como imagem ou PDF, para uso posterior.
 * **Ator:** Usuário Canva
@@ -101,7 +101,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com a internet durante o processo.
     2. Limite de downloads atingido para Usuários Gratuitos.
 
-**1.5. UC-05: Acessar Templates Prontos**
+## **1.5. UC-05: Acessar Templates Prontos**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a templates prontos no Canva, permitindo que os usuários escolham modelos pré-definidos para criar designs de forma rápida e eficiente.
 * **Ator:** Usuário Canva
@@ -119,7 +119,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Template não disponível ou removido.
     3. Limite de templates acessados atingido para Usuários Gratuitos.
 
-**1.6. UC-06: Exploração de Recursos Premium**
+## **1.6. UC-06: Exploração de Recursos Premium**
 
 * **Descrição:** Este caso de uso descreve a exploração dos recursos premium oferecidos pelo Canva, incluindo imagens, elementos gráficos, templates exclusivos e outras funcionalidades avançadas disponíveis para assinantes pagos.
 * **Ator:** Usuário Canva (Gratuito e Pro)
@@ -136,7 +136,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso Premium não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.7. UC-07: Adaptação do Design para diversos formatos**
+## **1.7. UC-07: Adaptação do Design para diversos formatos**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de redimensionamento de um design existente para diferentes formatos, como redes sociais, banners, cartões de visita, entre outros, garantindo a consistência visual e a qualidade do projeto.
 * **Ator:** Usuário Canva
@@ -153,7 +153,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Distorção de elementos visuais após o redimensionamento automático, necessitando ajustes manuais.
     2. Falha na conexão com a internet durante o processo.
 
-**1.8. UC-08: Logar na plataforma Canva**
+## **1.8. UC-08: Logar na plataforma Canva**
 
 * **Descrição:** Este caso de uso descreve o processo de login na plataforma Canva, permitindo que os usuários acessem suas contas de forma segura e acessem recursos exclusivos disponíveis para usuários cadastrados.
 * **Ator:** Usuário Anônimo, Usuário Canva
@@ -169,7 +169,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com a internet durante o processo.
     2. Dados de login inválidos.
 
-**1.9. UC-09: Logout da plataforma Canva**
+## **1.9. UC-09: Logout da plataforma Canva**
 
 * **Descrição:** Este caso de uso descreve o processo de logout da plataforma Canva, permitindo que os usuários encerrem suas sessões de forma segura e garantam a privacidade de suas informações.
 * **Ator:** Usuário Canva
@@ -183,7 +183,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com a internet durante o processo.
 
 
-**1.10. UC-010: Gerenciar Pastas e projetos**
+## **1.10. UC-010: Gerenciar Pastas e projetos**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de gerenciamento de pastas e projetos no Canva, permitindo que os usuários organizem seus designs em pastas, criem novas pastas, movam designs entre pastas e excluam pastas e designs.
 * **Ator:** Usuário Canva
@@ -204,7 +204,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     4. O usuário tenta criar uma pasta com um nome já existente no mesmo nível da estrutura de pastas.
     5. O usuário tenta realizar uma ação em uma pasta/projeto sem a devida permissão (ex: deletar um projeto compartilhado onde ele possui apenas permissão de visualização).
 
-**1.11. UC-11: Colaborar em tempo real**
+## **1.11. UC-11: Colaborar em tempo real**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de colaboração em tempo real no Canva, permitindo que os usuários trabalhem em um design simultaneamente, visualizando as alterações em tempo real e interagindo com outros colaboradores.
 * **Ator:** Usuário Canva
@@ -224,7 +224,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Limite de colaboradores atingido.
     3. Conflitos de edição entre colaboradores.
 
-**1.12. UC-12: Utilizar Recursos de Inteligência Artificial**
+## **1.12. UC-12: Utilizar Recursos de Inteligência Artificial**
 
 * **Descrição:** Este caso de uso descreve a utilização de recursos de inteligência artificial no Canva, como sugestões de design, detecção de cores, recomendações de fontes e outros recursos automatizados que auxiliam os usuários na criação de designs visualmente atraentes.
 
@@ -241,7 +241,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com o internet durante o processo.
     2. Sugestões inadequadas ou imprecisas.
 
-**1.13. UC-13: Acessar Recursos de Aprendizado**
+## **1.13. UC-13: Acessar Recursos de Aprendizado**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de aprendizado no Canva, como tutoriais, dicas, guias e cursos online, que auxiliam os usuários a explorar as funcionalidades da plataforma, aprimorar suas habilidades de design e obter inspiração para seus projetos.
 * **Ator:** Usuário Canva
@@ -258,7 +258,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso de aprendizado não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.14. UC-14: Personalizar Configurações de Conta**
+## **1.14. UC-14: Personalizar Configurações de Conta**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de personalização das configurações de conta no Canva, permitindo que os usuários atualizem suas informações pessoais, preferências de design, notificações, privacidade e outras configurações relacionadas à sua conta.
 * **Ator:** Usuário Canva
@@ -279,7 +279,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Dados inválidos ou incompletos.
     3. Configurações não salvas corretamente.
 
-**1.15. UC-15: Acessar Suporte e Atendimento ao Cliente**
+## **1.15. UC-15: Acessar Suporte e Atendimento ao Cliente**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso ao suporte e atendimento ao cliente no Canva, permitindo que os usuários obtenham ajuda, tirem dúvidas, relatem problemas, solicitem recursos ou forneçam feedback sobre a plataforma.
 * **Ator:** Usuário Canva
@@ -296,7 +296,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Tempo de espera prolongado para atendimento.
     3. Resolução inadequada do problema ou dúvida.
 
-**1.16. UC-16: Acessar Recursos de Colaboração**
+## **1.16. UC-16: Acessar Recursos de Colaboração**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de colaboração no Canva, como comentários, revisões, aprovações, marcações, compartilhamento de projetos e outras ferramentas que facilitam a comunicação e o trabalho em equipe.
 * **Ator:** Usuário Canva
@@ -314,7 +314,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso de colaboração não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.17. UC-17: Acessar Recursos de Marketing**
+## **1.17. UC-17: Acessar Recursos de Marketing**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de marketing no Canva, como modelos de cartões de visita, banners, flyers, posts para redes sociais, apresentações, entre outros, que auxiliam os usuários a criar materiais promocionais de forma rápida e profissional.
 * **Ator:** Usuário Canva
@@ -331,7 +331,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Template de marketing não disponível no momento.
     3. Usuário Gratuito tenta acessar template exclusivo para Usuários Pro.
 
-**1.18. UC-18: Acessar Recursos de Design Gráfico**
+## **1.18. UC-18: Acessar Recursos de Design Gráfico**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de design gráfico no Canva, como ícones, ilustrações, formas, texturas, fundos, paletas de cores, fontes, entre outros, que auxiliam os usuários a criar designs visualmente atraentes e profissionais.
 * **Ator:** Usuário Canva
@@ -348,7 +348,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso de design gráfico não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.19. UC-19: Acessar Recursos de Fotografia** 
+## **1.19. UC-19: Acessar Recursos de Fotografia** 
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de fotografia no Canva, como imagens, fotos, ilustrações, fundos, texturas, filtros, efeitos, entre outros, que auxiliam os usuários a criar designs visualmente atraentes e profissionais.
 * **Ator:** Usuário Canva
@@ -365,7 +365,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso de fotografia não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.20. UC-20: Acessar Recursos de Vídeo**
+## **1.20. UC-20: Acessar Recursos de Vídeo**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de vídeo no Canva, como vídeos, animações, transições, efeitos, trilhas sonoras, narrações, entre outros, que auxiliam os usuários a criar designs audiovisuais atraentes e profissionais.
 * **Ator:** Usuário Canva
@@ -382,7 +382,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     2. Recurso de vídeo não disponível no momento.
     3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.
 
-**1.21. UC-21: Acessar Recursos de Áudio**
+## **1.21. UC-21: Acessar Recursos de Áudio**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de áudio no Canva, como músicas, efeitos sonoros, narrações, trilhas sonoras, entre outros, que auxiliam os usuários a criar designs audiovisuais atraentes e profissionais.
 * **Ator:** Usuário Canva
