@@ -562,7 +562,7 @@
 |------|---------|
 |**Sinônimos**|Avaliação, Verificação|
 | **Noção** | Processo de experimentação de um design ou funcionalidade antes de sua finalização. |
-| **Impacto** | Garante a qualidade do design, permitindo ajustes antes da entrega final.. |
+| **Impacto** | Garante a qualidade do design, permitindo ajustes antes da entrega final. |
 | **Classificação** | Substantivo. |
 
 ---
