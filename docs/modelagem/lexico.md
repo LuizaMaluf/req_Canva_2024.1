@@ -203,7 +203,7 @@
 
 ---
 
-##Desfazer {#Desfazer}
+## Desfazer {#Desfazer}
 
 | Nome | Desfazer |
 |------|---------|
