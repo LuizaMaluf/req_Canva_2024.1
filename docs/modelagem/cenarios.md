@@ -1,6 +1,6 @@
 # **Cenários**
 
-| Data       | Tipo de Rich Picture                 | Autor         | Versão   |
+| Data       | Descrição                | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 12/08/2024 | Adição dos primeiros cenários encontrados durante a análise de protocolo| Luiza Maluf   | 0.0      |
 | 16/07/2024 | Adição de mais cenários após a navegação feita novamente pela plataforma. | Luiza Maluf   | 0.1      |

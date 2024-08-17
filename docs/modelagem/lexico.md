@@ -1,6 +1,6 @@
 # **Léxicos**
 
-| Data       | Tipo de Rich Picture                 | Autor         | Versão   |
+| Data       | Descrição             | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 12/08/2024 | Adição dos primeiros lexicos encontrados durante a análise de protocolo| Luiza Maluf   | 0.0      |
 | 16/07/2024 | Adição de mais léxicos encontrados após o desenvolvimento dos primeiros cenários. | Luiza Maluf   | 0.1      |

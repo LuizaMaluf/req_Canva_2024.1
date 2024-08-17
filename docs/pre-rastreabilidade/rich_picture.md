@@ -5,7 +5,7 @@ __HISTÓRICO DE REVISÃO__
 | Data       | Tipo de Rich Picture                 | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 24/07/2024 | Rich Picture Geral                   | Luiza Maluf   | 0.0      |
-| 24/07/2024 | Rich Picture Foco no Usuário         | Luiza Maluf   | 0.0      |
+| 24/07/2024 | Rich Picture Foco no Usuário         | Luiza Maluf   | 0.1      |
 
 ## __INTRODUÇÃO__
 
