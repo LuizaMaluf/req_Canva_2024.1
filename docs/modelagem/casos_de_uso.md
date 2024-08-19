@@ -1,5 +1,9 @@
 # **Especificação de Casos de Uso**
 
+| Data       | Descrição                | Autor         | Versão   |
+|------------|--------------------------------------|---------------|----------|
+| 19/08/2024 | Adição de diagramas necessários. | Gabriel Moura   | X.X      |
+
 **1. Casos de Uso**
 
 A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalidades do sistema. Esses casos incluem:

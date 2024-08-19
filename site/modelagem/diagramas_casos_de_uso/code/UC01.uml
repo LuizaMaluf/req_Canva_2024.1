@@ -1,0 +1,34 @@
+@startuml
+start
+:1. Usuário seleciona "Criar um Design";
+
+if (Criar com dimensões personalizadas?) then (Sim)
+  :1.1.  Usuário define dimensões personalizadas;
+else (Não)
+endif
+
+if (Iniciar com template vazio?) then (Sim)
+  :1.2.  Usuário seleciona "Template Vazio";
+else (Não)
+  :2. Sistema apresenta opções de formatos e modelos;
+  :3. Usuário escolhe um formato ou modelo;
+
+  if (Falha na conexão com a internet?) then (Sim)
+    :3.1. Sistema exibe mensagem de erro;
+    note right: Exceção
+    stop
+  elseif (Formato/modelo não disponível?) then (Sim)
+    :3.2. Sistema exibe mensagem de erro;
+    note right: Exceção
+    :2. Sistema apresenta opções de formatos e modelos;
+  elseif (Limite de designs atingido?) then (Sim)
+    :3.3. Sistema exibe mensagem e opções de upgrade;
+    note right: Exceção
+    stop
+  else (Não)
+    :4. Sistema cria um novo design;
+    :5. Usuário é direcionado para a interface de edição;
+  endif
+endif
+stop
+@enduml
