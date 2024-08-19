@@ -1,0 +1,39 @@
+@startuml
+start
+:1. Usuário navega ou usa a barra de pesquisa;
+:2. Sistema apresenta templates (categoria, formato, palavra-chave);
+:3. Usuário seleciona um template;
+
+if (Falha na conexão com a internet?) then (Sim)
+  :3.1. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  stop
+elseif (Template indisponível/removido?) then (Sim)
+  :3.2. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  :2. Sistema apresenta templates (categoria, formato, palavra-chave);
+elseif (Limite de templates acessados atingido?) then (Sim)
+  :3.3. Sistema exibe mensagem e opções de upgrade;
+  note right: Fluxo de Exceção
+  stop
+else (Não)
+  :4. Sistema abre o template na interface de edição;
+
+  if (Favoritar template?) then (Sim)
+    :4.1. Usuário favorita o template;
+  else (Não)
+  endif
+
+  if (Visualizar designs relacionados?) then (Sim)
+    :4.2. Sistema exibe designs relacionados;
+  else (Não)
+  endif
+
+  if (Acessar templates Pro?) then (Sim)
+    :4.3. Sistema exibe templates Pro (upgrade opcional);
+    note right: Fluxo Alternativo
+  else (Não)
+  endif
+endif
+stop
+@enduml

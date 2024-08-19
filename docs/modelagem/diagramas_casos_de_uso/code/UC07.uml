@@ -1,0 +1,35 @@
+@startuml
+start
+:1. Usuário abre um design existente;
+:2. Usuário utiliza a função "Redimensionar";
+
+if (Falha na conexão com a internet?) then (Sim)
+  :2.1. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  stop
+else (Não)
+  :3. Sistema apresenta opções de formatos;
+  :4. Usuário seleciona o novo formato;
+
+  if (Redimensionar manualmente?) then (Sim)
+    :4.1. Usuário define dimensões personalizadas;
+    :5. Sistema redimensiona o design;
+  else (Não)
+    :5. Sistema redimensiona o design automaticamente;
+
+    if (Distorção de elementos visuais?) then (Sim)
+      :5.1. Sistema alerta o usuário sobre a distorção;
+      note right: Fluxo de Exceção
+      :5.2. Usuário ajusta os elementos manualmente;
+    else (Não)
+    endif
+  endif
+
+  if (Salvar em diferentes formatos?) then (Sim)
+    :6. Usuário escolhe formatos adicionais para salvar;
+    :7. Sistema salva o design nos formatos escolhidos;
+  else (Não)
+  endif
+endif
+stop
+@enduml

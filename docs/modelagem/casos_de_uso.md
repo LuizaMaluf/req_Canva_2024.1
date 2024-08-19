@@ -183,7 +183,23 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com a internet durante o processo.
 
 
-## **1.10. UC-010: Gerenciar Pastas e projetos**
+### **1.16. UC-16: Acessar Recursos de Colaboração**
+
+* **Descrição:** Este caso de uso descreve a funcionalidade de acesso a recursos de colaboração no Canva, como comentários, revisões, aprovações, marcações, compartilhamento de projetos e outras ferramentas que facilitam a comunicação e o trabalho em equipe.
+* **Ator:** Usuário Canva
+* **Fluxo Básico de Eventos:**
+    1. O usuário acessa a seção de "Recursos de Colaboração".
+    2. O sistema exibe opções de colaboração disponíveis.
+    3. O usuário seleciona um recurso de colaboração.
+    4. O sistema abre o recurso selecionado para utilização.
+* **Fluxo Alternativo:**
+    1. O usuário pode adicionar comentários em designs compartilhados.
+    2. O usuário pode solicitar revisões ou aprovações de projetos.
+    3. O usuário pode marcar outros colaboradores em designs.
+* **Fluxo de Exceções:**
+    1. Falha na conexão com o internet durante o processo.
+    2. Recurso de colaboração não disponível no momento.
+    3. Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.# **1.10. UC-010: Gerenciar Pastas e projetos**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de gerenciamento de pastas e projetos no Canva, permitindo que os usuários organizem seus designs em pastas, criem novas pastas, movam designs entre pastas e excluam pastas e designs.
 * **Ator:** Usuário Canva
