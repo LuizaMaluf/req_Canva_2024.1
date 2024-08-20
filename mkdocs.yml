@@ -20,6 +20,7 @@ nav:
     - Backlog do Produto: modelagem/backlog.md
     - Especificação Suplementar: modelagem/especificacao_suplementar.md
     - iStar: modelagem/istar.md
+    - NFR Framework: modelagem/nfr-framework.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
