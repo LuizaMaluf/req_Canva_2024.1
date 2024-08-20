@@ -56,10 +56,10 @@ resolver problemas complexos de maneira visual e colaborativa.
 
 #### Versão 0.0
 
-![Rich Picture Geral](../images/rich_picture_geral_00.jpg)
+![Rich Picture Geral](../images/rich-picture/v0.0/geral.jpg)
 
 ### Fluxo do Usuário
 
 #### Versão 0.0
 
-![Rich Picture Usuario 00](../images/rich_picture_usuario_00.jpg)
+![Rich Picture Usuario 00](../images/rich-picture/v0.0/fluxo-de-usuario.jpg)
