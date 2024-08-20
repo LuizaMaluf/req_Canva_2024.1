@@ -1,36 +1,19 @@
 # **Especificação de Casos de Uso**
 
+# **1. Casos de Uso**
+
+A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalidades do sistema. Cada caso de uso representa uma interação específica entre o usuário e o sistema, detalhando os passos necessários para realizar uma determinada tarefa ou obter um resultado desejado. Os casos de uso são apresentados em um formato padronizado, incluindo descrição, atores envolvidos, fluxo básico de eventos, fluxos alternativos e exceções, além de diagramas de casos de uso para visualização.
+
+
 | Data       | Descrição                | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
-| 19/08/2024 | Adição de diagramas necessários. | Gabriel Moura   | X.X      |
-
-**1. Casos de Uso**
-
-A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalidades do sistema. Esses casos incluem:
-
-- [UC-01: Criar um Novo Design](#11-uc-01-criar-um-novo-design)
-- [UC-02: Editar um Design Existente](#12-uc-02-editar-um-design-existente)
-- [UC-03: Compartilhar um Design](#13-uc-03-compartilhar-um-design)
-- [UC-04: Baixar um Design](#14-uc-04-baixar-um-design)
-- [UC-05: Acessar Templates Prontos](#15-uc-05-acessar-templates-prontos)
-- [UC-06: Exploração de Recursos Premium](#16-uc-06-exploração-de-recursos-premium)
-- [UC-07: Adaptação do Design para diversos formatos](#17-uc-07-adaptação-do-design-para-diversos-formatos)
-- [UC-08: Logar na plataforma Canva](#18-uc-08-logar-na-plataforma-canva)
-- [UC-09: Logout da plataforma Canva](#19-uc-09-logout-da-plataforma-canva)
-- [UC-010: Gerenciar Pastas e projetos](#110-uc-010-gerenciar-pastas-e-projetos)
-- [UC-011: Colaborar em tempo real](#111-uc-011-colaborar-em-tempo-real)
-- [UC-012: Utilizar Recursos de Inteligência Artificial](#112-uc-012-utilizar-recursos-de-inteligência-artificial)
-- [UC-013: Acessar Recursos de Aprendizado](#113-uc-013-acessar-recursos-de-aprendizado)
-- [UC-014: Personalizar Configurações de Conta](#114-uc-014-personalizar-configurações-de-conta)
-- [UC-015: Acessar Suporte e Atendimento ao Cliente](#115-uc-015-acessar-suporte-e-atendimento-ao-cliente)
-- [UC-016: Acessar Recursos de Colaboração](#116-uc-016-acessar-recursos-de-colaboração)
-- [UC-017: Acessar Recursos de Marketing](#117-uc-017-acessar-recursos-de-marketing)
-- [UC-018: Acessar Recursos de Design Gráfico](#118-uc-018-acessar-recursos-de-design-gráfico)
-- [UC-019: Acessar Recursos de Fotografia](#119-uc-019-acessar-recursos-de-fotografia)
-- [UC-020: Acessar Recursos de Vídeo](#120-uc-020-acessar-recursos-de-vídeo)
-- [UC-021: Acessar Recursos de Áudio](#121-uc-021-acessar-recursos-de-áudio)
-
-
+| 15/08/2024 | Criação do Documento e Especificação do que são Casos de Uso. | Henrique Quenino | 0.1      |
+| 15/08/2024 | Adição dos 11 primeiros Casos de Uso durante análise de protocolo.         | Henrique Quenino | 0.2      |
+| 16/08/2024 | Revisão e Correção de Casos de Uso.   | Henrique Quenino | 0.3      |
+| 16/08/2024 | Adição de 9 Casos de Uso.           | Henrique Quenino | 0.5      |
+| 17/08/2024 | Revisão e Correção de Casos de Uso.   | Henrique Quenino e Luiza Maluf | 0.6      |
+| 19/08/2024 | Adição de Diagramas de Casos de Uso.  | Gabriel Moura | 0.7      |
+| 20/08/2024 | Revisão Final do Documento.           | Gabriel Moura e Henrique Quenino | 1.0      |
 
 ## **1.1. UC-01: Criar um Novo Design**
 
@@ -426,24 +409,24 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
 
 
 
-**2. Modelo de Casos de Uso:**
+# **2. Modelo de Casos de Uso:**
 
-**2.1. Atores:**
+## **2.1. Atores:**
 
 * Usuário Anônimo: Qualquer pessoa que acessa o aplicativo Canva sem estar logado.
 * Usuário Canva: Pessoa cadastrada na plataforma, podendo ser um Usuário Gratuito ou Usuário Pro (assinante).
 
-**2.2. Fluxo Básico de Eventos:**
+## **2.2. Fluxo Básico de Eventos:**
 
 Descrito em cada caso de uso (UC-XX).
 
-**2.3. Fluxos Alternativos e Excepcionais:**
+## **2.3. Fluxos Alternativos e Excepcionais:**
 
 Descritos em cada caso de uso (UC-XX).
 
-**3. Considerações Finais:**
+# **3. Considerações Finais:**
 
-**3.1. Benefícios da Especificação de Casos de Uso:**
+## **3.1. Benefícios da Especificação de Casos de Uso:**
 
 * Define o comportamento esperado do sistema do ponto de vista do usuário.
 * Facilita a comunicação entre desenvolvedores, designers e stakeholders.

@@ -1,5 +1,11 @@
 # **Especificação Suplementar**
 
+| Data       | Descrição | Autor | Versão |
+| ---------- | ------ | --------- | ----- |
+| 16/09/2021 | Criação do documento e definição dos requisitos não funcionais após análise de casos de uso | Henrique Quenino | 0.1 |
+| 17/09/2021 | Revisão e ajustes dos requisitos não funcionais | Henrique Quenino | 1.0 |
+
+
 **1. Introdução**
 
 Este documento descreve a Especificação Suplementar do site Canva, complementando a Especificação de Casos de Uso. Ele detalha os requisitos não funcionais, incluindo requisitos de desempenho, segurança, usabilidade e outros, essenciais para o sucesso da plataforma.
