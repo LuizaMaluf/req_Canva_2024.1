@@ -1,0 +1,38 @@
+@startuml
+start
+:1. Usuário acessa "Recursos de Vídeo";
+
+if (Falha na conexão com a internet?) then (Sim)
+  :1.1. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  stop
+else (Não)
+  :2. Sistema exibe recursos por categoria (vídeos, animações, etc.);
+
+  if (Pesquisar recursos?) then (Sim)
+    :2.1. Usuário pesquisa por palavra-chave ou categoria;
+    note right: Fluxo Alternativo
+  else (Não)
+  endif
+
+  :3. Usuário seleciona um recurso;
+
+  if (Recurso indisponível?) then (Sim)
+    :3.1. Sistema exibe mensagem de erro;
+    note right: Fluxo de Exceção
+    :2. Sistema exibe recursos por categoria (vídeos, animações, etc.);
+  elseif (Recurso exclusivo para Pro?) then (Sim)
+    :3.2. Sistema exibe mensagem e opções de upgrade;
+    note right: Fluxo de Exceção
+  else (Não)
+    :4. Sistema abre o recurso para utilização;
+
+    if (Favoritar recurso?) then (Sim)
+      :4.1. Usuário favorita o recurso;
+      note right: Fluxo Alternativo
+    else (Não)
+    endif
+  endif
+endif
+stop
+@enduml

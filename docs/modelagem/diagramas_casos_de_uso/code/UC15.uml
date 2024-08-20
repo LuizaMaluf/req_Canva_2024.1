@@ -1,0 +1,37 @@
+@startuml
+start
+:1. Usuário acessa "Suporte e Atendimento";
+
+if (Falha na conexão com a internet?) then (Sim)
+  :1.1. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  stop
+else (Não)
+  :2. Sistema exibe opções de contato (chat, email, telefone);
+
+  if (Acessar base de conhecimento/FAQ?) then (Sim)
+    :2.1. Sistema exibe base de conhecimento/FAQ;
+    note right: Fluxo Alternativo
+  else (Não)
+  endif
+
+  if (Enviar feedback/sugestões?) then (Sim)
+    :2.2. Usuário envia feedback/sugestões;
+    note right: Fluxo Alternativo
+  else (Não)
+    :3. Usuário seleciona o método de contato;
+    :4. Sistema inicia o atendimento ao cliente;
+
+    if (Tempo de espera prolongado?) then (Sim)
+      :4.1. Sistema oferece alternativas de contato;
+      note right: Fluxo de Exceção
+    elseif (Resolução inadequada?) then (Sim)
+      :4.2. Sistema oferece opções de escalonamento do atendimento;
+      note right: Fluxo de Exceção
+    else (Não)
+      :5. Atendimento finalizado;
+    endif
+  endif
+endif
+stop
+@enduml

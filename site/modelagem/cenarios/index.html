@@ -1,0 +1,1941 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../lexico/">
+      
+      
+        <link rel="next" href="../casos_de_uso/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Cenários - Canva - Requisitos de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cenarios" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Canva - Requisitos de Software" class="md-header__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../images/logoCanva.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Canva - Requisitos de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cenários
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pre-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+    
+  
+  Pre-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../elicitacao/brainstorming/" class="md-tabs__link">
+          
+  
+    
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../lexico/" class="md-tabs__link">
+          
+  
+    
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../atas/reuniao1/" class="md-tabs__link">
+          
+  
+    
+  
+  Reuniões
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../entregas/entrega1/" class="md-tabs__link">
+          
+  
+    
+  
+  Entregas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Canva - Requisitos de Software" class="md-nav__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../images/logoCanva.png" alt="logo">
+
+    </a>
+    Canva - Requisitos de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Pictures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/argumentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Argumentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/moscow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MoSCoW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/first_things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/analise_protocolo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de Protocolo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lexico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criacao-de-um-design-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de um Design Simples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-colaboracao-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Colaboração em Tempo Real
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Exploração de Recursos Premium
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-criacao-de-materiais-para-uma-campanha-publicitaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Criação de Materiais para uma Campanha Publicitária
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-adaptacao-de-um-design-para-diferentes-midias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Adaptação de um Design para Diferentes Mídias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exportacao-de-um-projeto-em-alta-resolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Exportação de um Projeto em Alta Resolução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-compartilhamento-de-post-para-redes-sociais" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Compartilhamento de Post para Redes Sociais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-login-e-logout-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login e Logout na Plataforma Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cenario-edicao-de-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Cenário: Edição de um Design Existente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cenario-download-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Cenário: Download de um Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-acesso-a-um-template-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Acesso a um Template Pronto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-gerenciamento-de-pastas-e-projetos-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Gerenciamento de Pastas e Projetos no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Utilização de Recursos de Inteligência Artificial no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-personalizar-configuracoes-de-conta-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Personalizar Configurações de Conta no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-acessar-suporte-e-atendimento-ao-cliente-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Acessar Suporte e Atendimento ao Cliente no Canva
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../casos_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação de Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../especificacao_suplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../istar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iStar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reuniões
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reuniões
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Entregas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-criacao-de-um-design-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de um Design Simples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-colaboracao-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Colaboração em Tempo Real
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Exploração de Recursos Premium
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-criacao-de-materiais-para-uma-campanha-publicitaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Criação de Materiais para uma Campanha Publicitária
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-adaptacao-de-um-design-para-diferentes-midias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Adaptação de um Design para Diferentes Mídias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exportacao-de-um-projeto-em-alta-resolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Exportação de um Projeto em Alta Resolução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-compartilhamento-de-post-para-redes-sociais" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Compartilhamento de Post para Redes Sociais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-login-e-logout-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login e Logout na Plataforma Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cenario-edicao-de-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Cenário: Edição de um Design Existente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cenario-download-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Cenário: Download de um Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-acesso-a-um-template-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Acesso a um Template Pronto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-gerenciamento-de-pastas-e-projetos-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Gerenciamento de Pastas e Projetos no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Utilização de Recursos de Inteligência Artificial no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-personalizar-configuracoes-de-conta-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Personalizar Configurações de Conta no Canva
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-acessar-suporte-e-atendimento-ao-cliente-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Acessar Suporte e Atendimento ao Cliente no Canva
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="cenarios"><strong>Cenários</strong></h1>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12/08/2024</td>
+<td>Adição dos primeiros cenários encontrados durante a análise de protocolo</td>
+<td>Luiza Maluf</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>16/07/2024</td>
+<td>Adição de mais cenários após a navegação feita novamente pela plataforma.</td>
+<td>Luiza Maluf</td>
+<td>0.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-criacao-de-um-design-simples"><strong>1. Criação de um Design Simples</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> novato acessa o Canva e deseja criar um <a href="../lexico.md#Design">design</a> de cartão de visita.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> está acessando o Canva pela primeira vez e tem pouca experiência em <a href="../lexico.md#Design">design</a> gráfico.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar logado na plataforma Canva.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz login na plataforma Canva.</li>
+<li>Navega pelos <a href="../lexico.md#Templates">templates</a> disponíveis e escolhe um para cartão de visita.</li>
+<li><a href="../lexico.md#Personalizar">Personaliza</a> o template, <a href="../lexico.md#Adicionar">inserindo</a> seu nome, cargo e informações de contato.</li>
+<li><a href="../lexico.md#Altera">Altera</a> as cores e <a href="#Fonte">fontes</a> de acordo com sua preferência.</li>
+<li>Visualiza o <a href="../lexico.md#Design">design</a> final e decide <a href="../lexico.md#Salvar">salvá-lo</a>.</li>
+<li>O <a href="../lexico.md#Usuário">usuário</a> <a href="../lexico.md#Baixar">baixa</a> o <a href="../lexico.md#Design">design</a> para seu computador.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p><a href="../lexico.md#Usuário">Usuário</a> deve ter uma <a href="../lexico.md#Conta">conta</a> ativa na plataforma Canva.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p><a href="../lexico.md#Usuário">Usuário</a> <a href="../lexico.md#Criar">criou</a> e <a href="../lexico.md#Salvar">salvou</a> um cartão de visita simples, pronto para uso.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> consegue <a href="../lexico.md#Criar">criar</a> e <a href="../lexico.md#Salvar">salvar</a> um cartão de visita simples, ficando satisfeito com a facilidade de uso da <a href="../lexico.md#Ferramenta">ferramenta</a>.</p>
+<hr />
+<h2 id="2-colaboracao-em-tempo-real"><strong>2. Colaboração em Tempo Real</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Dois <a href="../lexico.md#Usuário">usuários</a> <a href="../lexico.md#Colaboraçãi">colaboram</a> simultaneamente em um <a href="../lexico.md#Design">design</a> de <a href="../lexico.md#Apresentação">apresentação</a> para uma reunião de negócios.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>Os <a href="../lexico.md#Usuário">usuários</a> estão em locais diferentes, mas precisam trabalhar juntos no mesmo <a href="../lexico.md#Projeto">projeto</a> em tempo real na plataforma Canva.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuários</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva, chat <a href="../lexico.md#Integração">integrado</a>.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>Ambos os <a href="../lexico.md#Usuário">usuários</a> devem estar <a href="../lexico.md#Login">logados</a> na plataforma Canva e ter uma <a href="../lexico.md#Conexão">conexão</a> de internet estável.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li><a href="../lexico.md#Usuário">Usuário</a> 1 <a href="../lexico.md#Criar">cria</a> uma <a href="../lexico.md#Apresentação">apresentação</a> no Canva.</li>
+<li><a href="../lexico.md#Usuário">Usuário</a> 1 <a href="../lexico.md#Compartilhar">compartilha</a> o link de <a href="../lexico.md#Edição">edição</a> do <a href="../lexico.md#Design">design</a> com o <a href="../lexico.md#Usuário">Usuário</a>.</li>
+<li>Ambos os <a href="../lexico.md#Usuário">usuários</a> abrem o <a href="../lexico.md#Design">design</a> <a href="../lexico.md#Simultâneo">simultaneamente</a> e começam a <a href="../lexico.md#Edição">editá-lo</a>.</li>
+<li><a href="../lexico.md#Usuário">Usuário</a> 1 trabalha nos primeiros <a href="../lexico.md#Slide">slides</a>, enquanto <a href="../lexico.md#Usuário">Usuário</a> <a href="../lexico.md#Edição">edita</a> os últimos slides.</li>
+<li>Os <a href="../lexico.md#Usuário">usuários</a> discutem as <a href="../lexico.md#Alteração">alterações</a> e ajustes necessários usando o chat <a href="../lexico.md#Integração">integrado</a> da <a href="../lexico.md#Plataforma">plataforma</a>.</li>
+<li>Ambos revisam o <a href="../lexico.md#Design">design</a> final juntos, fazem os ajustes necessários e <a href="../lexico.md#Salvar">salvam</a> o <a href="../lexico.md#Projeto">projeto</a>.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>Ambos os <a href="../lexico.md#Usuário">usuários</a> precisam ter <a href="../lexico.md#Permissão">permissão</a> de <a href="../lexico.md#Edição">edição</a> para colaborar no <a href="../lexico.md#Design">design</a>.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Design">design</a> da <a href="../lexico.md#Apresentação">apresentação</a> foi concluído e <a href="../lexico.md#Salvar">salvo</a>, estando pronto para a reunião.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>Os dois <a href="../lexico.md#Usuário">usuários</a> conseguem <a href="../lexico.md#Colaboração">colaborar</a> em tempo real, completando o <a href="../lexico.md#Design">design</a> de forma eficiente e satisfatória.</p>
+<hr />
+<h2 id="3-exploracao-de-recursos-premium"><strong>3. Exploração de Recursos Premium</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> <a href="../lexico.md#Gratuito">gratuito</a> explora os benefícios de um <a href="../lexico.md#Assinatura">plano de assinatura</a> para decidir se vale a pena <a href="../lexico.md#Assinar">assiná-lo</a>.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> sente que as opções <a href="../lexico.md#Gratuito">gratuitas</a> são limitadas e deseja saber se vale a pena <a href="../lexico.md#Assinar">assinar</a> um <a href="../lexico.md#Assinatura">plano</a>.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar logado na plataforma Canva.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> navega pelos <a href="../lexico.md#Templates">[templates]</a> gratuitos, mas não encontra algo que atenda às suas necessidades.</li>
+<li>Ele vê a indicação de <a href="../lexico.md#Templates">templates</a> Premium e resolve clicar para ver as opções.</li>
+<li>Um pop-up aparece explicando os benefícios do <a href="../lexico.md#Assinatura">plano de assinatura</a>, como acesso a <a href="../lexico.md#Templates">templates</a> exclusivos e recursos adicionais.</li>
+<li>O <a href="../lexico.md#Usuário">usuário</a> decide experimentar o <a href="../lexico.md#Assinatura">plano</a> por 30 dias <a href="../lexico.md#Gratuito">gratuitamente</a>.</li>
+<li>Após a ativação, ele começa a usar os <a href="../lexico.md#Templates">templates</a> Premium e nota a diferença na qualidade e variedade.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve ter uma <a href="../lexico.md#Conta">conta</a> ativa na plataforma Canva.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> explora os recursos Premium e decide se continuará com a <a href="../lexico.md#Assinatura">assinatura</a> após o período de <a href="../lexico.md#Teste">teste</a>.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> percebe o valor dos <a href="../lexico.md#Recuros">recursos</a> <a href="../lexico.md#Assinatura">Premium</a> e decide continuar com a <a href="../lexico.md#Assinatura">assinatura</a> após o período de <a href="../lexico.md#Teste">teste</a>.</p>
+<hr />
+<h2 id="4-criacao-de-materiais-para-uma-campanha-publicitaria"><strong>4. Criação de Materiais para uma Campanha Publicitária</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Uma equipe de marketing cria <a href="../lexico.md#elementos-gráficos-elementos-gráficos">materiais gráficos</a> para uma nova campanha publicitária.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>A equipe precisa garantir que todos os materiais tenham uma identidade visual consistente.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li>Designer</li>
+<li>Gerente de Marketing</li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>A equipe de marketing deve estar <a href="../lexico.md#Alinhamento">alinhada</a> quanto à identidade visual da campanha.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O designer seleciona um conjunto de <a href="../lexico.md#Template">templates</a> que combinam entre si para garantir consistência visual.</li>
+<li>Adapta cada <a href="../lexico.md#Template">Templates</a> para diferentes formatos (<a href="../lexico.md#Publicação">postagem</a> em redes sociais, banners para site, e-mail marketing).</li>
+<li>Utiliza <a href="../lexico.md#Elementos-Gráficos">elementos gráficos</a> e o <a href="../lexico.md#Banco-de-Imagens">Banco de Imagens</a> para enriquecer os materiais.</li>
+<li>O <a href="../lexico.md#Gerente-de-Marketing">gerente de marketing</a> revisa e sugere pequenas <a href="../lexico.md#Alterar">alterações</a>.</li>
+<li>Após aprovação, o <a href="../lexico.md#Designer">designer</a> <a href="../lexico.md#Exportação">exporta</a> os materiais nos formatos necessários.</li>
+<li>Os materiais são <a href="../lexico.md#Compartilhamento">compartilhados</a> com a equipe e publicados conforme o cronograma da campanha.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>A equipe deve respeitar o prazo da campanha e as diretrizes de identidade visual estabelecidas.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>Os <a href="../lexico.md#elementos-gráficos-elementos-gráficos">materiais gráficos</a> estão prontos e <a href="../lexico.md#Alinhamento">alinhados</a> com a identidade visual da campanha.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>A equipe de marketing consegue <a href="../lexico.md#Criar">criar</a> uma campanha coesa e visualmente atraente, melhorando a identidade da marca.</p>
+<hr />
+<h2 id="5-adaptacao-de-um-design-para-diferentes-midias"><strong>5. Adaptação de um Design para Diferentes Mídias</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um designer adapta um único <a href="../lexico.md#Design">design</a> para diferentes mídias, como cartazes impressos, posts em redes sociais e banners para sites.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O designer precisa garantir que a mensagem e a identidade visual sejam mantidas em todos os formatos.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li>Designer</li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O designer deve ter acesso aos <a href="../lexico.md#Templates">templates</a> originais e aos requisitos específicos de cada mídia.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O designer seleciona o <a href="../lexico.md#Design">design</a> original no Canva.</li>
+<li>Duplica o <a href="../lexico.md#Design">design</a> e ajusta as dimensões para cada mídia (A4 para cartazes, 1080x1080 para posts, etc.).</li>
+<li>Reposiciona os <a href="../lexico.md#Elementos-Gráficos">elementos gráficos</a> conforme necessário para manter o equilíbrio visual.</li>
+<li>Ajusta o tamanho das fontes e o espaçamento para garantir legibilidade em cada formato.</li>
+<li>Revisa cada adaptação e <a href="../lexico.md#Exportação">exporta</a> os <a href="../lexico.md#Arquivo">arquivos</a> nos formatos apropriados.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O designer deve garantir que a mensagem principal permaneça clara em todas as adaptações.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>Os designs estão prontos para uso em diferentes mídias.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O designer adapta com sucesso o <a href="../lexico.md#Design">design</a> original para diferentes mídias, mantendo a consistência da mensagem e da identidade visual.</p>
+<hr />
+<h2 id="6-exportacao-de-um-projeto-em-alta-resolucao"><strong>6. Exportação de um Projeto em Alta Resolução</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um designer exporta um <a href="../lexico.md#Projeto">projeto</a> gráfico em alta resolução para impressão profissional.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O designer precisa garantir que o <a href="../lexico.md#Arquivo">arquivo</a> final tenha qualidade suficiente para impressão em grande escala.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Projeto">projeto</a> deve estar finalizado e revisado.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> abre o <a href="../lexico.md#Projeto">projeto</a> no Canva.</li>
+<li>Seleciona a opção de <a href="../lexico.md#Exportação">exportação</a> e escolhe o formato adequado (por exemplo, PDF para impressão).</li>
+<li>Ajusta as configurações de resolução para a máxima qualidade disponível.</li>
+<li>Revisa as opções de margens, caso necessário.</li>
+<li><a href="../lexico.md#Exportação">Exporta</a> o <a href="../lexico.md#Arquivo">arquivo</a> e faz o download.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve garantir que as configurações de <a href="../lexico.md#Exportação">exportação</a> atendam aos requisitos da impressão.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Projeto">projeto</a> está pronto para ser enviado para a gráfica.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> consegue <a href="../lexico.md#Exportação">exportar</a> o <a href="../lexico.md#Projeto">projeto</a> em alta resolução, garantindo uma impressão de alta qualidade.</p>
+<hr />
+<h2 id="7-compartilhamento-de-post-para-redes-sociais"><strong>7. Compartilhamento de Post para Redes Sociais</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> <a href="../lexico.md#Criar">cria</a> e <a href="../lexico.md#Compartilhamento">compartilha</a> um post visual para promover um novo produto em diversas redes sociais.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deseja utilizar o Canva para <a href="../lexico.md#Criar">criar</a> um post atraente que será <a href="../lexico.md#Compartilhamento">compartilhado</a> em múltiplas plataformas sociais para maximizar o alcance do novo produto.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva, <a href="../lexico.md#Conta">contas</a> nas redes sociais (Instagram, Facebook, Twitter, LinkedIn).</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve ter as imagens do produto, textos promocionais e informações sobre as redes sociais onde o post será <a href="../lexico.md#Compartilhamento">compartilhado</a>.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> acessa o Canva e escolhe um template de post adequado para redes sociais.</li>
+<li>Personaliza o <a href="../lexico.md#Design">[design](../lexico.md#Design)</a> com imagens do produto, texto promocional e hashtags relevantes.</li>
+<li>Ajusta o <a href="../lexico.md#Tamplate">layout</a> e o <a href="../lexico.md#Design">design</a> para atender às diretrizes específicas de cada plataforma social.</li>
+<li>Revê o post para garantir que todos os detalhes estejam corretos e que o <a href="../lexico.md#Design">design</a> esteja otimizado para cada rede social.</li>
+<li><a href="../lexico.md#Exportação">Exporta</a> o post no formato adequado para cada <a href="../lexico.md#Plataforma">plataforma</a> (Instagram, Facebook, Twitter, LinkedIn).</li>
+<li><a href="../lexico.md#Compartilhamento">Compartilha</a> o post diretamente nas <a href="../lexico.md#Contass">contas</a> de redes sociais usando as <a href="../lexico.md#Ferramenta">ferramentas</a> de <a href="../lexico.md#Itegração">integração</a> do Canva ou faz o upload manualmente em cada plataforma.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>Os posts devem seguir as diretrizes de tamanho e formato recomendadas por cada rede social para garantir uma boa visualização e desempenho.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>Os posts estão <a href="../lexico.md#Publicação">publicados</a> e visíveis nas redes sociais selecionadas.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> cria e <a href="../lexico.md#Compartilhamento">compartilha</a> posts atraentes que promovem eficazmente o novo produto, engajando os seguidores em diversas redes sociais.</p>
+<hr />
+<h2 id="8-login-e-logout-na-plataforma-canva"><strong>8. Login e Logout na Plataforma Canva</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> acessa sua conta na plataforma Canva para <a href="../lexico.md#Criar">criar</a> e gerenciar <a href="../lexico.md#Design">design</a>, e depois realiza o <a href="../lexico.md#Logout">logout</a> para garantir a segurança da conta.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> precisa acessar sua <a href="../lexico.md#Conta">conta</a> na plataforma Canva para trabalhar em <a href="../lexico.md#Projetos">projetos</a> e, após concluir seu trabalho, deseja fazer <a href="../lexico.md#Logout">logout</a> para proteger suas informações.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve ter uma <a href="../lexico.md#Conta">conta</a> ativa na plataforma Canva e conhecer suas credenciais de <a href="../lexico.md#Login">login</a>.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> <a href="../lexico.md#Acesso">acessa</a> a página de <a href="../lexico.md#Login">login</a> do Canva.</li>
+<li>Insere seu nome de <a href="../lexico.md#Usuário">usuário</a> e senha.</li>
+<li>Clica no botão de login para <a href="../lexico.md#Acesso">acessar</a> sua <a href="../lexico.md#Conta">conta</a>.</li>
+<li>O <a href="../lexico.md#Usuário">usuário</a> usa a plataforma Canva para <a href="../lexico.md#Criar">criar</a> ou gerenciar <a href="../lexico.md#Design">design</a>.</li>
+<li>Após concluir suas atividades, o <a href="../lexico.md#Usuário">usuário</a> localiza a opção de <a href="../lexico.md#Logout">logout</a> no menu de perfil.</li>
+<li>Clica na opção de <a href="../lexico.md#Logout">logout</a> para sair da conta.</li>
+<li>O <a href="../lexico.md#Usuário">usuário</a> é redirecionado para a página de <a href="../lexico.md#Login">login</a> ou para a página inicial do Canva.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve lembrar suas credenciais para realizar o <a href="../lexico.md#Login">login</a>. Após o <a href="../lexico.md#Logout">logout</a>, é necessário fazer <a href="../lexico.md#Login">login</a> novamente para <a href="../lexico.md#Acesso">acessar</a> a <a href="../lexico.md#Conta">conta</a>.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> foi desconectado da sua <a href="../lexico.md#Conta">conta</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva, garantindo que suas informações estejam seguras.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> consegue fazer <a href="../lexico.md#Login">login</a> e <a href="../lexico.md#Logout">logout</a> com sucesso, garantindo o <a href="../lexico.md#Acesso">acesso</a> e a segurança de sua <a href="../lexico.md#Conta">conta</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva.</p>
+<hr />
+<h2 id="9-cenario-edicao-de-um-design-existente"><strong>9. Cenário: Edição de um Design Existente</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> deseja <a href="../lexico.md#Edição">editar</a> um <a href="../lexico.md#Design">design</a> já existente na <a href="../lexico.md#Plataforma">plataforma</a> Canva para ajusta-lo às suas novas necessidades.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> já criou ou tem acesso a um design na plataforma Canva e agora precisa modificá-lo para atualizá-lo ou adaptá-lo a um novo propósito.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva e ter <a href="../lexico.md#Acesso">acesso</a> ao <a href="../lexico.md#Design">design</a> que deseja <a href="../lexico.md#Edição">editar</a>.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz <a href="../lexico.md#Login">login</a> no Canva.</li>
+<li>Navega até a seção "Meus Designs" ou utiliza a barra de pesquisa para localizar o <a href="../lexico.md#Design">design</a> existente.</li>
+<li>Clica no <a href="../lexico.md#Design">design</a> desejado para abri-lo na interface de <a href="../lexico.md#Edição">edição</a>.</li>
+<li>Realiza as modificações necessárias, como alteração de texto, imagens, cores e layout.</li>
+<li>Visualiza as mudanças em tempo real para garantir que o <a href="../lexico.md#Design">design</a> atende às novas necessidades.</li>
+<li>Salva as alterações e, se necessário, exporta o <a href="../lexico.md#Design">design</a> modificado nos formatos desejados.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve garantir que todas as <a href="../lexico.md#Alterações">alterações</a> estejam de acordo com os requisitos do projeto ou com a nova finalidade do design.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O design foi <a href="../lexico.md#Edição">editado</a> com sucesso e está pronto para ser usado conforme o novo propósito.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> consegue <a href="../lexico.md#Edição">editar</a> o <a href="../lexico.md#Design">design</a> existente de maneira eficaz, adaptando-o às suas novas necessidades e garantindo que o resultado final esteja de acordo com as expectativas.</p>
+<hr />
+<h2 id="10-cenario-download-de-um-design"><strong>10. Cenário: Download de um Design</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>Um <a href="../lexico.md#Usuário">usuário</a> deseja <a href="../lexico.md#Baixar">baixar</a> um <a href="../lexico.md#Design">design</a> da <a href="../lexico.md#Plataforma">plataforma</a> Canva para utilizá-lo fora da plataforma, como para impressão ou <a href="../lexico.md#Compartilhamento">compartilhamento</a>.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> terminou de <a href="../lexico.md#Criar">criar</a> ou <a href="../lexico.md#Edição">editar</a> um <a href="../lexico.md#Design">design</a> na plataforma Canva e agora precisa <a href="../lexico.md#Baixar">baixá-lo</a> para uso offline ou compartilhamento em outras plataformas.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva e ter um <a href="../lexico.md#Design">design</a> finalizado e pronto para o download.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz <a href="../lexico.md#Login">login</a> no Canva.</li>
+<li>Navega até o <a href="../lexico.md#Design">design</a> finalizado que deseja baixar, acessando-o através da seção "Meus Designs" ou utilizando a barra de pesquisa.</li>
+<li>Clica no <a href="../lexico.md#Design">design</a> desejado e clica no botão de "Download" no canto superior direito da interface.</li>
+<li>Escolhe o formato de arquivo desejado (por exemplo, PNG, JPEG, PDF) e ajusta as configurações de qualidade, resolução ou margens, se necessário.</li>
+<li>Confirma as opções e inicia o download do arquivo.</li>
+<li>O design é baixado para o dispositivo do usuário, ficando disponível para uso offline.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve garantir que escolheu o formato de <a href="../lexico.md#Arquivo">arquivo</a> correto e configurou as opções de download conforme a finalidade do design.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O design foi <a href="../lexico.md#Baixar">baixado</a> com sucesso e está pronto para ser usado conforme o necessário.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> consegue <a href="../lexico.md#Baixar">baixar</a> o <a href="../lexico.md#Design">design</a> no formato desejado, com a qualidade adequada, pronto para o uso offline ou compartilhado.</p>
+<hr />
+<h2 id="11-acesso-a-um-template-pronto"><strong>11. Acesso a um Template Pronto</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>O usuário deseja acessar um template pronto na plataforma Canva para iniciar a criação de um design personalizado.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O usuário está na plataforma Canva e deseja utilizar um template pré-definido como base para criar um novo design.
+<strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz <a href="../lexico.md#Login">login</a> no Canva.</li>
+<li>Na página inicial, o usuário navega até a seção de "Templates" ou utiliza a barra de pesquisa para buscar um template específico.</li>
+<li>O usuário explora as categorias disponíveis, como "Cartões de Visita," "Apresentações," "Postagens para Redes Sociais," entre outras.</li>
+<li>Seleciona o template que melhor atende às suas necessidades.</li>
+<li>Abre o template escolhido, visualizando uma prévia do design.</li>
+<li>Clica no botão "Usar este template" para iniciar a personalização do design.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve garantir que escolheu um template adequado ao seu propósito antes de iniciar a personalização.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O usuário tem o template pronto aberto na interface de edição do Canva, pronto para ser personalizado conforme desejado.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O usuário consegue acessar e abrir um template pronto na plataforma Canva, facilitando o início da criação de um design personalizado.</p>
+<hr />
+<h2 id="12-gerenciamento-de-pastas-e-projetos-no-canva"><strong>12. Gerenciamento de Pastas e Projetos no Canva</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>O usuário deseja organizar seus projetos de design criando e gerenciando pastas na plataforma Canva.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O usuário possui vários projetos na plataforma Canva e deseja organizá-los de forma eficiente para facilitar o acesso e a gestão.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva e ter <a href="../lexico.md#Projetos">projetos</a> criados.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz <a href="../lexico.md#Login">login</a> no Canva.</li>
+<li>Acessa a seção "Todos os seus designs" no painel principal.</li>
+<li>Identifica a necessidade de organizar os projetos em pastas.</li>
+<li>Clica na opção "Criar nova pasta" e dá um nome à nova pasta, como "Projetos de Marketing" ou "Apresentações 2024".</li>
+<li>Após criar a pasta, o usuário arrasta e solta os projetos desejados dentro da pasta ou seleciona os projetos e usa a opção "Mover para a pasta" no menu de contexto.</li>
+<li>O usuário também pode criar subpastas dentro das pastas principais para uma organização mais detalhada.</li>
+<li>Se necessário, o usuário renomeia, exclui ou move as pastas conforme as necessidades de organização.</li>
+<li>Para localizar rapidamente um projeto específico, o usuário utiliza a barra de pesquisa ou navega pelas pastas organizadas.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve organizar os projetos de maneira lógica para facilitar o acesso futuro. O Canva pode ter limitações no número de subpastas ou no número de projetos por pasta, dependendo do plano de assinatura.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>Os projetos estão organizados em pastas, permitindo que o usuário acesse e gerencie seus designs de forma mais eficiente.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O usuário consegue criar, organizar e gerenciar pastas para seus projetos na plataforma Canva, melhorando a eficiência na navegação e no gerenciamento dos designs.</p>
+<hr />
+<h2 id="13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva"><strong>13. Utilização de Recursos de Inteligência Artificial no Canva</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>O usuário deseja utilizar os recursos de inteligência artificial (IA) do Canva para aprimorar seus designs, como a geração de textos automáticos ou a criação de elementos gráficos personalizados.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O usuário está trabalhando em um projeto de design no Canva e deseja explorar as ferramentas de IA disponíveis para acelerar o processo criativo e melhorar a qualidade do design.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web, plataforma Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva e ter um <a href="../lexico.md#Projetos">projeto</a> aberto.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O <a href="../lexico.md#Usuário">usuário</a> faz <a href="../lexico.md#Login">login</a> no Canva e abre um projeto.</li>
+<li>No painel de ferramentas, o usuário identifica a seção de "Recursos de IA" ou uma ferramenta específica de IA, como "Gerador de Texto" ou "Criação Automática de Elementos Gráficos".</li>
+<li>O usuário seleciona o recurso de IA que deseja utilizar, como a geração de texto automático para uma manchete ou a sugestão de paletas de cores personalizadas.</li>
+<li>Se utilizando da IA, o usuário insere palavras-chave ou instruções sobre o que deseja gerar (por exemplo, "slogan para campanha de verão" ou "ilustração abstrata para fundo").</li>
+<li>A IA processa as informações e apresenta sugestões ou gera os elementos solicitados.</li>
+<li>O usuário revisa as sugestões e, se necessário, faz ajustes manuais para alinhar o resultado com o objetivo do projeto.</li>
+<li>O usuário integra os elementos gerados pela IA ao design e continua a personalização conforme necessário.</li>
+<li>Se satisfeito com o resultado, o usuário salva o projeto final ou faz uma exportação.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>Os recursos de IA podem ter limitações em termos de complexidade de geração ou em quantidade de opções oferecidas, dependendo do plano de assinatura do Canva.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O design do projeto foi aprimorado com a ajuda dos recursos de IA, economizando tempo e aumentando a qualidade do resultado.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O usuário consegue utilizar eficazmente os recursos de inteligência artificial do Canva, como a geração automática de texto ou a criação de elementos gráficos, melhorando a eficiência do processo de design e o resultado final.</p>
+<hr />
+<h2 id="14-personalizar-configuracoes-de-conta-no-canva"><strong>14. Personalizar Configurações de Conta no Canva</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>O usuário deseja personalizar as configurações de sua conta no Canva para adaptar a plataforma às suas preferências e necessidades específicas.</p>
+<p><strong>CONTEXTO</strong></p>
+<p>O usuário está logado em sua conta no Canva e quer ajustar configurações como idioma, notificações, métodos de pagamento, ou privacidade para otimizar sua experiência na plataforma.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O usuário faz login na plataforma Canva e acessa a página inicial.</li>
+<li>O usuário localiza o menu de configurações de conta, geralmente acessível através do ícone de perfil ou das opções de menu.</li>
+<li>O usuário clica na opção "Configurações de Conta" para abrir a página de configurações.</li>
+<li>Na página de configurações, o usuário navega entre as diferentes categorias, como "Informações Pessoais", "Notificações", "Segurança", "Preferências de Idioma", ou "Faturamento e Pagamentos".</li>
+<li>
+<p>O usuário seleciona a categoria que deseja personalizar. Por exemplo:</p>
+<ul>
+<li>
+<p>Para alterar o idioma da plataforma, o usuário acessa "Preferências de Idioma" e escolhe o idioma desejado.</p>
+</li>
+<li>
+<p>Para ajustar as notificações, o usuário acessa "Notificações" e escolhe quais tipos de alertas deseja receber por email ou no aplicativo.</p>
+</li>
+<li>
+<p>Para atualizar métodos de pagamento, o usuário acessa "Faturamento e Pagamentos" e adiciona ou modifica as opções de pagamento.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Após fazer as alterações desejadas, o usuário salva as configurações.</p>
+</li>
+<li>O usuário revisa as mudanças feitas para garantir que as configurações estão corretas e de acordo com suas preferências.</li>
+<li>Caso necessário, o usuário faz novos ajustes ou retorna à página inicial do Canva.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>Algumas opções de personalização podem estar disponíveis apenas para usuários com planos de assinatura específicos, como o Canva Pro.
+<strong>PÓS-CONDIÇÃO</strong></p>
+<p>As configurações da conta do usuário no Canva são atualizadas conforme as preferências definidas.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O usuário consegue personalizar as configurações de sua conta no Canva, adaptando a plataforma às suas preferências e melhorando sua experiência de uso.</p>
+<hr />
+<h2 id="15-acessar-suporte-e-atendimento-ao-cliente-no-canva"><strong>15. Acessar Suporte e Atendimento ao Cliente no Canva</strong></h2>
+<p><strong>OBJETIVO</strong></p>
+<p>O usuário deseja acessar o suporte e atendimento ao cliente do Canva para resolver dúvidas, problemas técnicos, ou obter informações sobre a plataforma. </p>
+<p><strong>CONTEXTO</strong></p>
+<p>O usuário está utilizando a plataforma Canva e encontra dificuldades ou questões que não consegue resolver sozinho. Ele decide buscar ajuda através dos canais de suporte disponíveis.</p>
+<p><strong>ATORES</strong></p>
+<ul>
+<li><a href="../lexico.md#Usuário">Usuário</a></li>
+<li>Representante de Suporte do Canva</li>
+</ul>
+<p><strong>RECURSOS</strong></p>
+<p>Computador ou smartphone, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<p><strong>PRÉ-CONDIÇÃO</strong></p>
+<p>O <a href="../lexico.md#Usuário">usuário</a> deve estar <a href="../lexico.md#Login">logado</a> na <a href="../lexico.md#Plataforma">plataforma</a> Canva.</p>
+<p><strong>EPISÓDIOS</strong></p>
+<ol>
+<li>O usuário faz login na plataforma Canva e acessa a página inicial.</li>
+<li>O usuário localiza a seção de "Ajuda" ou "Suporte", geralmente disponível no rodapé da página ou no menu de perfil.</li>
+<li>O usuário clica na opção "Ajuda" para acessar a central de suporte do Canva.</li>
+<li>
+<p>Na central de suporte, o usuário pode:</p>
+<ul>
+<li>
+<p>Explorar artigos e tutoriais disponíveis na base de conhecimento do Canva para encontrar uma solução para sua dúvida.</p>
+</li>
+<li>
+<p>Utilizar a barra de pesquisa para digitar palavras-chave relacionadas ao problema ou questão.</p>
+</li>
+</ul>
+<p>-Acessar as perguntas frequentes (FAQ) para verificar se a dúvida já foi respondida.</p>
+</li>
+<li>
+<p>Se o usuário não encontrar a solução nas opções anteriores, ele pode optar por:</p>
+<ul>
+<li>
+<p>Entrar em contato com o suporte ao cliente via chat ao vivo, se disponível.</p>
+</li>
+<li>
+<p>Enviar uma solicitação de suporte por email, detalhando o problema e aguardando a resposta da equipe.</p>
+</li>
+<li>
+<p>Acessar a comunidade do Canva para interagir com outros usuários e buscar soluções colaborativas.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>O usuário escolhe o canal de atendimento mais adequado para sua necessidade e segue as instruções fornecidas para entrar em contato com o suporte.</p>
+</li>
+<li>O usuário aguarda a resposta do suporte e, caso solicitado, segue as orientações fornecidas para resolver o problema.</li>
+<li>Caso necessário, o usuário faz novos ajustes ou retorna à página inicial do Canva.</li>
+<li>O usuário confirma que o problema foi resolvido ou, se necessário, continua o diálogo com o suporte até a conclusão.</li>
+</ol>
+<p><strong>RESTRIÇÕES</strong></p>
+<p>O tempo de resposta do suporte pode variar dependendo do canal escolhido e do plano de assinatura do usuário.</p>
+<p><strong>PÓS-CONDIÇÃO</strong></p>
+<p>O usuário recebe o suporte necessário para resolver seu problema ou esclarecer suas dúvidas.</p>
+<p><strong>RESULTADO ESPERADO</strong></p>
+<p>O usuário consegue acessar o suporte e atendimento ao cliente do Canva, resolve seu problema ou obtém a informação necessária, e retoma suas atividades na plataforma com sucesso.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../lexico/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Léxicos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Léxicos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../casos_de_uso/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Especificação de Casos de Uso">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Especificação de Casos de Uso
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.footer", "content.code.copy", "content.tabs.link", "header.autohide", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
