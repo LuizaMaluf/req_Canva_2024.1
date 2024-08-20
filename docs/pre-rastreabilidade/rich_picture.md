@@ -2,10 +2,10 @@
 
 ## Histórico de Versões
 
-| Data       | Tipo de Rich Picture          | Autor       | Versão |
+| Data       | Descrição                     | Autor       | Versão |
 |------------|-------------------------------|-------------|--------|
 | 24/07/2024 | Rich Picture geral.           | Luiza Maluf | 0.0    |
-| 24/07/2024 | Rich Picture Foco no Usuário. | Luiza Maluf | 0.1    |
+| 24/07/2024 | Rich Picture Foco no usuário. | Luiza Maluf | 0.1    |
 
 ## Origem
 
@@ -20,7 +20,7 @@ Originado na abordagem de Soft Systems Methodology (SSM) desenvolvida por Peter
 Checkland, o Rich Picture é caracterizado por ser uma representação gráfica que
 inclui pessoas, processos, fluxos de informação, relacionamentos e contextos.
 
-### Características Principais
+## Características Principais
 
 - **Visual e Intuitivo**: Utiliza desenhos, símbolos, ícones e texto para
   capturar e comunicar aspectos importantes do sistema.
@@ -31,16 +31,15 @@ inclui pessoas, processos, fluxos de informação, relacionamentos e contextos.
 - **Colaborativo**: Frequentemente criado em grupos, promovendo a participação e
   a comunicação entre stakeholders.
 
-### Objetivos
+## Objetivos
 
-1. **Compreensão**: Ajudar a entender complexidades e dinâmicas de sistemas.
-2. **Comunicação**: Facilitar a comunicação entre diferentes partes
-   interessadas.
-3. **Identificação de Problemas**: Destacar áreas problemáticas e oportunidades
-   de melhoria.
-4. **Planejamento**: Apoiar na elaboração de estratégias e soluções.
+* **Compreensão**: Ajudar a entender complexidades e dinâmicas de sistemas.
+* **Comunicação**: Facilitar a comunicação entre diferentes partes interessadas.
+* **Identificação de Problemas**: Destacar áreas problemáticas e oportunidades
+  de melhoria.
+* **Planejamento**: Apoiar na elaboração de estratégias e soluções.
 
-### Utilização
+## Utilização
 
 Rich Pictures são amplamente usados em diversas áreas, incluindo engenharia de
 sistemas, gestão de projetos, análise de negócios e desenvolvimento
