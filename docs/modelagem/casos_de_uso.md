@@ -196,7 +196,7 @@ A seção de Casos de Uso do aplicativo Canva descreve as principais funcionalid
     1. Falha na conexão com a internet durante o processo.
 
 
-### **1.10. UC-010: Gerenciar Pastas e projetos**
+## **1.10. UC-010: Gerenciar Pastas e projetos**
 
 * **Descrição:** Este caso de uso descreve a funcionalidade de gerenciamento de pastas e projetos no Canva, permitindo que os usuários organizem seus designs em pastas, criem novas pastas, movam designs entre pastas e excluam pastas e designs.
 * [**Diagrama**](diagramas_casos_de_uso/images/UC10.png)
