@@ -13,12 +13,12 @@
 
 ## Pauta
 
-Construção do [Rich Picture](/docs/rich_picture.md), [Brainstorm](/docs/brainstorming.md).
+Construção do [Rich Picture](../pre-rastreabilidade/rich_picture.md) e [Brainstorm](../elicitacao/brainstorming.md)
 
 ## Discussões
-Discursão sobre a plataforma Canva, navegando entre todas as funcionalidades para ajudar a contrução dos [Rich Picture](/docs/rich_picture.md). Os integrantes buscaram entender o fluxo principal do usuário para usar como base.
+Discursão sobre a plataforma Canva, navegando entre todas as funcionalidades para ajudar a contrução dos [Rich Picture](../pre-rastreabilidade/rich_picture.md). Os integrantes buscaram entender o fluxo principal do usuário para usar como base.
 
-Entendendo melhor como funciona a plataforma, pudemos já fazer o [Brainstorm](/docs/brainstorming.md) e produzir mapas mentais.
+Entendendo melhor como funciona a plataforma, pudemos já fazer o [Brainstorm](../elicitacao/brainstorming.md) e produzir mapas mentais.
 
 ## Decisões
 
@@ -33,5 +33,5 @@ Entendendo melhor como funciona a plataforma, pudemos já fazer o [Brainstorm](/
 
 ## Ações 
 
-1. [Rich Picture](/docs/rich_picture.md)
-2. [Brainstorm](/docs/brainstorming.md)
+1. [Rich Picture](../pre-rastreabilidade/rich_picture.md)
+2. [Brainstorm](../elicitacao/brainstorming.md)

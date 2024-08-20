@@ -15,7 +15,7 @@
 
 ## Pauta
 
-Construção da [Argumentação 1](argumentacao.md)
+Construção da [Argumentação](../pre-rastreabilidade/argumentacao.md)
 
 ## Discussões
 
@@ -27,7 +27,7 @@ Decidimos usar o Framework ACE como framework de argumentação e para represent
 
 ## Ações
 
-1. [Argumentação 1](argumentacao.md)
+1. [Argumentação](../pre-rastreabilidade/argumentacao.md)
 
 ## Observação
 

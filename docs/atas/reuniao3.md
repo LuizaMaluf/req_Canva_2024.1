@@ -1,4 +1,4 @@
-#__Reunião 2__
+#__Reunião 3__
 
 **Data:** [29/07/2024]  
 **Hora de Início:** [20h30]  
@@ -12,7 +12,7 @@
 
 ## Pauta
 
-Construção do [MoSCoW](moscow.md) e do [First Things First](first_things.md)
+Construção do [MoSCoW](../elicitacao/moscow.md) e do [First Things First](../elicitacao/first_things.md)
 
 ## Discussões
 
@@ -21,8 +21,8 @@ Utilização das Técnicas de priorização de requisitos chamadas MoSCow e Firs
 
 ## Ações
 
-1. [MoSCoW](moscow.md)
-2. [First Things First](first_things.md)
+1. [MoSCoW](../elicitacao/moscow.md)
+2. [First Things First](../elicitacao/first_things.md)
 
 ## Observação
 
