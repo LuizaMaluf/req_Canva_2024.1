@@ -3,7 +3,17 @@
 | Data       | Descrição                | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 12/08/2024 | Adição dos primeiros cenários encontrados durante a análise de protocolo| Luiza Maluf   | 0.0      |
-| 16/07/2024 | Adição de mais cenários após a navegação feita novamente pela plataforma. | Luiza Maluf   | 0.1      |
+| 16/07/2024 | Adição de mais cenários após avaliar os casos de uso. | Luiza Maluf   | 0.1      |
+
+## **Origem**
+
+O desenvolvimento destes cenários foi dado a partir da [análise de protocolo](../elicitacao/analise_protocolo.md) feita na parte da elicitação.
+
+Não satisfeitos com a quantidade de cenários e com uma visão diferente vinda da [Especificação de Casos de Uso](./casos_de_uso.md), foi possível identificar novos cenários.
+
+## **Metodologia**
+
+Foi feita a navegação dentro da plataforma anotando os principais processos que o usuáro poderia efetuar.
 
 ## __1. Criação de um Design Simples__
 
