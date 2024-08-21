@@ -5,6 +5,17 @@
 | 12/08/2024 | Adição dos primeiros lexicos encontrados durante a análise de protocolo| Luiza Maluf   | 0.0      |
 | 16/07/2024 | Adição de mais léxicos encontrados após o desenvolvimento dos primeiros cenários. | Luiza Maluf   | 0.1      |
 
+## **Origem**
+
+O desenvolvimento deste léxico foi dado a partir da [análise de protocolo](../elicitacao/analise_protocolo.md) feita na parte da elicitação.
+
+Além disso, um segunda versão foi feita após o desenvolvimento dos [cenários](../modelagem/cenarios.md).
+
+## **Metodologia**
+
+Primeiramente, navegando dentro da plataforma e anotando as palavras chaves.
+
+Em um segundo momento, foi possível identificar novos léxicos durante a produção dos [cenários](../modelagem/cenarios.md)
 
 ## Adicionar {#Adicionar}
 

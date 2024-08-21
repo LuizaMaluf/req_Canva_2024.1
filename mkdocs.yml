@@ -17,14 +17,17 @@ nav:
     - Léxicos: modelagem/lexico.md
     - Cenários: modelagem/cenarios.md
     - Especificação de Casos de Uso: modelagem/casos_de_uso.md
-    - Backlog do Produto: modelagem/backlog.md
+    - Backlog do Produto e Histórias de Usuários: modelagem/backlog.md
     - Especificação Suplementar: modelagem/especificacao_suplementar.md
     - iStar: modelagem/istar.md
+    - NFR Framework: modelagem/nfr-framework.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
     - Reunião 2: atas/reuniao2.md
     - Reunião 3: atas/reuniao3.md
+    - Reunião 4: atas/reuniao4.md
+    - Reunião 5: atas/reuniao5.md
   - Entregas:
     - Entrega 1: entregas/entrega1.md
 
