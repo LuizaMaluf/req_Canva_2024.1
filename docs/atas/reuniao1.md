@@ -1,9 +1,9 @@
 # Reunião 1
 
-**Data:** [25/07/2024]  
-**Hora de Início:** [20h30]  
-**Hora de Término:** [23h00]  
-**Local:** [Discord]  
+**Data:** [25/07/2024]<br />
+**Hora de Início:** [20h30]<br />
+**Hora de Término:** [23h00]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 
