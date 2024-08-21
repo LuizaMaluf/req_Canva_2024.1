@@ -11,19 +11,6 @@
 O desenvolvimento desta Argumentação foi dado a partir da
 [Reunião 2](../atas/reuniao2.md).
 
-## Introdução
-
-A argumentação é fundamental para o sucesso de um trabalho em grupo, pois ela
-assegura o compartilhamento e o confronto de ideias. Esse processo não só torna
-o projeto mais eficaz, mas também alinha os membros da equipe, permitindo que
-todos trabalhem juntos em direção a um objetivo comum.
-
-## Objetivos
-
-O principal objetivo da argumentação é promover a discursão de pontos de vista
-divergentes. A documentação dessa técnica é crucial para garantir a
-rastreabilidade e a transparência do processo de decisão.
-
 ## Metodologia
 
 O grupo decidiu adotar um processo baseado em reuniões para expor e discutir os
@@ -39,6 +26,18 @@ produção da documentação do tema em questão. Dessa forma, o grupo pretende
 analisar diversos setores do aplicativo, garantindo uma compreensão mais
 completa e detalhada dos aspectos relevantes para o projeto.
 
+## Introdução
+
+A argumentação é fundamental para o sucesso de um trabalho em grupo, pois ela
+assegura o compartilhamento e o confronto de ideias. Esse processo não só torna
+o projeto mais eficaz, mas também alinha os membros da equipe, permitindo que
+todos trabalhem juntos em direção a um objetivo comum.
+
+## Objetivos
+
+O principal objetivo da argumentação é promover a discursão de pontos de vista
+divergentes. A documentação dessa técnica é crucial para garantir a
+rastreabilidade e a transparência do processo de decisão.
 
 ## Artefatos
 
@@ -103,11 +102,11 @@ atributos citados.**
 
 Os conflitos identificados foram:
 
-| ID | Conflito                                                  | Descrição                                                                                             |
-|----|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| C1 | Personalização Limitada vs. Interface Intuitiva           | A interface intuitiva simplifica o uso, mas pode não oferecer opções avançadas de personalização.     |
-| C2 | Dependência de Internet vs. Colaboração em Tempo Real     | A colaboração em tempo real depende de uma conexão estável com a internet.                            |
-| C3 | Custo de Recursos Premium vs. Acessibilidade dos Recursos | Muitos recursos premium exigem pagamento, o que pode limitar a acessibilidade para todos os usuários. |
+| ID   | Conflito                                                  | Descrição                                                                                             |
+|------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `C1` | Personalização Limitada vs. Interface Intuitiva           | A interface intuitiva simplifica o uso, mas pode não oferecer opções avançadas de personalização.     |
+| `C2` | Dependência de Internet vs. Colaboração em Tempo Real     | A colaboração em tempo real depende de uma conexão estável com a internet.                            |
+| `C3` | Custo de Recursos Premium vs. Acessibilidade dos Recursos | Muitos recursos premium exigem pagamento, o que pode limitar a acessibilidade para todos os usuários. |
 
 ### Conclusão
 
@@ -124,35 +123,37 @@ tornando-a ainda mais inclusiva e poderosa para uma audiência diversificada.
 
 #### Proposições (i)
 
-```
-i1: Interface Intuitiva
-i2: Variedade de Templates
-i3: Recursos Gráficos e Elementos Visuais
-i4: Colaboração em Tempo Real
-i5: Versatilidade de Exportação
-i6: Limitações de Personalização Avançada
-i7: Dependência de Conexão com a Internet
-i8: Custo de Recursos Premium
-```
+| ID   | Proposição                            |
+|------|---------------------------------------|
+| `i1` | Interface Intuitiva                   |
+| `i2` | Variedade de Templates                |
+| `i3` | Recursos Gráficos e Elementos Visuais |
+| `i4` | Colaboração em Tempo Real             |
+| `i5` | Versatilidade de Exportação           |
+| `i6` | Limitações de Personalização Avançada |
+| `i7` | Dependência de Conexão com a Internet |
+| `i8` | Custo de Recursos Premium             |
 
 #### Inferências (iT)
 
-```
-iT1: Facilidade de Uso
-iT2: Rapidez na Criação de Conteúdos
-iT3: Qualidade e Profissionalismo
-iT4: Colaboração e Feedback
-iT5: Flexibilidade no Uso
-```
+| ID    | Inferência                      |
+|-------|---------------------------------|
+| `iT1` | Facilidade de Uso               |
+| `iT2` | Rapidez na Criação de Conteúdos |
+| `iT3` | Qualidade e Profissionalismo    |
+| `iT4` | Colaboração e Feedback          |
+| `iT5` | Flexibilidade no Uso            |
 
 #### Conflitos (C):
 
-```
-C1: Personalização Limitada vs. Interface Intuitiva
-C2: Dependência de Internet vs. Colaboração em Tempo Real
-C3: Custo de Recursos Premium vs. Acessibilidade dos Recursos
-```
+| ID   | Conflito                                                  |
+|------|-----------------------------------------------------------|
+| `C1` | Personalização Limitada vs. Interface Intuitiva           |
+| `C2` | Dependência de Internet vs. Colaboração em Tempo Real     |
+| `C3` | Custo de Recursos Premium vs. Acessibilidade dos Recursos |
 
 ### Grafo de Argumentação
+
+#### Versão 0.0
 
 ![Grafo argumentação 1](../images/argumentacao/v0.0/argumentacao.jpg)
