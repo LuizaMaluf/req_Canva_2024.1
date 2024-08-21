@@ -2,10 +2,6 @@
 
 ## Histórico de Versões
 
-<!-- |    Data    | Versão | Descrição | Responsável por documentar |
-|------------|--------|-----------|-------|
-| 29/07/2024 |  1.0   | Primeira versão da análise FTF | Gabriel Moura | -->
-
 | Data       | Descrição                       | Autor          | Versão |
 |------------|---------------------------------|----------------|--------|
 | 29/07/2024 | Primeira versão da análise FTF. | Gabriel Moura  | 0.0    |
