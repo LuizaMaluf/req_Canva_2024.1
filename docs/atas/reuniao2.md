@@ -1,9 +1,9 @@
 #__Reunião 2__
 
-**Data:** [28/07/2024]  
-**Hora de Início:** [19h30]  
-**Hora de Término:** [21h00]  
-**Local:** [Teams]  
+**Data:** [28/07/2024]<br />
+**Hora de Início:** [19h30]<br />
+**Hora de Término:** [21h00]<br />
+**Local:** [Teams]<br />
 
 ## Participantes
 

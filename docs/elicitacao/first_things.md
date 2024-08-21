@@ -1,37 +1,65 @@
-## Análise First Things First dos Requisitos do Canva (Criação e Design)
+# First Things First
 
-|    Data    | Versão | Descrição | Responsável por documentar |
-|------------|--------|-----------|-------|
-| 29/07/2024 |  1.0   | Primeira versão da análise FTF | Gabriel Moura |
+## Histórico de Versões
 
-### Introdução
+| Data       | Descrição                       | Autor          | Versão |
+|------------|---------------------------------|----------------|--------|
+| 29/07/2024 | Primeira versão da análise FTF. | Gabriel Moura  | 0.0    |
 
-A técnica First Things First é um método de priorização que visa classificar os requisitos com base na relação entre seu valor e o custo/risco envolvido em sua implementação. Essa técnica é especialmente útil para determinar a ordem de desenvolvimento das funcionalidades, garantindo que as de maior valor e menor custo/risco sejam priorizadas.
+## Origem
 
-### Objetivo
+O desenvolvimento deste MoSCoW foi dado a partir da
+[Reunião 3](../atas/reuniao3.md).
 
-O objetivo da análise First Things First é definir a ordem ideal de implementação dos requisitos elicitados para a plataforma Canva, considerando o benefício proporcionado ao usuário em relação ao custo e risco de desenvolvimento. 
+## Metodologia
 
-### Metodologia
+## Introdução
 
-A metodologia First Things First se baseia em uma tabela onde cada requisito é avaliado em quatro critérios, utilizando uma escala de 1 a 9:
+A técnica First Things First é um método de priorização que visa classificar os
+requisitos com base na relação entre seu valor e o custo/risco envolvido em sua
+implementação. Essa técnica é especialmente útil para determinar a ordem de
+desenvolvimento das funcionalidades, garantindo que as de maior valor e menor
+custo/risco sejam priorizadas.
 
-1.  **Benefício Relativo:**  Representa o quão benéfico o requisito é para o usuário, caso seja implementado. 
-2.  **Penalidade Relativa:**  Indica o quão prejudicial seria para o usuário caso o requisito não fosse implementado.
-3.  **Custo Relativo:**  Reflete o custo estimado (em tempo, esforço e recursos) para implementar o requisito.
-4.  **Risco Relativo:**  Avalia o risco potencial de encontrar problemas ou dificuldades na implementação do requisito.
+## Objetivo
+
+O objetivo da análise First Things First é definir a ordem ideal de
+implementação dos requisitos elicitados para a plataforma Canva, considerando o
+benefício proporcionado ao usuário em relação ao custo e risco de
+desenvolvimento.
+
+A metodologia First Things First se baseia em uma tabela onde cada requisito é
+avaliado em quatro critérios, utilizando uma escala de 1 a 9:
+
+1. **Benefício Relativo:** Representa o quão benéfico o requisito é para o
+   usuário, caso seja implementado. 
+2. **Penalidade Relativa:** Indica o quão prejudicial seria para o usuário caso
+   o requisito não fosse implementado.
+3. **Custo Relativo:** Reflete o custo estimado (em tempo, esforço e recursos)
+   para implementar o requisito.
+4. **Risco Relativo:** Avalia o risco potencial de encontrar problemas ou
+   dificuldades na implementação do requisito.
 
 Com base nessas avaliações, são calculados os seguintes valores:
 
 * **Valor Total:** Soma do Benefício Relativo e da Penalidade Relativa.
-* **Valor %:** Porcentagem que o Valor Total de um requisito representa em relação à soma de todos os Valores Totais.
-* **Custo %:** Porcentagem que o Custo Relativo de um requisito representa em relação à soma de todos os Custos Relativos.
-* **Risco %:** Porcentagem que o Risco Relativo de um requisito representa em relação à soma de todos os Riscos Relativos.
-* **Prioridade:** Calculada pela fórmula: Valor % / (Custo % + Risco %).
+* **Valor %:** Porcentagem que o Valor Total de um requisito representa em
+  relação à soma de todos os Valores Totais.
+* **Custo %:** Porcentagem que o Custo Relativo de um requisito representa em
+  relação à soma de todos os Custos Relativos.
+* **Risco %:** Porcentagem que o Risco Relativo de um requisito representa em
+  relação à soma de todos os Riscos Relativos.
+* **Prioridade:** Calculada pela fórmula: `Valor% / (Custo% + Risco%)`.
 
-Os requisitos são então ordenados de forma decrescente de acordo com o valor de Prioridade. Aqueles com maior prioridade devem ser implementados primeiro.
+Os requisitos são então ordenados de forma decrescente de acordo com o valor de
+prioridade. Aqueles com maior prioridade devem ser implementados primeiro.
+
+<!-- TODO(Caio): Melhorar a legibilidade desta tabela. -->
+
+## Artefatos
 
 ### Requisitos tabelados
+
 | Nº | Requisito | Benefício Relativo | Penalidade Relativa | Valor Total | Valor % | Custo Relativo | Custo % | Risco Relativo | Risco % | Prioridade |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Diversidade de formatos de design (posts, banners, apresentações, etc.) | 9 | 9 | 18 | 8.87% | 8 | 9.09% | 2 | 2.63% | **0.70** |
@@ -72,4 +100,4 @@ Os requisitos são então ordenados de forma decrescente de acordo com o valor d
 | 36 | Acessibilidade | 8 | 7 | 15 | 7.41% | 4 | 4.76% | 3 | 3.95% | **0.93** |
 | 37 | Escalabilidade | 9 | 8 | 17 | 8.40% | 9 | 10.71% | 7 | 8.97% | **0.45** |
 | 38 | Internacionalização | 7 | 6 | 13 | 6.41% | 7 | 8.33% | 6 | 7.69% | **0.51** |
-| **TOTAL** | **301** | **252** | **553** | **100%** | **113** | **100%** | **89** | **100%** | **--** |
+| **TOTAL** | **301** | **252** | **553** | **100%** | **113** | **100%** | **89** | **100%** | **-** |

@@ -1,9 +1,9 @@
 #__Reunião 5__
 
-**Data:** [07/08/2024]
-**Hora de Início:** [20h30]
-**Hora de Término:** [23h50]
-**Local:** [Discord]
+**Data:** [07/08/2024]<br />
+**Hora de Início:** [20h30]<br />
+**Hora de Término:** [23h50]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 
@@ -32,4 +32,3 @@ Os integrantes do grupo discutiram sobre as metodologias de desenvolvimento de s
 7. Designou-se a tarefa de modelagem por iStar para os integrantes Caio e Rodrigo.
 8. Designou-se a tarefa de modelagem por especificação de suplementar para os integrantes Henrique e Luiza.
 8. A próxima reunião será realizada no dia 10/08/2024, às 20h30, no Discord.
-

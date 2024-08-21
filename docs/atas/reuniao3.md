@@ -1,9 +1,9 @@
 #__Reunião 3__
 
-**Data:** [29/07/2024]  
-**Hora de Início:** [20h30]  
-**Hora de Término:** [23h30]  
-**Local:** [Discord]  
+**Data:** [29/07/2024]<br />
+**Hora de Início:** [20h30]<br />
+**Hora de Término:** [23h30]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 

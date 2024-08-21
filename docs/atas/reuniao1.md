@@ -1,9 +1,9 @@
-#__Reunião 1__
+# Reunião 1
 
-**Data:** [25/07/2024]  
-**Hora de Início:** [20h30]  
-**Hora de Término:** [23h00]  
-**Local:** [Discord]  
+**Data:** [25/07/2024]<br />
+**Hora de Início:** [20h30]<br />
+**Hora de Término:** [23h00]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 
@@ -13,25 +13,34 @@
 
 ## Pauta
 
-Construção do [Rich Picture](../pre-rastreabilidade/rich_picture.md) e [Brainstorm](../elicitacao/brainstorming.md)
+Construção do [Rich Picture](../pre-rastreabilidade/rich_picture.md) e
+[Brainstorm](../elicitacao/brainstorming.md).
 
 ## Discussões
-Discursão sobre a plataforma Canva, navegando entre todas as funcionalidades para ajudar a contrução dos [Rich Picture](../pre-rastreabilidade/rich_picture.md). Os integrantes buscaram entender o fluxo principal do usuário para usar como base.
 
-Entendendo melhor como funciona a plataforma, pudemos já fazer o [Brainstorm](../elicitacao/brainstorming.md) e produzir mapas mentais.
+Discussão inicial sobre a plataforma Canva, navegando entre todas as
+funcionalidades para ajudar a contrução dos
+[Rich Picture](../pre-rastreabilidade/rich_picture.md). Os integrantes buscaram
+entender o fluxo principal do usuário para usar como base.
+
+Entendendo melhor como funciona a plataforma, pudemos já fazer o
+[Brainstorm](../elicitacao/brainstorming.md) e produzir mapas mentais.
 
 ## Decisões
 
-1. Rich Picture
+### Rich Picture
 
-    Decidimos focar no percurso do usuário na plataforma e analisar as possibiliades que ele tem ao fazer o seu cadastro.
+Decidimos focar no percurso do usuário na plataforma e analisar as possibiliades
+que ele tem ao fazer o seu cadastro.
 
-2. Brainstorm
+### Brainstorm
 
-    Decidimos primeiro pensar em palavras-chave que melhor representasse o que estávamos analisando. A partir das palavras, pudemos construir macro ideias sobre a plataforma.
+Decidimos primeiro pensar em palavras-chave que melhor representasse o que
+estávamos analisando. A partir das palavras, pudemos construir macro ideias
+sobre a plataforma.
 
 
-## Ações 
+## Artefatos 
 
-1. [Rich Picture](../pre-rastreabilidade/rich_picture.md)
-2. [Brainstorm](../elicitacao/brainstorming.md)
+* [Rich Picture](../pre-rastreabilidade/rich_picture.md)
+* [Brainstorm](../elicitacao/brainstorming.md)

@@ -4,6 +4,10 @@
 |------------|--------|-----------|-------|
 | 14/08/2024 |  Adição da versão inicial do iStar após introspecção durante navegação na plataforma e na Análise de Protocolo | Rodrigo Mattos | 1.0 |
 
+!!! warning "Em construção"
+
+    Este documento ainda está em construção e não deve ser considerado como
+    versão final para esta release.
 
 ## Introdução
 
