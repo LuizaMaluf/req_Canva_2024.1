@@ -53,7 +53,7 @@ identificados durante o brainstorming. O mapa mental foi gerado utilizando a
 ferramenta [Miro](https://miro.com/). A imagem do mapa mental pode ser
 visualizada abaixo:
 
-## Versão 0.0
+#### Versão 0.0
 
 ![Mapa Mental](../images/Mapa-Mental.png)
 
