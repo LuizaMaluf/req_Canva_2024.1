@@ -1,5 +1,9 @@
 # Análise de Protocolo
 
+|    Data    | Descrição | Autor | Versão |
+|------------|--------|-----------|-------|
+| 30/07/2024 |  Adição da Análise de Protocolo feita após navegação na plataforma   | Rodrigo Mattos | 1.0 |
+
 - Objetivo: Avaliar a usabilidade do processo de criação de uma apresentação no Canva.
 - Participantes: Rodrigo Mattos (membro do grupo).
 - Tarefa: Criar uma apresentação de slides utilizando templates, elementos gráficos e adicionando texto.
