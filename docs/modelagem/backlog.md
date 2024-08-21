@@ -1,12 +1,24 @@
-# **Histórico de versões**
+## **Histórico de versões**
 
 | Data       | Descrição                | Autor         | Versão   |
 |------------|--------------------------------------|---------------|----------|
 | 17/08/2024 | Definição das histórias de usuário baseando-se nos requisitos listados na parte de elicitação MoSCoW. Definição das Releases, Sprints e Backlog do Produto| Luiza Maluf | 0.0      |
 
+## **Origem**
 
+Esse documento foi feito com base nos requisitos listados na parte de elicitação [MoSCoW](../elicitacao/moscow.md).
 
-# **Backlog do Produto**
+## **Metodologia**
+
+Tendo em vista os requisitos elicitados, foram criadas histórias de usuário que descrevem as funcionalidades de uma maneira centrada no usuário. Cada história foi detalhada com critérios de aceitação, que estabelecem as condições mínimas para que a funcionalidade seja considerada completa.
+
+As histórias de usuário foram então distribuídas em sprints, que são ciclos de desenvolvimento curtos e iterativos. Cada sprint foca em entregar funcionalidades específicas, permitindo feedback contínuo e ajustes ao longo do desenvolvimento.
+
+O backlog foi estruturado com todas as histórias de usuário ordenadas por prioridade e distribuídas entre as sprints. 
+
+Esse backlog serve como guia para o desenvolvimento, garantindo que as funcionalidades mais importantes sejam entregues primeiro e que o produto evolua de acordo com as necessidades dos usuários.
+
+## **Backlog do Produto**
 
 | Épico                            | Sprint | ID    | Eu, como       | Desejo                                             | Para que eu possa                                 | Pontos | Prioridade | Requisito                        |
 |----------------------------------|--------|-------|----------------|----------------------------------------------------|---------------------------------------------------|--------|------------|----------------------------------|
@@ -50,12 +62,9 @@
 | Internacionalização              | 12     | [US#38](#us38) | Usuário        | Utilizar a plataforma em diferentes idiomas        | Acessar a plataforma em minha língua nativa       | 5      | Could      | RF38                             |
 
 
-# **Roadmap**
-
 ## **Release 1**
 
 ### **Sprint 1**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -63,22 +72,19 @@
 | US#02 | Utilizar templates prontos e editá-los                 | 5      |
 
 
-#### US#01:
-
+#### US#01
 
 - História: Como usuário, desejo criar posts, banners e apresentações para utilizar diferentes formatos de design.
 
 - Critérios de Aceitação: O usuário deve ser capaz de selecionar entre diversos formatos de design, como posts, banners, e apresentações, diretamente na interface inicial.
 
-#### US#02:
-
+#### US#02
 
 - História: Como usuário, desejo utilizar templates prontos e editá-los para personalizar designs rapidamente.
     
 - Critérios de Aceitação: O sistema deve oferecer uma biblioteca de templates personalizáveis para diferentes formatos de design, permitindo a edição rápida e fácil.
 
 ### **Sprint 2**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -87,22 +93,19 @@
 | US#05 | Salvar e exportar designs em PDF, JPG, PNG             | 5      |
 
 
-#### US#03:
+#### US#03
         
-
 - História: Como usuário, desejo criar designs do zero para criar designs completamente personalizados.
         
 - Critérios de Aceitação: O usuário deve ser capaz de iniciar um design em branco, sem restrições de template, com acesso completo às ferramentas de criação.
 
-#### US#04:
-
+#### US#04
 
 - História: Como usuário, desejo importar imagens e fotos para incluir minhas próprias mídias nos designs.
     
 - Critérios de Aceitação: O sistema deve permitir a importação de arquivos de imagem nos formatos mais comuns (JPEG, PNG, etc.), e possibilitar sua inserção nos designs.
 
-#### US#05:
-    
+#### US#05
 
 - História: Como usuário, desejo salvar e exportar designs em PDF, JPG e PNG para usar os designs fora da plataforma.
         
@@ -110,22 +113,19 @@
 
 ### **Sprint 3**
 
-
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
 | US#06 | Importar vídeos e outros arquivos                      | 8      |
 | US#07 | Exportar designs em SVG, MP4, GIF                      | 8      |
 
-
-#### US#06:
+#### US#06
 
 
 - História: Como usuário, desejo importar vídeos e outros arquivos para incluir vídeos nos meus designs.
     
 - Critérios de Aceitação: O sistema deve permitir a importação de arquivos de vídeo (MP4, MOV, etc.) e possibilitar sua inserção nos designs.
 
-#### US#07:
-        
+#### US#07    
 
 - História: Como usuário, desejo exportar designs em SVG, MP4 e GIF para usar designs em formatos específicos.
         
@@ -135,7 +135,6 @@
 
 ### **Sprint 4**
 
-
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
 | US#08 | Integrar com redes sociais e agendar posts             | 13     |
@@ -143,29 +142,26 @@
 | US#10 | Ajustar brilho, contraste e saturação das imagens      | 8      |
 
 
-#### US#08:
+#### US#08
     
 
 - História: Como usuário, desejo integrar com redes sociais e agendar posts para publicar diretamente nas redes sociais.
         
 - Critérios de Aceitação: O sistema deve oferecer integração com as principais redes sociais, permitindo o agendamento e a publicação direta de designs.
 
-#### US#09:
-        
-
+#### US#09
+    
 - História: Como usuário, desejo cortar, redimensionar e girar imagens para ajustar imagens de acordo com a necessidade.
         
 - Critérios de Aceitação: O sistema deve incluir ferramentas básicas de edição de imagem, como corte, redimensionamento e rotação, acessíveis de forma intuitiva.
 
-#### US#10:
+#### US#10
         
-
 - História: Como usuário, desejo ajustar brilho, contraste e saturação das imagens para melhorar a qualidade visual das minhas imagens.
         
 - Critérios de Aceitação: O sistema deve permitir ajustes de brilho, contraste e saturação em imagens, com uma interface visual simples e eficaz.
 
 ### **Sprint 5**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -174,23 +170,20 @@
 | US#13 | Aplicar filtros, efeitos e remover fundo das imagens   | 13     |
 
 
-#### US#11:
+#### US#11
         
-
 - História: Como usuário, desejo editar textos com formatação básica, escolha de fontes e cores para personalizar textos nos meus designs.
         
 - Critérios de Aceitação: O sistema deve oferecer opções de formatação de texto, incluindo a seleção de fontes, tamanhos, cores, e alinhamento.
 
-#### US#12:
-        
+#### US#12
 
 - História: Como usuário, desejo adicionar ícones, ilustrações e formas geométricas para enriquecer o conteúdo dos designs.
         
 - Critérios de Aceitação: O sistema deve fornecer uma biblioteca de ícones, ilustrações e formas geométricas, que possam ser adicionadas e editadas nos designs.
 
-#### US#13:
+#### US#13
         
-
 - História: Como usuário, desejo aplicar filtros, efeitos e remover o fundo das imagens para criar efeitos visuais mais profissionais.
         
 - Critérios de Aceitação: O sistema deve incluir ferramentas para aplicação de filtros, efeitos visuais, e remoção automática de fundos em imagens.
@@ -199,29 +192,24 @@
 
 ### **Sprint 6**
 
-
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
 | US#14 | Criar efeitos de texto como sombra e contorno          | 8      |
 | US#15 | Organizar camadas básicas, ordem e visibilidade        | 8      |
 
-
-#### US#14:
+#### US#14
     
-
 - História: Como usuário, desejo criar efeitos de texto como sombra e contorno para destacar textos nos designs.
     
 - Critérios de Aceitação: O sistema deve permitir a aplicação de efeitos de sombra e contorno em textos, com opções de customização.
 
-#### US#15:
+#### US#15
         
-
 - História: Como usuário, desejo organizar camadas básicas, ordem e visibilidade para gerenciar a composição dos elementos.
         
 - Critérios de Aceitação: O sistema deve oferecer controle sobre as camadas dos elementos, permitindo alterar a ordem e visibilidade diretamente na interface.
 
 ### **Sprint 7**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -231,30 +219,26 @@
 | US#19 | Compartilhar designs para edição com permissões        | 8      |
 
 
-#### US#16:
+#### US#16
     
-
 - História: Como usuário, desejo ajustar opacidade e bloquear camadas para controlar a visibilidade e segurança das camadas.
     
 - Critérios de Aceitação: O sistema deve permitir ajustes de opacidade e a opção de bloquear camadas para evitar alterações indesejadas.
 
-#### US#17:
-        
+#### US#17
 
 - História: Como usuário, desejo aplicar máscaras lineares e radiais para criar efeitos de máscara nos designs.
         
 - Critérios de Aceitação: O sistema deve incluir ferramentas para a aplicação de máscaras lineares e radiais em imagens e outros elementos.
 
-#### US#18:
+#### US#18
         
-
 - História: Como usuário, desejo compartilhar designs para visualização para mostrar meus designs para outras pessoas.
     
 - Critérios de Aceitação: O sistema deve permitir o compartilhamento de designs por meio de links ou outras plataformas, apenas para visualização.
 
-#### US#19:
+#### US#19
         
-
 - História: Como usuário, desejo compartilhar designs para edição com permissões básicas para colaborar na criação de designs.
     
 - Critérios de Aceitação: O sistema deve permitir o compartilhamento de designs com permissões básicas de edição, incluindo restrições de acesso.
@@ -262,7 +246,6 @@
 ## **Release 4**
 
 ### **Sprint 8**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -272,36 +255,31 @@
 | US#23 | Usar grade e guias para alinhar elementos              | 5      |
 
 
-#### US#20:
-        
+#### US#20
 
 - História: Como usuário, desejo editar designs em tempo real com outros usuários para trabalhar junto com outros na criação de designs.
         
 - Critérios de Aceitação: O sistema deve permitir a edição colaborativa em tempo real, sincronizando alterações imediatamente entre os participantes.
 
-#### US#21:
-
+#### US#21
         
 - História: Como usuário, desejo utilizar um sistema de chat durante a edição para comunicar com outros enquanto edito.
         
 - Critérios de Aceitação: O sistema deve integrar um chat funcional dentro da interface de edição, permitindo comunicação direta entre os usuários.
 
-#### US#22:
+#### US#22
         
-
 - História: Como usuário, desejo deixar comentários em elementos específicos para revisar e dar feedback sobre partes do design.
         
 - Critérios de Aceitação: O sistema deve permitir a adição de comentários diretamente em elementos específicos do design, com notificações para outros usuários.
 
-#### US#23:
+#### US#23
         
-
 - História: Como usuário, desejo usar grade e guias para alinhar elementos para manter a simetria e organização do design.
         
 - Critérios de Aceitação: O sistema deve oferecer opções de grade e guias que podem ser ativadas ou desativadas conforme a necessidade.
 
 ### **Sprint 9**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -311,36 +289,31 @@
 | US#27 | Acessar o histórico de versões do design               | 8      |
 
 
-#### US#24:
+#### US#24
         
-
 - História: Como usuário, desejo ver uma pré-visualização em tempo real do design para avaliar o design enquanto edito.
         
 - Critérios de Aceitação: O sistema deve exibir uma pré-visualização em tempo real, refletindo todas as mudanças feitas no design.
 
-#### US#25:
+#### US#25
         
-
 - História: Como usuário, desejo criar e usar paletas de cores para manter a consistência de cores nos designs.
         
 - Critérios de Aceitação: O sistema deve permitir a criação e gerenciamento de paletas de cores, com a possibilidade de aplicação em qualquer design.
 
-#### US#26:
-        
+#### US#26
 
 - História: Como usuário, desejo utilizar um guia de estilo para assegurar que os designs sigam um padrão visual.
         
 - Critérios de Aceitação: O sistema deve oferecer um guia de estilo que pode ser configurado e aplicado automaticamente em novos designs.
 
-#### US#27:
+#### US#27
         
-
 - História: Como usuário, desejo acessar o histórico de versões do design para reverter a versões anteriores caso necessário.
         
 -Critérios de Aceitação: O sistema deve manter um histórico de versões de cada design, permitindo a restauração de versões anteriores com facilidade.
 
 ### **Sprint 10**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -351,36 +324,31 @@
 | US#32 | Integrar com redes sociais e armazenamento em nuvem    | 8      |
 
 
-#### US#28:
-
+#### US#28
 
 - História: Como usuário, desejo utilizar atalhos de teclado para aumentar a eficiência durante a criação de designs.
 
 - Critérios de Aceitação: O sistema deve incluir e permitir a personalização de atalhos de teclado para as principais funções de design.
 
-#### US#29:
-
+#### US#29
 
 - História: Como usuário, desejo navegar por uma interface fácil de usar.
 
 -Critérios de Aceitação: A interface deve ser intuitiva, com navegação clara e acessível, permitindo uma experiência de uso fluida.
 
-#### US#30:
-
+#### US#30
 
 - História: Como usuário, desejo usar a função de arrastar e soltar para manipular elementos de forma fácil e rápida.
     
 -Critérios de Aceitação: O sistema deve permitir que o usuário arraste e solte elementos dentro da área de design com precisão e sem dificuldades.
 
-#### US#31:
-
+#### US#31
 
 - História: Como usuário, desejo criar designs que sejam responsivos para assegurar que o design seja exibido corretamente em diferentes dispositivos.
     
 - Critérios de Aceitação: O sistema deve fornecer ferramentas e opções para criar designs que se ajustem automaticamente a diferentes tamanhos e resoluções de tela.
 
-#### US#32:
-
+#### US#32
 
 
 - História: Como usuário, desejo integrar com redes sociais e armazenamento em nuvem para facilitar o compartilhamento e armazenamento dos designs.
@@ -388,7 +356,6 @@
 - Critérios de Aceitação: O sistema deve permitir integração com plataformas de redes sociais e serviços de armazenamento em nuvem, possibilitando o compartilhamento e armazenamento direto dos designs.
 
 ### **Sprint 11**
-
 
 | ID    | Nome da História de Usuário                            | Pontos |
 |-------|--------------------------------------------------------|--------|
@@ -399,45 +366,38 @@
 | US#37 | Ter a plataforma escalável conforme o uso aumenta      | 5      |
 | US#38 | Utilizar a plataforma em diferentes idiomas            | 5      |
 
-
-#### US#33:
-
+#### US#33
 
 - História: Como usuário, desejo usar a ferramenta com performance rápida e eficiente para ter uma experiência fluida durante a criação dos designs.
     
 - Critérios de Aceitação: O sistema deve garantir um desempenho ágil e eficiente, com tempos de resposta rápidos e mínima latência durante a criação e edição de designs.
 
-#### US#34:
-
+#### US#34
 
 - História: Como usuário, desejo confiar que a ferramenta funcionará de forma estável para evitar interrupções e perda de trabalho.
 
 - Critérios de Aceitação: O sistema deve ser robusto e estável, minimizando falhas e interrupções durante o uso, com mecanismos de recuperação de dados em caso de problemas.
 
-#### US#35:
-
+#### US#35
 
 - História: Como usuário, desejo ter segurança dos meus dados armazenados para garantir que meus dados pessoais estejam protegidos.
 
 - Critérios de Aceitação: O sistema deve implementar medidas de segurança robustas para proteger dados pessoais e informações armazenadas, incluindo criptografia e controle de acesso.
 
-#### US#36:
-
+#### US#36
 
 - História: Como usuário, desejo utilizar a ferramenta com recursos de acessibilidade para garantir que todos os usuários possam utilizar a plataforma.
 
 - Critérios de Aceitação: O sistema deve incluir recursos de acessibilidade, como suporte a leitores de tela, navegação por teclado e opções de contraste, para atender às necessidades de todos os usuários.
 
 
-#### US#37:
-
+#### US#37
 
 - História: Como usuário, desejo ter a plataforma escalável conforme o uso aumenta para assegurar que o sistema suporte um grande número de usuários.
 
 - Critérios de Aceitação: O sistema deve ser capaz de escalar adequadamente para lidar com um aumento no número de usuários e dados, sem perda de desempenho.
 
-#### US#38:
-
+#### US#38
 
 - História: Como usuário, desejo utilizar a plataforma em diferentes idiomas para acessar a plataforma em minha língua nativa.
 
