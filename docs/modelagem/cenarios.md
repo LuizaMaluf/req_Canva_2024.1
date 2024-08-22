@@ -105,7 +105,7 @@ Os dois [usuários](lexico.md#Usuário) conseguem [colaborar](lexico.md#Colabora
 
 ---
 ### __3. Exploração de Recursos Premium__
-__OBJETIVO__#### 
+#### __OBJETIVO__ 
 
 Um [usuário](lexico.md#Usuário) [gratuito](lexico.md#Gratuito) explora os benefícios de um [plano de assinatura](lexico.md#Assinatura) para decidir se vale a pena [assiná-lo](lexico.md#Assinar).
 

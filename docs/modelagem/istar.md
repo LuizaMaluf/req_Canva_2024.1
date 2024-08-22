@@ -21,18 +21,18 @@ O iStar (ou i*) é uma técnica de modelagem que ajuda a entender e representar 
 
 ## Strategic Dependency Model (SD)
 
-![Diagrama de Dependência](../images/DiagramaDeDependencias%20.png)
+![Diagrama de Dependência](../images/istar/DiagramaDeDependencias%20.png)
 
 ## Strategic Rationale Model (SR)
 
 ## SR Usuário
 
-![SR Usuário](../images/SR_Usuario.png)
+![SR Usuário](../images/istar/SR_Usuario.png)
 
 ## SR Canva
 
-![SR Canva](../images/SR_Canva.png)
+![SR Canva](../images/istar/SR_Canva.png)
 
 ## SR PRO
 
-![SR PRO](../images/SR_PRO.png)
+![SR PRO](../images/istar/SR_PRO.png)
