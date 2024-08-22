@@ -55,7 +55,7 @@ visualizada abaixo:
 
 #### Versão 0.0
 
-![Mapa Mental](../images/Mapa-Mental.png)
+![Mapa Mental](../images/elicitacao/Mapa-Mental.png)
 
 ### Priorização dos Requisitos
 
