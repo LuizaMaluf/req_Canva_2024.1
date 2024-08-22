@@ -7,7 +7,7 @@
 
 ## Origem
 
-O desenvolvimento destes cenários foi dado a partir da [análise de protocolo](../elicitacao/analise_protocolo.md) feita na parte da elicitação.
+O desenvolvimento destes cenários foi dado a partir da [análise de protocolo](../elicitacao/analise_protocolo.md), feita na parte de elicitação.
 
 Não satisfeitos com a quantidade de cenários e com uma visão diferente vinda da [Especificação de Casos de Uso](./casos_de_uso.md), foi possível identificar novos cenários.
 

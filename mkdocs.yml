@@ -30,6 +30,7 @@ nav:
     - Reunião 5: atas/reuniao5.md
   - Entregas:
     - Entrega 1: entregas/entrega1.md
+    - Entrega 2: entregas/entrega2.md
 
 theme:
   name: material

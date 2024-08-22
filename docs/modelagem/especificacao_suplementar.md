@@ -5,6 +5,14 @@
 | 16/09/2021 | Criação do documento e definição dos requisitos não funcionais após análise de casos de uso | Henrique Quenino | 0.1 |
 | 17/09/2021 | Revisão e ajustes dos requisitos não funcionais | Henrique Quenino | 1.0 |
 
+## Origem
+
+A Especificação Suplementar foi criada após a análise dos casos de uso do site Canva, com o objetivo de definir os requisitos não funcionais essenciais para o desenvolvimento e operação da plataforma.
+
+## Metodologia
+
+Os requisitos não funcionais foram identificados considerando as necessidades dos usuários, as restrições do sistema e as melhores práticas de desenvolvimento de software.
+
 
 ## __1. Introdução__
 

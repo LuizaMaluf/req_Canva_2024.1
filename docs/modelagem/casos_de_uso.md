@@ -21,7 +21,11 @@ Caio Alexandre
 
 ## Origem
 
+Os casos de uso foram criados com base na elicitação, mais especificamente tendo em vista a [análise de protocolo](../elicitacao/analise_protocolo.md), já que por meio dela foi possível identificar as principais funcionalidades do aplicativo Canva.
+
 ## Metodologia
+
+Realizou-se por meio do contacto direto com o Canva, onde foi possível obter informações sobre o funcionamento do aplicativo e as principais funcionalidades oferecidas aos usuários. A partir dessas informações, foram identificados os principais casos de uso do Canva.
 
 ## Introdução
 
