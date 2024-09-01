@@ -21,6 +21,8 @@ nav:
     - Especificação Suplementar: modelagem/especificacao_suplementar.md
     - iStar: modelagem/istar.md
     - NFR Framework: modelagem/nfr-framework.md
+  - Análise:
+    - Validação da Priorização: analise/verf_priorizacao.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
