@@ -4,7 +4,7 @@
 
 | Data       | Descrição                  | Autor         | Versão |
 |------------|----------------------------|---------------|--------|
-| 29/07/2024 | Primeira versão da análise | Gabriel Moura | 1.0    |
+| 29/07/2024 | Primeira versão da análise | Gabriel Moura | [1.0](moscow.md)    |
 
 ## Origem
 

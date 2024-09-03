@@ -10,7 +10,7 @@ nav:
     - Argumentação: pre-rastreabilidade/argumentacao.md
   - Elicitação:
     - Brainstorming: elicitacao/brainstorming.md
-    - MoSCoW: elicitacao/moscow.md
+    - MoSCoW: analise/correcoes/moscow_corrigido.md
     - First Things First: elicitacao/first_things.md
     - Análise de Protocolo: elicitacao/analise_protocolo.md
   - Modelagem:

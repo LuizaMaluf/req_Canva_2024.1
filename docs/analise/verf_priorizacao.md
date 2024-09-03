@@ -23,22 +23,15 @@ Com base nos resultados, a priorização foi dividida em qualidade alta, média 
 
 ## Checklist
 
-1. Verificação de Classificação:
+### Primeira análise do [MoSCoW (versão 1.0)](../elicitacao/moscow.md)
 
-    - Todos os requisitos estão corretamente classificados como "Must", "Should", "Could", ou "Would"?
+- [x] Todos os requisitos estão corretamente classificados como "Must", "Should", "Could", ou "Would".
+- [x] Possui código de identificação de requisito.
+- [x] Todo requisito utiliza o mesmo padrão de priorização.
+- [ ] Existe justificativa para a priorização de cada requisito.
+- [ ] O impacto do requisito foi levado em conta na priorização.
+- [x] Os custos de implementação estão estimados.
 
-2. Avaliação de Critérios:
+### Correção
 
-    - __Impacto:__ O impacto do requisito está bem definido e considerado na priorização?
-
-    - __Valor ao Usuário:__ O benefício para o usuário é explícito?
-    
-    - __Custo:__ Os custos de implementação estão estimados?
-    
-    - __Risco:__ Os riscos foram avaliados e documentados?
-
-    ## Revisão
-
-    | Requisito | Classificação | Impacto | Valor ao Usuário | Custo | Risco |
-    |-----------|---------------|---------|------------------|-------|-------|
-    | RF001     | Sim           | Não     | Sim              | Sim   | Não   |
+Para visualizar a correção do MoSCoW clique [aqui](./correcoes/moscow_corrigido.md)
