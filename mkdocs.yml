@@ -18,11 +18,12 @@ nav:
     - Cenários: modelagem/cenarios.md
     - Especificação de Casos de Uso: modelagem/casos_de_uso.md
     - Backlog do Produto e Histórias de Usuários: modelagem/backlog.md
-    - Especificação Suplementar: modelagem/especificacao_suplementar.md
+    - Especificação Suplementar: analise/correcoes/esp_suplementar_corrigido.md
     - iStar: modelagem/istar.md
     - NFR Framework: modelagem/nfr-framework.md
   - Análise:
     - Validação da Priorização: analise/verf_priorizacao.md
+    - Validação da Especificação Suplementar: analise/verf_esp_suplementar.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md

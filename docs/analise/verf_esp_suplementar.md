@@ -1,9 +1,8 @@
-# Veficação - Inspeção do MoSCoW
-
+# Veficação - Inspeção da Especificação Suplementar
 
 |    Data    | Versão |      Descrição      |        Autor     |
 |------------|--------|---------------------|------------------|
-| 01/09/2024 |  0.0   | Criando a documentação de Inspeção do MoSCoW | Luiza Maluf |
+| 03/09/2024 |  0.0   | Criando a documentação de Inspeção da especificação suplementar | Luiza Maluf |
 
 ## Introdução
 
@@ -23,19 +22,18 @@ Com base nos resultados, a priorização foi dividida em qualidade alta, média 
 
 ## Checklist
 
-### Primeira análise do [MoSCoW (versão 1.0)](../elicitacao/moscow.md)
+### Primeira análise da [Especificação Suplementar (versão 1.0)](../modelagem/especificacao_suplementar.md)
 
-- [x] Todos os requisitos estão corretamente classificados como "Must", "Should", "Could", ou "Would".
-- [x] Possui código de identificação de requisito.
-- [x] Todo requisito utiliza o mesmo padrão de priorização.
-- [ ] Existe justificativa para a priorização de cada requisito.
-- [ ] O impacto do requisito foi levado em conta na priorização.
-- [x] Os custos de implementação estão estimados.
+- [x] Os requisitos não funcionais estão bem definidos.
+- [x] Todos os requisitos não funcionais possuem suas necessidades definidas.
+- [x] Todos os tópicos estão bem definidos e enumerados.
+- [x] Existem requisitos relacionados à performance, segurança, usabilidade, e compatibilidade documentados.
+- [ ] Os requisitos suplementares estão corretamente rastreados para os requisitos funcionais.
 
-### Correção
+### Correção 
 
-Para visualizar a correção do MoSCoW clique [aqui](./correcoes/moscow_corrigido.md)
+Para visualizar a correção da Especificação Suplementar clique [aqui](../analise/correcoes/esp_suplementar_corrigido.md)
 
 ### Resultado
 
-Qualidade média.
+Qualidade alta.
