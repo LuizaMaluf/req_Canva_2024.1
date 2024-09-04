@@ -25,6 +25,7 @@ nav:
     - Validação da Argumentação: analise/verf_argumentacao.md
     - Validação da Priorização: analise/verf_priorizacao.md
     - Validação da Especificação Suplementar: analise/verf_esp_suplementar.md
+    - Validação do NFR Framework: analise/verf_nfr-framework.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
