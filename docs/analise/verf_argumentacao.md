@@ -1,4 +1,4 @@
-# Veficação - Inspeção da Argumentação
+# verificação - Inspeção da Argumentação
 
 |    Data    | Versão |      Descrição      |        Autor     |
 |------------|--------|---------------------|------------------|

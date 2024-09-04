@@ -1,4 +1,4 @@
-# Veficação - Inspeção da Especificação Suplementar
+# verificação - Inspeção da Especificação Suplementar
 
 |    Data    | Versão |      Descrição      |        Autor     |
 |------------|--------|---------------------|------------------|
