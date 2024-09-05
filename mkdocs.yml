@@ -25,6 +25,7 @@ nav:
     - Validação da Argumentação: analise/verf_argumentacao.md
     - Validação da Priorização: analise/verf_priorizacao.md
     - Validação da Especificação Suplementar: analise/verf_esp_suplementar.md
+    - Validação do NFR Framework: analise/verf_nfr-framework.md
     - Validação dos Léxicos: analise/verf_lexico.md
     - Validação dos Cenários: analise/verf_cenario.md
     - Validação do Rich Picture: analise/verf_rich_picture.md

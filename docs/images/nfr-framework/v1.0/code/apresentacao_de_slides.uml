@@ -1,0 +1,28 @@
+@startuml
+!define softgoal(name) cloud "name"
+!define op(name) cloud #line.bold;  "name"
+
+softgoal(Apresentações de Slides) as apresentacoes
+op(WYSIWYG) as wysiwyg
+op(Estatísticas e métricas) as estatisticas
+op(Salvamento automático) as salvamento
+softgoal(Compartilhamento da apresentacao) as compartilhamento
+op(Link público) as link
+op(Arquivo) as arquivo
+softgoal(Toolchain) as toolchain
+
+apresentacoes <-- wysiwyg : +
+apresentacoes <-- estatisticas : +
+apresentacoes <-- salvamento : +
+apresentacoes --> compartilhamento
+
+wysiwyg --> toolchain
+
+compartilhamento <-- link : +
+compartilhamento <-- arquivo : +
+
+legend right
++ : Contribuição Positiva
+- : Contribuição Negativa
+endlegend
+@enduml
