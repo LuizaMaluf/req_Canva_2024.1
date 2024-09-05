@@ -1,0 +1,47 @@
+@startuml
+!define softgoal(name) cloud name
+!define op(name) cloud #line.bold;  name 
+
+softgoal(Design) as design
+softgoal(Usabilidade) as usabilidade
+softgoal(Acessibilidade) as acessibilidade
+op(Simplicidade_de_Linguagem) as linguagem
+softgoal(Portabilidade) as portabilidade
+op(Compatibilidade_entre_Navegadores) as compatibilidade
+op(Projecao_de_Layouts) as layouts
+op(Identidade_Visual) as identidade
+op(Internacionalizacao) as internacionalizacao
+softgoal(Seguranca) as seguranca
+op(Criptografia_de_Senhas) as criptografia
+softgoal(Desempenho) as desempenho
+op(Autenticacao_com_2_fatores) as autenticacao
+op(Design_responsivo) as responsivo
+
+design <-- usabilidade
+design --> acessibilidade
+design <-- layouts : +
+design <-- identidade : +
+
+usabilidade <-- internacionalizacao : +
+
+
+
+portabilidade <-- acessibilidade
+portabilidade <-- compatibilidade : +
+portabilidade <-- responsivo : +
+
+
+linguagem --> acessibilidade : +
+ 
+seguranca --> autenticacao : +
+seguranca --> criptografia : +
+
+desempenho <-- criptografia: -
+desempenho <-- autenticacao : -
+
+
+legend right
++ : Contribuição Positiva
+- : Contribuição Negativa
+endlegend
+@enduml

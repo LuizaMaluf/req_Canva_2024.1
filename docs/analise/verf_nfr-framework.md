@@ -34,11 +34,11 @@ A qualidade do NFR será classificada como:
 - [x] As operacionalizações são representadas por nuvens com bordas grossas?
 - [x] As operacionalizações descrevem como atingir os softgoals?
 - [x] As dependências entre softgoals e operacionalizações são representadas por setas?
-- [x] As setas indicam o tipo de contribuição (positiva ou negativa)?
+- [ ] As setas indicam o tipo de contribuição (positiva ou negativa)?
 - [ ] O diagrama utiliza uma legenda para explicar os símbolos e tipos de contribuição?
-- [x] O diagrama está organizado e fácil de entender?
+- [ ] O diagrama está organizado e fácil de entender?
 - [ ] As relações de decomposição e dependência entre os softgoals estão claras e completas?
-- [ ] As operacionalizações propostas são viáveis e adequadas para o contexto do Canva?
+- [x] As operacionalizações propostas são viáveis e adequadas para o contexto do Canva?
 
 ### Resultado
 
