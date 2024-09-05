@@ -4,7 +4,8 @@
 
 | Data       | Descrição                                   | Autor          | Versão |
 |------------|---------------------------------------------|----------------|--------|
-| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | 0.0    |
+| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](nfr-framework.md) |
+| 05/09/2024 | Correção após inspeção. | Gabriel Moura | [1.0](../analise/correcoes/nfr-framework_corrigido.md) |
 
 ## Origem
 

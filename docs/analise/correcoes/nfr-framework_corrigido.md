@@ -5,7 +5,7 @@
 | Data       | Descrição                                   | Autor          | Versão |
 |------------|---------------------------------------------|----------------|--------|
 | 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](../../modelagem/nfr-framework.md)    |
-| 05/09/2024 | Adicionado o NFR geral aprimorado | Gabriel Moura | [1.0](nfr-framework_corrigido.md)    |
+| 05/09/2024 | NFRs refeitos em nova e melhor versão. | Gabriel Moura | [1.0](nfr-framework_corrigido.md)    |
 
 ## Origem
 
@@ -40,9 +40,6 @@ argumentação, impactos e legenda.
 
 ### Edição de Imagens (`NFRF2`)
 
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
 
 #### Versão 0.0
 
@@ -54,10 +51,10 @@ argumentação, impactos e legenda.
 
 ### Apresentação de Slides (`NFRF3`)
 
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
-
 #### Versão 0.0
 
 ![NFR Framework - Edição de Imagens](../../images/nfr-framework/v0.0/apresentacao-de-slides.png)
+
+#### Versão 1.0
+
+![NFR Framework - Geral](../../images/nfr-framework/v1.0/apresentacao_de_slides.png)

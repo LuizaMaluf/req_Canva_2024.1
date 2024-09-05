@@ -1,21 +1,21 @@
 @startuml
-!define softgoal(name) cloud name
-!define op(name) cloud #line.bold;  name 
+!define softgoal(name) cloud "name"
+!define op(name) cloud #line.bold;  "name"
 
 softgoal(Design) as design
 softgoal(Usabilidade) as usabilidade
 softgoal(Acessibilidade) as acessibilidade
-op(Simplicidade_de_Linguagem) as linguagem
+op(Simplicidade de Linguagem) as linguagem
 softgoal(Portabilidade) as portabilidade
-op(Compatibilidade_entre_Navegadores) as compatibilidade
-op(Projecao_de_Layouts) as layouts
-op(Identidade_Visual) as identidade
-op(Internacionalizacao) as internacionalizacao
-softgoal(Seguranca) as seguranca
-op(Criptografia_de_Senhas) as criptografia
+op(Compatibilidade entre Navegadores) as compatibilidade
+op(Projeção de Layouts) as layouts
+op(Identidade Visual) as identidade
+op(Internacionalização) as internacionalizacao
+softgoal(Segurança) as seguranca
+op(Criptografia de Senhas) as criptografia
 softgoal(Desempenho) as desempenho
-op(Autenticacao_com_2_fatores) as autenticacao
-op(Design_responsivo) as responsivo
+op(Autenticação com 2 fatores) as autenticacao
+op(Design responsivo) as responsivo
 
 design <-- usabilidade
 design --> acessibilidade
