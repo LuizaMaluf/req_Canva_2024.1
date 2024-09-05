@@ -1,15 +1,17 @@
-# **iStar**
+# iStar
 
-|    Data    | Descrição | Autor | Versão |
-|------------|--------|-----------|-------|
-| 14/08/2024 |  Adição da versão inicial do iStar | Rodrigo Mattos | 0.0 |
-| 02/09/2024 |  Melhoria dos diagramas SD e SR | Rodrigo Mattos | 0.1 |
+|    Data    | Descrição                          | Autor          | Versão |
+|------------|------------------------------------|----------------|--------|
+| 14/08/2024 | Adição da versão inicial do iStar. | Rodrigo Mattos | 0.0    |
+| 02/09/2024 | Melhoria dos diagramas SD e SR.    | Rodrigo Mattos | 0.1    |
 
-## **Origem**
+## Origem
 
-O desenvolvimento deste iStar foi dado inicialmente a partir da [análise de protocolo](../elicitacao/analise_protocolo.md) feita na parte da elicitação e após introspecção durante navegação na plataforma Canva.
+O desenvolvimento deste iStar foi dado inicialmente a partir da
+[Análise de Protocolo](../elicitacao/analise_protocolo.md) feita na parte da
+elicitação e após introspecção durante navegação na plataforma Canva.
 
-## **Metodologia**
+## Metodologia
 
 O desenvolvimento do iStar foi feito inicialmente com a identificação
 dos principais atores envolvidos no sistema. Em seguida, foi feita a modelagem
@@ -17,30 +19,36 @@ dos diagramas SD e SR explicando as dependências entre os atores e as
 tarefas e objetivos de cada ator. Posteriormente o documento foi
 revisado pelo Caio.
 
-## **Introdução**
+## Introdução
 
-O iStar (ou i*) é uma técnica de modelagem que ajuda a entender e representar as relações e dependências entre diferentes atores (como pessoas, sistemas ou organizações) dentro de um sistema ou projeto. Ele foca em identificar os objetivos dos atores, as tarefas que realizam para alcançá-los, e como esses atores dependem uns dos outros para atingir seus objetivos.
+O iStar (ou i*) é uma técnica de modelagem que ajuda a entender e representar as
+relações e dependências entre diferentes atores (como pessoas, sistemas ou
+organizações) dentro de um sistema ou projeto. Ele foca em identificar os
+objetivos dos atores, as tarefas que realizam para alcançá-los, e como esses
+atores dependem uns dos outros para atingir seus objetivos.
 
-## **Principais Atores**
+## Artefatos
+
+### Principais Atores
 
 - Usuário
 - Canva
 - PRO
 
-## **Strategic Dependency Model (SD)**
+### Strategic Dependency Model (SD)
 
 ![Diagrama de Dependência](../images/istar/DiagramaDeDependencias.png)
 
-## **Strategic Rationale Model (SR)**
+### Strategic Rationale Model (SR)
 
-## SR Usuário
+#### SR Usuário
 
 ![SR Usuário](../images/istar/SR-Usuario.png)
 
-## SR Canva
+#### SR Canva
 
 ![SR Canva](../images/istar/SR-Canva.png)
 
-## SR PRO
+#### SR PRO
 
 ![SR PRO](../images/istar/SR-PRO.png)
