@@ -14,8 +14,8 @@ nav:
     - First Things First: elicitacao/first_things.md
     - Análise de Protocolo: elicitacao/analise_protocolo.md
   - Modelagem:
-    - Léxicos: modelagem/lexico.md
-    - Cenários: modelagem/cenarios.md
+    - Léxicos: analise/correcoes/lexicos_corrigido.md
+    - Cenários: analise/correcoes/cenarios_corrigido.md
     - Especificação de Casos de Uso: modelagem/casos_de_uso.md
     - Backlog do Produto e Histórias de Usuários: modelagem/backlog.md
     - Especificação Suplementar: analise/correcoes/esp_suplementar_corrigido.md
@@ -25,6 +25,9 @@ nav:
     - Validação da Argumentação: analise/verf_argumentacao.md
     - Validação da Priorização: analise/verf_priorizacao.md
     - Validação da Especificação Suplementar: analise/verf_esp_suplementar.md
+    - Validação dos Léxicos: analise/verf_lexico.md
+    - Validação dos Cenários: analise/verf_cenario.md
+    - Validação do Rich Picture: analise/verf_rich_picture.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
