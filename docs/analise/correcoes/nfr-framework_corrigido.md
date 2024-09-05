@@ -1,16 +1,16 @@
-#__NFR Framework__
+# NFR Framework
 
 ## Histórico de Versões
 
 | Data       | Descrição                                   | Autor          | Versão |
 |------------|---------------------------------------------|----------------|--------|
-| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](nfr-framework.md) |
-| 05/09/2024 | Correção após inspeção. | Gabriel Moura | [1.0](../analise/correcoes/nfr-framework_corrigido.md) |
+| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](../../modelagem/nfr-framework.md)    |
+| 05/09/2024 | NFRs refeitos em nova e melhor versão. | Gabriel Moura | [1.0](nfr-framework_corrigido.md)    |
 
 ## Origem
 
 O desenvolvimento deste NFR Framework foi dado a partir da
-[Reunião 5](../atas/reuniao5.md).
+[Reunião 5](../../atas/reuniao5.md).
 
 ## Metodologia
 
@@ -32,24 +32,29 @@ argumentação, impactos e legenda.
 
 #### Versão 0.0
 
-![NFR Framework - Geral](../images/nfr-framework/v0.1/geral.png)
+![NFR Framework - Geral](../../images/nfr-framework/v0.1/geral.png)
+
+#### Versão 1.0
+
+![NFR Framework - Geral](../../images/nfr-framework/v1.0/geral.png)
 
 ### Edição de Imagens (`NFRF2`)
 
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
 
 #### Versão 0.0
 
-![NFR Framework - Edição de Imagens](../images/nfr-framework/v0.0/edicao-de-imagens.png)
+![NFR Framework - Edição de Imagens](../../images/nfr-framework/v0.0/edicao-de-imagens.png)
+
+#### Versão 1.0
+
+![NFR Framework - Geral](../../images/nfr-framework/v1.0/edicao_de_imagens.png)
 
 ### Apresentação de Slides (`NFRF3`)
 
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
-
 #### Versão 0.0
 
-![NFR Framework - Edição de Imagens](../images/nfr-framework/v0.0/apresentacao-de-slides.png)
+![NFR Framework - Edição de Imagens](../../images/nfr-framework/v0.0/apresentacao-de-slides.png)
+
+#### Versão 1.0
+
+![NFR Framework - Geral](../../images/nfr-framework/v1.0/apresentacao_de_slides.png)
