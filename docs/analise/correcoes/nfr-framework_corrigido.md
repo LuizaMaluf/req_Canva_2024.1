@@ -48,6 +48,10 @@ argumentação, impactos e legenda.
 
 ![NFR Framework - Edição de Imagens](../../images/nfr-framework/v0.0/edicao-de-imagens.png)
 
+#### Versão 1.0
+
+![NFR Framework - Geral](../../images/nfr-framework/v1.0/edicao_de_imagens.png)
+
 ### Apresentação de Slides (`NFRF3`)
 
 !!! warning "Depreciado"
