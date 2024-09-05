@@ -17,7 +17,7 @@ nav:
     - Léxicos: analise/correcoes/lexicos_corrigido.md
     - Cenários: analise/correcoes/cenarios_corrigido.md
     - Especificação de Casos de Uso: modelagem/casos_de_uso.md
-    - Backlog do Produto e Histórias de Usuários: modelagem/backlog.md
+    - Backlog do Produto e Histórias de Usuários: analise/correcoes/backlog_corrigido.md
     - Especificação Suplementar: analise/correcoes/esp_suplementar_corrigido.md
     - iStar: modelagem/istar.md
     - NFR Framework: modelagem/nfr-framework.md
@@ -29,6 +29,8 @@ nav:
     - Validação dos Léxicos: analise/verf_lexico.md
     - Validação dos Cenários: analise/verf_cenario.md
     - Validação do Rich Picture: analise/verf_rich_picture.md
+    - Validação do Backlog do Produto e Histórias de Usuários: analise/verf_backlog.md
+    - Validação da Especificação de Casos de Uso: analise/verf_casos_de_uso.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
