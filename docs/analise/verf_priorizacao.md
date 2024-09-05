@@ -1,4 +1,4 @@
-# verificação - Inspeção do MoSCoW
+# Verificação - Inspeção do MoSCoW
 
 
 |    Data    | Versão |      Descrição      |        Autor     |
