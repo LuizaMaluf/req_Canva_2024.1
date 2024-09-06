@@ -32,6 +32,8 @@ nav:
     - Validação do Backlog do Produto e Histórias de Usuários: analise/verf_backlog.md
     - Validação da Especificação de Casos de Uso: analise/verf_casos_de_uso.md
     - Inspeção do iStar: analise/istar.md
+  - Pós-Rastreabilidade:
+    - Forward-From: pos-rastreabilidade/forward.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
