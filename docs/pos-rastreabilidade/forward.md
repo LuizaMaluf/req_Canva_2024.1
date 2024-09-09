@@ -40,7 +40,7 @@
 | RF030 | Arrastar e soltar.                                                            |[Acesse aqui](telas/RF030.png)|
 | RF031 | Design responsivo.                                                            |[Acesse aqui](telas/RF031.png)|
 | RF032 | Integração com outras ferramentas (redes sociais, armazenamento em nuvem).    |[Acesse aqui](telas/RF032.png)|
-| RF033 | Performance rápida e eficiente.                                               |[Acesse aqui](telas/RF033.png)|
+| RF033 | Performance rápida e eficiente.                                               | |
 | RF034 | Confiabilidade.                                                               | |
 | RF035 | Segurança dos dados do usuário.                                               | |
 | RF036 | Acessibilidade.                                                               | |
