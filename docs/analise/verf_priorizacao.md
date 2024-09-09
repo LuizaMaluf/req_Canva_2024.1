@@ -7,11 +7,11 @@
 
 ## Introdução
 
-O objetivo dessa documentação é fazer a verificação da priorização utilizando a técnica de inspeção.
+O objetivo dessa documentação é fazer a verificação da Priorização utilizando a técnica de inspeção.
 
 ## Objetivo
 
-O principal objetivo e verificar a qualidade dos artefatos produzios pelo grupo e priorizar quais pontos devem ser refatorados.
+O principal objetivo é verificar a qualidade dos artefatos produzios pelo grupo e priorizar quais pontos devem ser refatorados.
 
 ## Metodologia
 
