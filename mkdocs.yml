@@ -34,6 +34,7 @@ nav:
     - Inspeção do iStar: analise/istar.md
   - Pós-Rastreabilidade:
     - Forward-From: pos-rastreabilidade/forward.md
+    - Backward-From: pos-rastreabilidade/backward.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
