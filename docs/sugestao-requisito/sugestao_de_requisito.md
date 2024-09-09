@@ -5,9 +5,13 @@
 | 06/09/2024 |  0.0   | Criação do documento | Henrique Quenino |
 | 07/09/2024 |  1.0   | Adição do protótipo no figma | Henrique Quenino |
 
-## Introdução
+## Origem
 
-Esta sugestão visa integrar um editor de partituras musicais à plataforma Canva, expandindo suas funcionalidades e atendendo às necessidades de um público mais amplo, incluindo estudantes, professores e músicos.
+A ideia para a funcionalidade surgiu a partir de sessões de **co-criação** com usuários representativos do público-alvo do Canva. Durante as variadas conversas, os participantes foram convidados a compartilhar suas experiências e desafios utilizando a plataforma. 
+
+A demanda por Editor de Partituras para Canva emergiu como uma funcionalidade relevante, inovadora e necessária para os usuários, que relataram o desejo dessa funcionalidade. 
+
+A sugestão que se segue visa integrar um editor de partituras musicais à plataforma Canva, expandindo suas funcionalidades e atendendo às necessidades de um público mais amplo, incluindo estudantes, professores e músicos.
 
 ## Descrição da Funcionalidade
 
