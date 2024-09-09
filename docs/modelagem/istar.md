@@ -4,6 +4,7 @@
 |------------|------------------------------------|----------------|--------|
 | 14/08/2024 | Adição da versão inicial do iStar. | Rodrigo Mattos | 0.0    |
 | 02/09/2024 | Melhoria dos diagramas SD e SR.    | Rodrigo Mattos | 0.1    |
+| 09/09/2024 | Correção dos diagramas SD e SR.    | Rodrigo Mattos | 0.2    |
 
 ## Origem
 
@@ -14,7 +15,7 @@ elicitação e após introspecção durante navegação na plataforma Canva.
 ## Metodologia
 
 O desenvolvimento do iStar foi feito inicialmente com a identificação
-dos principais atores envolvidos no sistema. Em seguida, foi feita a modelagem
+dos principais atores e agentes envolvidos no sistema. Em seguida, foi feita a modelagem
 dos diagramas SD e SR explicando as dependências entre os atores e as
 tarefas e objetivos de cada ator. Posteriormente o documento foi
 revisado pelo Caio.
@@ -29,7 +30,7 @@ atores dependem uns dos outros para atingir seus objetivos.
 
 ## Artefatos
 
-### Principais Atores
+### Principais Atores/Agentes
 
 - Usuário
 - Canva
