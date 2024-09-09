@@ -35,6 +35,7 @@ nav:
   - Pós-Rastreabilidade:
     - Forward-From: pos-rastreabilidade/forward.md
     - Backward-From: pos-rastreabilidade/backward.md
+  - Sugestão de Requisito: sugestao-requisito/sugestao_de_requisito.md
   
   - Reuniões:
     - Reunião 1: atas/reuniao1.md
