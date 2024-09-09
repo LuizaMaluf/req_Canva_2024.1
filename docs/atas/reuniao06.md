@@ -1,8 +1,8 @@
 #__Reunião 6__
 
-**Data:** XX/XX/XXXX<br />
+**Data:** 01/09/2024<br />
 **Hora de Início:** 20h30<br />
-**Hora de Término:** 23h00<br />
+**Hora de Término:** 22h45<br />
 **Local:** Discord<br />
 
 ## Participantes

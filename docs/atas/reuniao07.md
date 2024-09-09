@@ -1,7 +1,7 @@
 #__Reunião 7__
 
-**Data:** XX/XX/XXXX<br />
-**Hora de Início:** 20h30<br />
+**Data:** 03/09/2024<br />
+**Hora de Início:** 22h45<br />
 **Hora de Término:** 23h00<br />
 **Local:** Discord<br />
 
