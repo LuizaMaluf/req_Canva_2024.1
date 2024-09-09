@@ -6,7 +6,7 @@
 |------------|---------------------------------------------|----------------|--------------------------------------------------------|
 | 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](nfr-framework.md)                                |
 | 05/09/2024 | Correção após inspeção.                     | Gabriel Moura  | [1.0](../analise/correcoes/nfr-framework_corrigido.md) |
-| 09/09/2024 | Melhoria do `NFRF1`.                        | Caio Alexandre | [1.1](nfr-framework.md)                                |
+| 09/09/2024 | Melhoria do `NFRF1`.                        | Caio Alexandre | [1.1](../analise/correcoes/nfr-framework_corrigido.md) |
 
 ## Origem
 
