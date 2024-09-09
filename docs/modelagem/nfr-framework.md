@@ -2,10 +2,11 @@
 
 ## Histórico de Versões
 
-| Data       | Descrição                                   | Autor          | Versão |
-|------------|---------------------------------------------|----------------|--------|
-| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](nfr-framework.md) |
-| 05/09/2024 | Correção após inspeção. | Gabriel Moura | [1.0](../analise/correcoes/nfr-framework_corrigido.md) |
+| Data       | Descrição                                   | Autor          | Versão                                                 |
+|------------|---------------------------------------------|----------------|--------------------------------------------------------|
+| 17/08/2024 | Desenvolvimento inicial dos NFR Frameworks. | Caio Alexandre | [0.0](nfr-framework.md)                                |
+| 05/09/2024 | Correção após inspeção.                     | Gabriel Moura  | [1.0](../analise/correcoes/nfr-framework_corrigido.md) |
+| 09/09/2024 | Melhoria do `NFRF1`.                        | Caio Alexandre | [1.1](nfr-framework.md)                                |
 
 ## Origem
 
@@ -34,22 +35,30 @@ argumentação, impactos e legenda.
 
 ![NFR Framework - Geral](../images/nfr-framework/v0.1/geral.png)
 
+#### Versão 1.0
+
+![NFR Framework - Geral](../images/nfr-framework/v1.0/geral.png)
+
+#### Versão 1.1
+
+![NFR Framework - Geral](../images/nfr-framework/v1.1/geral.png)
+
 ### Edição de Imagens (`NFRF2`)
-
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
 
 #### Versão 0.0
 
 ![NFR Framework - Edição de Imagens](../images/nfr-framework/v0.0/edicao-de-imagens.png)
 
+#### Versão 1.0
+
+![NFR Framework - Edição de Imagens](../images/nfr-framework/v1.0/edicao-de-imagens.png)
+
 ### Apresentação de Slides (`NFRF3`)
-
-!!! warning "Depreciado"
-
-    Este NFR Framework será refeito em uma nova versão.
 
 #### Versão 0.0
 
 ![NFR Framework - Edição de Imagens](../images/nfr-framework/v0.0/apresentacao-de-slides.png)
+
+#### Versão 1.0
+
+![NFR Framework - Edição de Imagens](../images/nfr-framework/v1.0/apresentacao-de-slides.png)
