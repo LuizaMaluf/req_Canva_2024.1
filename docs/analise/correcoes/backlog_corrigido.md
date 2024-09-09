@@ -9,7 +9,7 @@
 
 ## **Origem**
 
-Esse documento foi feito com base nos requisitos listados na parte de elicitação [MoSCoW](../elicitacao/moscow.md).
+Esse documento foi feito com base nos requisitos listados na parte de elicitação [MoSCoW](../../elicitacao/moscow.md).
 
 ## **Metodologia**
 
