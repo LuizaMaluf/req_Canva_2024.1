@@ -1,4 +1,4 @@
-#__Reunião 1__
+# Reunião 1
 
 **Data:** [25/07/2024]<br />
 **Hora de Início:** [20h30]<br />

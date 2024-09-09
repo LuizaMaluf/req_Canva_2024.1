@@ -10,7 +10,7 @@
 ## Origem
 
 O desenvolvimento deste Rich Picture foi dado a partir da
-[Reunião 1](../atas/reuniao1.md).
+[Reunião 1](../atas/reuniao01.md).
 
 ## Introdução
 

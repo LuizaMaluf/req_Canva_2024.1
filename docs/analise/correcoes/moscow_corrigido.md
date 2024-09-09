@@ -10,7 +10,7 @@
 ## Origem
 
 O desenvolvimento deste MoSCoW foi dado a partir da
-[Reunião 3](../../atas/reuniao3.md).
+[Reunião 3](../../../atas/reuniao03.md).
 
 ## Metodologia
 

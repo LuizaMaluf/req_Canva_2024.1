@@ -9,7 +9,7 @@
 ## Origem
 
 O desenvolvimento desta Argumentação foi dado a partir da
-[Reunião 2](../atas/reuniao2.md).
+[Reunião 2](../atas/reuniao02.md).
 
 ## Metodologia
 

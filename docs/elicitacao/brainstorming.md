@@ -9,7 +9,7 @@
 ## Origem
 
 O desenvolvimento deste branstorming foi dado a partir da
-[Reunião 1](../atas/reuniao1.md).
+[Reunião 1](../atas/reuniao01.md).
 
 ## Metodologia
 
