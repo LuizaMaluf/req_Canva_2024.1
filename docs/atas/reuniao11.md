@@ -1,9 +1,9 @@
 #__Reunião 11__
 
-**Data:** 04/09/2024<br />
-**Hora de Início:** 22h45<br />
-**Hora de Término:** 23h00<br />
-**Local:** Discord<br />
+**Data:** [04/09/2024]<br />
+**Hora de Início:** [22h45]<br />
+**Hora de Término:** [23h00]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 

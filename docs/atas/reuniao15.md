@@ -1,9 +1,9 @@
 #__Reunião 15__
 
-**Data:** 03/09/2024<br />
-**Hora de Início:** 20h30<br />
-**Hora de Término:** 23h00<br />
-**Local:** Discord<br />
+**Data:** [03/09/2024]<br />
+**Hora de Início:** [20h30]<br />
+**Hora de Término:** [23h00]<br />
+**Local:** [Discord]<br />
 
 ## Participantes
 

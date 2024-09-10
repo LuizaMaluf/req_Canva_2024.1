@@ -3,7 +3,7 @@
 |    Data    | Versão |      Descrição      |        Autor     |
 |------------|--------|---------------------|------------------|
 | 06/09/2024 |  0.0   | Criação do documento | Henrique Quenino |
-| 07/09/2024 |  1.0   | Adição do protótipo no figma | Henrique Quenino |
+| 07/09/2024 |  1.0   | Adição do protótipo | Henrique Quenino |
 
 ## Origem
 
