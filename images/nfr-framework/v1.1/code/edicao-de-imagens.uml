@@ -1,0 +1,37 @@
+@startuml
+!define softgoal(name) cloud "name"
+!define op(name) cloud #line.bold;  "name" 
+
+softgoal(Edição de Imagens) as edicao
+
+softgoal(Usabilidade e Acessibilidade) as usabilidade
+op(WYSIWYG) as wysiwyg
+op(Efeitos fontes decorações e ícones) as recursos
+op(Templates reutilizáveis) as templates
+op(Recomendação de paletas de cor) as recomendacao
+op(Colaboração entre usuários) as colaboracao
+op(Visualização em tempo real) as visualizacao
+softgoal(Exportação de Imagens) as exportacao
+op(Integração com Google Drive) as integracao
+softgoal(Apresentação em Slides) as apresentacao
+
+edicao --> usabilidade
+edicao <-- colaboracao : +
+edicao --> exportacao
+
+usabilidade <-- wysiwyg : +
+usabilidade <-- recomendacao : +
+
+wysiwyg <-- recursos : +
+wysiwyg <-- templates : +
+
+colaboracao <-- visualizacao : +
+
+exportacao <-- integracao : +
+exportacao --> apresentacao
+
+legend right
++ : Contribuição Positiva
+- : Contribuição Negativa
+endlegend
+@enduml

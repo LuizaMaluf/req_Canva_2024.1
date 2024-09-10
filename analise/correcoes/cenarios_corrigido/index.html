@@ -1,0 +1,6083 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../lexicos_corrigido/">
+      
+      
+        <link rel="next" href="../../../modelagem/casos_de_uso/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Cenários - Canva - Requisitos de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cenarios" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Canva - Requisitos de Software" class="md-header__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../../images/logoCanva.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Canva - Requisitos de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cenários
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../pre-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+    
+  
+  Pre-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../elicitacao/brainstorming/" class="md-tabs__link">
+          
+  
+    
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../lexicos_corrigido/" class="md-tabs__link">
+          
+  
+    
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../verf_argumentacao/" class="md-tabs__link">
+          
+  
+    
+  
+  Análise
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../pos-rastreabilidade/forward/" class="md-tabs__link">
+          
+  
+    
+  
+  Pós-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../sugestao-requisito/sugestao_de_requisito/" class="md-tabs__link">
+        
+  
+    
+  
+  Sugestão de Requisito
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../atas/reuniao01/" class="md-tabs__link">
+          
+  
+    
+  
+  Reuniões
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../entregas/entrega1/" class="md-tabs__link">
+          
+  
+    
+  
+  Entregas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Canva - Requisitos de Software" class="md-nav__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../../images/logoCanva.png" alt="logo">
+
+    </a>
+    Canva - Requisitos de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Pictures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pre-rastreabilidade/argumentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Argumentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moscow_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MoSCoW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/first_things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/analise_protocolo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de Protocolo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lexicos_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#origem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criacao-de-um-design-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de um Design Simples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Criação de um Design Simples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-colaboracao-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Colaboração em Tempo Real
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Colaboração em Tempo Real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Exploração de Recursos Premium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Exploração de Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criacao-de-materiais-para-uma-campanha-publicitaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Criação de Materiais para uma Campanha Publicitária
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Criação de Materiais para uma Campanha Publicitária">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-adaptacao-de-um-design-para-diferentes-midias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Adaptação de um Design para Diferentes Mídias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Adaptação de um Design para Diferentes Mídias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-exportacao-de-um-projeto-em-alta-resolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Exportação de um Projeto em Alta Resolução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Exportação de um Projeto em Alta Resolução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-compartilhamento-de-post-para-redes-sociais" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Compartilhamento de Post para Redes Sociais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Compartilhamento de Post para Redes Sociais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-login-e-logout-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login e Logout na Plataforma Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Login e Logout na Plataforma Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-cenario-edicao-de-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Cenário: Edição de um Design Existente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Cenário: Edição de um Design Existente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cenario-download-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Cenário: Download de um Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Cenário: Download de um Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-acesso-a-um-template-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Acesso a um Template Pronto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Acesso a um Template Pronto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-gerenciamento-de-pastas-e-projetos-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Gerenciamento de Pastas e Projetos no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Gerenciamento de Pastas e Projetos no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Utilização de Recursos de Inteligência Artificial no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Utilização de Recursos de Inteligência Artificial no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-personalizar-configuracoes-de-conta-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Personalizar Configurações de Conta no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Personalizar Configurações de Conta no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-acessar-suporte-e-atendimento-ao-cliente-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Acessar Suporte e Atendimento ao Cliente no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Acessar Suporte e Atendimento ao Cliente no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-criacao-de-um-design-do-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Criação de um Design do Zero
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Criação de um Design do Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-feedback-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Feedback de um Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Feedback de um Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-criacao-de-materiais-educacionais-interativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Criação de Materiais Educacionais Interativos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Criação de Materiais Educacionais Interativos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação de Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog do Produto e Histórias de Usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../esp_suplementar_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/istar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iStar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/nfr-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Análise
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Análise
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_argumentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Argumentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_esp_suplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_nfr-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_lexico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_cenario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do Backlog do Produto e Histórias de Usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verf_casos_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Especificação de Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../istar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inspeção do iStar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pós-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pós-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pos-rastreabilidade/forward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forward-From
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pos-rastreabilidade/backward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backward-From
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sugestao-requisito/sugestao_de_requisito/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sugestão de Requisito
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reuniões
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reuniões
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/reuniao15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Entregas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#origem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criacao-de-um-design-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de um Design Simples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Criação de um Design Simples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-colaboracao-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Colaboração em Tempo Real
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Colaboração em Tempo Real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Exploração de Recursos Premium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Exploração de Recursos Premium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criacao-de-materiais-para-uma-campanha-publicitaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Criação de Materiais para uma Campanha Publicitária
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Criação de Materiais para uma Campanha Publicitária">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-adaptacao-de-um-design-para-diferentes-midias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Adaptação de um Design para Diferentes Mídias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Adaptação de um Design para Diferentes Mídias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-exportacao-de-um-projeto-em-alta-resolucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Exportação de um Projeto em Alta Resolução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Exportação de um Projeto em Alta Resolução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-compartilhamento-de-post-para-redes-sociais" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Compartilhamento de Post para Redes Sociais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Compartilhamento de Post para Redes Sociais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-login-e-logout-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Login e Logout na Plataforma Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Login e Logout na Plataforma Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-cenario-edicao-de-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Cenário: Edição de um Design Existente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Cenário: Edição de um Design Existente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-cenario-download-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Cenário: Download de um Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Cenário: Download de um Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-acesso-a-um-template-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Acesso a um Template Pronto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Acesso a um Template Pronto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-gerenciamento-de-pastas-e-projetos-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Gerenciamento de Pastas e Projetos no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Gerenciamento de Pastas e Projetos no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Utilização de Recursos de Inteligência Artificial no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Utilização de Recursos de Inteligência Artificial no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-personalizar-configuracoes-de-conta-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Personalizar Configurações de Conta no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Personalizar Configurações de Conta no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-acessar-suporte-e-atendimento-ao-cliente-no-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Acessar Suporte e Atendimento ao Cliente no Canva
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Acessar Suporte e Atendimento ao Cliente no Canva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-criacao-de-um-design-do-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Criação de um Design do Zero
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Criação de um Design do Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-feedback-de-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Feedback de um Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Feedback de um Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-criacao-de-materiais-educacionais-interativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Criação de Materiais Educacionais Interativos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Criação de Materiais Educacionais Interativos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      OBJETIVO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      CONTEXTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atores_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATORES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RECURSOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-condicao_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRÉ-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#episodios_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      EPISÓDIOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restricoes_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESTRIÇÕES
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pos-condicao_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      PÓS-CONDIÇÃO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultado-esperado_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RESULTADO ESPERADO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="cenarios"><strong>Cenários</strong></h1>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12/08/2024</td>
+<td>Adição dos primeiros cenários encontrados durante a análise de protocolo</td>
+<td>Luiza Maluf</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>16/07/2024</td>
+<td>Adição de mais cenários após avaliar os casos de uso.</td>
+<td>Luiza Maluf</td>
+<td><a href="../../../modelagem/cenarios/">1.0</a></td>
+</tr>
+<tr>
+<td>05/09/2024</td>
+<td>Correção dos cenários após <a href="../../verf_cenario/">verificação</a></td>
+<td>Henrique Quenino</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="origem">Origem</h2>
+<p>O desenvolvimento destes cenários foi dado a partir da <a href="../../../elicitacao/analise_protocolo/">análise de protocolo</a>, feita na parte de elicitação.</p>
+<p>Não satisfeitos com a quantidade de cenários e com uma visão diferente vinda da <a href="../../../modelagem/casos_de_uso/">Especificação de Casos de Uso</a>, foi possível identificar novos cenários.</p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Foi feita a navegação dentro da plataforma anotando os principais processos que o usuáro poderia efetuar.</p>
+<h3 id="1-criacao-de-um-design-simples"><strong>1. Criação de um Design Simples</strong></h3>
+<h4 id="objetivo"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> novato acessa o Canva e deseja criar um <a href="../../../modelagem/lexico/#Design">design</a> de cartão de visita.</p>
+<h4 id="contexto"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está acessando o Canva pela primeira vez e tem pouca experiência em <a href="../../../modelagem/lexico/#Design">design</a> gráfico.</p>
+<h4 id="atores"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar logado na plataforma Canva.</p>
+<h4 id="episodios"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz login na plataforma Canva.</li>
+<li>Navega pelos <a href="../../../modelagem/lexico/#Templates">templates</a> disponíveis e escolhe um para cartão de visita.</li>
+<li><a href="../../../modelagem/lexico/#Personalizar">Personaliza</a> o <a href="../../../modelagem/lexico/#Templates">template</a>, <a href="../../../modelagem/lexico/#Adicionar">inserindo</a> seu nome, cargo e informações de contato.</li>
+<li><a href="../../../modelagem/lexico/#Altera">Altera</a> as cores e <a href="#Fonte">fontes</a> de acordo com sua preferência.</li>
+<li>Visualiza o <a href="../../../modelagem/lexico/#Design">design</a> final e decide <a href="../../../modelagem/lexico/#Salvar">salvá-lo</a>.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> <a href="../../../modelagem/lexico/#Baixar">baixa</a> o <a href="../../../modelagem/lexico/#Design">design</a> para seu <a href="../../../modelagem/lexico/#Computador">Computador</a>.</li>
+</ol>
+<h4 id="restricoes"><strong>RESTRIÇÕES</strong></h4>
+<p><a href="../../../modelagem/lexico/#Usuário">Usuário</a> deve ter uma <a href="../../../modelagem/lexico/#Conta">conta</a> ativa na plataforma Canva.</p>
+<h4 id="pos-condicao"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p><a href="../../../modelagem/lexico/#Usuário">Usuário</a> <a href="../../../modelagem/lexico/#Criar">criou</a> e <a href="../../../modelagem/lexico/#Salvar">salvou</a> um cartão de visita simples, pronto para uso.</p>
+<h4 id="resultado-esperado"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue <a href="../../../modelagem/lexico/#Criar">criar</a> e <a href="../../../modelagem/lexico/#Salvar">salvar</a> um cartão de visita simples, ficando satisfeito com a facilidade de uso da <a href="../../../modelagem/lexico/#Ferramenta">ferramenta</a>.</p>
+<hr />
+<h3 id="2-colaboracao-em-tempo-real"><strong>2. Colaboração em Tempo Real</strong></h3>
+<h4 id="objetivo_1"><strong>OBJETIVO</strong></h4>
+<p>Dois <a href="../../../modelagem/lexico/#Usuário">usuários</a> <a href="../../../modelagem/lexico/#Colaboraçãi">colaboram</a> simultaneamente em um <a href="../../../modelagem/lexico/#Design">design</a> de <a href="../../../modelagem/lexico/#Apresentação">apresentação</a> para uma reunião de negócios.</p>
+<h4 id="contexto_1"><strong>CONTEXTO</strong></h4>
+<p>Os <a href="../../../modelagem/lexico/#Usuário">usuários</a> estão em locais diferentes, mas precisam trabalhar juntos no mesmo <a href="../../../modelagem/lexico/#Projeto">projeto</a> em tempo real na plataforma Canva.</p>
+<h4 id="atores_1"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuários</a></li>
+</ul>
+<h4 id="recursos_1"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva, <a href="../../../modelagem/lexico/#Chat">chat</a> <a href="../../../modelagem/lexico/#Integração">integrado</a>.</p>
+<h4 id="pre-condicao_1"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>Ambos os <a href="../../../modelagem/lexico/#Usuário">usuários</a> devem estar <a href="../../../modelagem/lexico/#Login">logados</a> na plataforma Canva e ter uma <a href="../../../modelagem/lexico/#Conexão">conexão</a> de internet estável.</p>
+<h4 id="episodios_1"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a> 1 <a href="../../../modelagem/lexico/#Criar">cria</a> uma <a href="../../../modelagem/lexico/#Apresentação">apresentação</a> no Canva.</li>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a> 1 <a href="../../../modelagem/lexico/#Compartilhar">compartilha</a> o link de <a href="../../../modelagem/lexico/#Edição">edição</a> do <a href="../../../modelagem/lexico/#Design">design</a> com o <a href="../../../modelagem/lexico/#Usuário">Usuário</a>.</li>
+<li>Ambos os <a href="../../../modelagem/lexico/#Usuário">usuários</a> abrem o <a href="../../../modelagem/lexico/#Design">design</a> <a href="../../../modelagem/lexico/#Simultâneo">simultaneamente</a> e começam a <a href="../../../modelagem/lexico/#Edição">editá-lo</a>.</li>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a> 1 trabalha nos primeiros <a href="../../../modelagem/lexico/#Slide">slides</a>, enquanto <a href="../../../modelagem/lexico/#Usuário">Usuário</a> <a href="../../../modelagem/lexico/#Edição">edita</a> os últimos slides.</li>
+<li>Os <a href="../../../modelagem/lexico/#Usuário">usuários</a> discutem as <a href="../../../modelagem/lexico/#Alteração">alterações</a> e ajustes necessários usando o <a href="../../../modelagem/lexico/#Chat">chat</a> <a href="../../../modelagem/lexico/#Integração">integrado</a> da <a href="../../../modelagem/lexico/#Plataforma">plataforma</a>.</li>
+<li>Ambos revisam o <a href="../../../modelagem/lexico/#Design">design</a> final juntos, fazem os ajustes necessários e <a href="../../../modelagem/lexico/#Salvar">salvam</a> o <a href="../../../modelagem/lexico/#Projeto">projeto</a>.</li>
+</ol>
+<h4 id="restricoes_1"><strong>RESTRIÇÕES</strong></h4>
+<p>Ambos os <a href="../../../modelagem/lexico/#Usuário">usuários</a> precisam ter <a href="../../../modelagem/lexico/#Permissão">permissão</a> de <a href="../../../modelagem/lexico/#Edição">edição</a> para colaborar no <a href="../../../modelagem/lexico/#Design">design</a>.</p>
+<h4 id="pos-condicao_1"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Design">design</a> da <a href="../../../modelagem/lexico/#Apresentação">apresentação</a> foi concluído e <a href="../../../modelagem/lexico/#Salvar">salvo</a>, estando pronto para a reunião.</p>
+<h4 id="resultado-esperado_1"><strong>RESULTADO ESPERADO</strong></h4>
+<p>Os dois <a href="../../../modelagem/lexico/#Usuário">usuários</a> conseguem <a href="../../../modelagem/lexico/#Colaboração">colaborar</a> em tempo real, completando o <a href="../../../modelagem/lexico/#Design">design</a> de forma eficiente e satisfatória.</p>
+<hr />
+<h3 id="3-exploracao-de-recursos-premium"><strong>3. Exploração de Recursos Premium</strong></h3>
+<h4 id="objetivo_2"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> <a href="../../../modelagem/lexico/#Gratuito">gratuito</a> explora os benefícios de um <a href="../../../modelagem/lexico/#Assinatura">plano de assinatura</a> para decidir se vale a pena <a href="../../../modelagem/lexico/#Assinar">assiná-lo</a>.</p>
+<h4 id="contexto_2"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> sente que as opções <a href="../../../modelagem/lexico/#Gratuito">gratuitas</a> são limitadas e deseja saber se vale a pena <a href="../../../modelagem/lexico/#Assinar">assinar</a> um <a href="../../../modelagem/lexico/#Assinatura">plano</a>.</p>
+<h4 id="atores_2"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_2"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_2"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar logado na plataforma Canva.</p>
+<h4 id="episodios_2"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> navega pelos <a href="../../../modelagem/lexico/#Templates">templates</a> gratuitos, mas não encontra algo que atenda às suas necessidades.</li>
+<li>Ele vê a indicação de <a href="../../../modelagem/lexico/#Templates">templates</a> Premium e resolve clicar para ver as opções.</li>
+<li>Um pop-up aparece explicando os benefícios do <a href="../../../modelagem/lexico/#Assinatura">plano de assinatura</a>, como acesso a <a href="../../../modelagem/lexico/#Templates">templates</a> exclusivos e recursos adicionais.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> decide experimentar o <a href="../../../modelagem/lexico/#Assinatura">plano</a> por 30 dias <a href="../../../modelagem/lexico/#Gratuito">gratuitamente</a>.</li>
+<li>Após a ativação, ele começa a usar os <a href="../../../modelagem/lexico/#Templates">templates</a> Premium e nota a diferença na qualidade e variedade.</li>
+</ol>
+<h4 id="restricoes_2"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter uma <a href="../../../modelagem/lexico/#Conta">conta</a> ativa na plataforma Canva.</p>
+<h4 id="pos-condicao_2"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> explora os recursos Premium e decide se continuará com a <a href="../../../modelagem/lexico/#Assinatura">assinatura</a> após o período de <a href="../../../modelagem/lexico/#Teste">teste</a>.</p>
+<h4 id="resultado-esperado_2"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> percebe o valor dos <a href="../../../modelagem/lexico/#Recuros">recursos</a> <a href="../../../modelagem/lexico/#Assinatura">Premium</a> e decide continuar com a <a href="../../../modelagem/lexico/#Assinatura">assinatura</a> após o período de <a href="../../../modelagem/lexico/#Teste">teste</a>.</p>
+<hr />
+<h3 id="4-criacao-de-materiais-para-uma-campanha-publicitaria"><strong>4. Criação de Materiais para uma Campanha Publicitária</strong></h3>
+<h4 id="objetivo_3"><strong>OBJETIVO</strong></h4>
+<p>Uma <a href="../../../modelagem/lexico/#Equipe">equipe</a> de marketing utiliza o Canva para criar <a href="../../../modelagem/lexico/#Elementos-Gráficos">materiais gráficos</a> para uma campanha publicitária.</p>
+<h4 id="contexto_3"><strong>CONTEXTO</strong></h4>
+<p>A <a href="../../../modelagem/lexico/#Equipe">equipe</a> precisa garantir que todos os materiais tenham uma <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> consistente e atraente.</p>
+<h4 id="atores_3"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Designer">Designer</a></li>
+<li>Gerente de Marketing</li>
+</ul>
+<h4 id="recursos_3"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_3"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>A <a href="../../../modelagem/lexico/#Equipe">equipe</a> de marketing deve estar <a href="../../../modelagem/lexico/#Alinhamento">alinhada</a> quanto à <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> da campanha.</p>
+<h4 id="episodios_3"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Designer">Designer</a> seleciona um conjunto de <a href="../../../modelagem/lexico/#Template">templates</a> que combinam entre si para garantir consistência visual.</li>
+<li>Adapta cada <a href="../../../modelagem/lexico/#Template">Templates</a> para diferentes formatos (<a href="../../../modelagem/lexico/#Publicação">postagem</a> em redes sociais, banners para site, e-mail marketing).</li>
+<li>Utiliza <a href="../../../modelagem/lexico/#Elementos-Gráficos">elementos gráficos</a> e o <a href="../../../modelagem/lexico/#Banco-de-Imagens">Banco de Imagens</a> para enriquecer os materiais.</li>
+<li>O <a href="../../../modelagem/lexico/#Gerente-de-Marketing">gerente de marketing</a> revisa e sugere pequenas <a href="../../../modelagem/lexico/#Alterar">alterações</a>.</li>
+<li>Após aprovação, o <a href="../../../modelagem/lexico/#[Designer](../../modelagem/lexico.md#Designer)">[Designer](../../modelagem/lexico.md#Designer)</a> <a href="../../../modelagem/lexico/#Exportação">exporta</a> os materiais nos formatos necessários.</li>
+<li>Os materiais são <a href="../../../modelagem/lexico/#Compartilhamento">compartilhados</a> com a <a href="../../../modelagem/lexico/#Equipe">equipe</a> e publicados conforme o cronograma da campanha.</li>
+</ol>
+<h4 id="restricoes_3"><strong>RESTRIÇÕES</strong></h4>
+<p>A <a href="../../../modelagem/lexico/#Equipe">equipe</a> deve respeitar o prazo da campanha e as diretrizes de <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> estabelecidas.</p>
+<h4 id="pos-condicao_3"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>Os <a href="../../../modelagem/lexico/#elementos-gráficos-elementos-gráficos">materiais gráficos</a> estão prontos e <a href="../../../modelagem/lexico/#Alinhamento">alinhados</a> com a <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> da campanha.</p>
+<h4 id="resultado-esperado_3"><strong>RESULTADO ESPERADO</strong></h4>
+<p>A <a href="../../../modelagem/lexico/#Equipe">equipe</a> de marketing consegue <a href="../../../modelagem/lexico/#Criar">criar</a> uma campanha coesa e visualmente atraente, melhorando a identidade da marca.</p>
+<hr />
+<h3 id="5-adaptacao-de-um-design-para-diferentes-midias"><strong>5. Adaptação de um Design para Diferentes Mídias</strong></h3>
+<h4 id="objetivo_4"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Designer">Designer</a> adapta um único <a href="../../../modelagem/lexico/#Design">design</a> para diferentes mídias, como cartazes impressos, posts em redes sociais e banners para sites.</p>
+<h4 id="contexto_4"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Designer">Designer</a> precisa garantir que a mensagem e a <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> sejam mantidas em todos os formatos.</p>
+<h4 id="atores_4"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Designer">Designer</a></li>
+</ul>
+<h4 id="recursos_4"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_4"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Designer">Designer</a> deve ter acesso aos <a href="../../../modelagem/lexico/#Templates">templates</a> originais e aos requisitos específicos de cada mídia.</p>
+<h4 id="episodios_4"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Designer">Designer</a> seleciona o <a href="../../../modelagem/lexico/#Design">design</a> original no Canva.</li>
+<li>Duplica o <a href="../../../modelagem/lexico/#Design">design</a> e ajusta as dimensões para cada mídia (A4 para cartazes, 1080x1080 para posts, etc.).</li>
+<li>Reposiciona os <a href="../../../modelagem/lexico/#Elementos-Gráficos">elementos gráficos</a> conforme necessário para manter o equilíbrio visual.</li>
+<li>Ajusta o tamanho das fontes e o espaçamento para garantir legibilidade em cada formato.</li>
+<li>Revisa cada adaptação e <a href="../../../modelagem/lexico/#Exportação">exporta</a> os <a href="../../../modelagem/lexico/#Arquivo">arquivos</a> nos formatos apropriados.</li>
+</ol>
+<h4 id="restricoes_4"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Designer">Designer</a> deve garantir que a mensagem principal permaneça clara em todas as adaptações.</p>
+<h4 id="pos-condicao_4"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>Os <a href="../../../modelagem/lexico/#Design">designs</a> estão prontos para uso em diferentes mídias.</p>
+<h4 id="resultado-esperado_4"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Designer">Designer</a> adapta com sucesso o <a href="../../../modelagem/lexico/#Design">design</a> original para diferentes mídias, mantendo a consistência da mensagem e da <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a>.</p>
+<hr />
+<h3 id="6-exportacao-de-um-projeto-em-alta-resolucao"><strong>6. Exportação de um Projeto em Alta Resolução</strong></h3>
+<h4 id="objetivo_5"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Designer">Designer</a> exporta um <a href="../../../modelagem/lexico/#Projeto">projeto</a> gráfico em alta resolução para impressão profissional.</p>
+<h4 id="contexto_5"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Designer">Designer</a> precisa garantir que o <a href="../../../modelagem/lexico/#Arquivo">arquivo</a> final tenha qualidade suficiente para impressão em grande escala.</p>
+<h4 id="atores_5"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_5"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_5"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Projeto">projeto</a> deve estar finalizado e revisado.</p>
+<h4 id="episodios_5"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> abre o <a href="../../../modelagem/lexico/#Projeto">projeto</a> no Canva.</li>
+<li>Seleciona a opção de <a href="../../../modelagem/lexico/#Exportação">exportação</a> e escolhe o formato adequado (por exemplo, PDF para impressão).</li>
+<li>Ajusta as configurações de resolução para a máxima qualidade disponível.</li>
+<li>Revisa as opções de margens, caso necessário.</li>
+<li><a href="../../../modelagem/lexico/#Exportação">Exporta</a> o <a href="../../../modelagem/lexico/#Arquivo">arquivo</a> e faz o download.</li>
+</ol>
+<h4 id="restricoes_5"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve garantir que as configurações de <a href="../../../modelagem/lexico/#Exportação">exportação</a> atendam aos requisitos da impressão.</p>
+<h4 id="pos-condicao_5"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Projeto">projeto</a> está pronto para ser enviado para a gráfica.</p>
+<h4 id="resultado-esperado_5"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue <a href="../../../modelagem/lexico/#Exportação">exportar</a> o <a href="../../../modelagem/lexico/#Projeto">projeto</a> em alta resolução, garantindo uma impressão de alta qualidade.</p>
+<hr />
+<h3 id="7-compartilhamento-de-post-para-redes-sociais"><strong>7. Compartilhamento de Post para Redes Sociais</strong></h3>
+<h4 id="objetivo_6"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> <a href="../../../modelagem/lexico/#Criar">cria</a> e <a href="../../../modelagem/lexico/#Compartilhamento">compartilha</a> um post visual para promover um novo produto em diversas redes sociais.</p>
+<h4 id="contexto_6"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja utilizar o Canva para <a href="../../../modelagem/lexico/#Criar">criar</a> um post atraente que será <a href="../../../modelagem/lexico/#Compartilhamento">compartilhado</a> em múltiplas plataformas sociais para maximizar o alcance do novo produto.</p>
+<h4 id="atores_6"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_6"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva, <a href="../../../modelagem/lexico/#Conta">contas</a> nas redes sociais (Instagram, Facebook, Twitter, LinkedIn).</p>
+<h4 id="pre-condicao_6"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter as imagens do produto, textos promocionais e informações sobre as redes sociais onde o post será <a href="../../../modelagem/lexico/#Compartilhamento">compartilhado</a>.</p>
+<h4 id="episodios_6"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa o Canva e escolhe um <a href="../../../modelagem/lexico/#Templates">template</a> de post adequado para redes sociais.</li>
+<li>Personaliza o <a href="../../../modelagem/lexico/#Design">design</a> com imagens do produto, texto promocional e hashtags relevantes.</li>
+<li>Ajusta o <a href="../../../modelagem/lexico/#Tamplate">layout</a> e o <a href="../../../modelagem/lexico/#Design">design</a> para atender às diretrizes específicas de cada plataforma social.</li>
+<li>Revê o post para garantir que todos os detalhes estejam corretos e que o <a href="../../../modelagem/lexico/#Design">design</a> esteja otimizado para cada rede social.</li>
+<li><a href="../../../modelagem/lexico/#Exportação">Exporta</a> o post no formato adequado para cada <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> (Instagram, Facebook, Twitter, LinkedIn).</li>
+<li><a href="../../../modelagem/lexico/#Compartilhamento">Compartilha</a> o post diretamente nas <a href="../../../modelagem/lexico/#Contass">contas</a> de redes sociais usando as <a href="../../../modelagem/lexico/#Ferramenta">ferramentas</a> de <a href="../../../modelagem/lexico/#Itegração">integração</a> do Canva ou faz o upload manualmente em cada plataforma.</li>
+</ol>
+<h4 id="restricoes_6"><strong>RESTRIÇÕES</strong></h4>
+<p>Os posts devem seguir as diretrizes de tamanho e formato recomendadas por cada rede social para garantir uma boa visualização e desempenho.</p>
+<h4 id="pos-condicao_6"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>Os posts estão <a href="../../../modelagem/lexico/#Publicação">publicados</a> e visíveis nas redes sociais selecionadas.</p>
+<h4 id="resultado-esperado_6"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> cria e <a href="../../../modelagem/lexico/#Compartilhamento">compartilha</a> posts atraentes que promovem eficazmente o novo produto, engajando os seguidores em diversas redes sociais.</p>
+<hr />
+<h3 id="8-login-e-logout-na-plataforma-canva"><strong>8. Login e Logout na Plataforma Canva</strong></h3>
+<h4 id="objetivo_7"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa sua conta na plataforma Canva para <a href="../../../modelagem/lexico/#Criar">criar</a> e gerenciar <a href="../../../modelagem/lexico/#Design">design</a>, e depois realiza o <a href="../../../modelagem/lexico/#Logout">logout</a> para garantir a segurança da conta.</p>
+<h4 id="contexto_7"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> precisa acessar sua <a href="../../../modelagem/lexico/#Conta">conta</a> na plataforma Canva para trabalhar em <a href="../../../modelagem/lexico/#Projetos">projetos</a> e, após concluir seu trabalho, deseja fazer <a href="../../../modelagem/lexico/#Logout">logout</a> para proteger suas informações.</p>
+<h4 id="atores_7"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_7"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_7"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter uma <a href="../../../modelagem/lexico/#Conta">conta</a> ativa na plataforma Canva e conhecer suas credenciais de <a href="../../../modelagem/lexico/#Login">login</a>.</p>
+<h4 id="episodios_7"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> <a href="../../../modelagem/lexico/#Acesso">acessa</a> a página de <a href="../../../modelagem/lexico/#Login">login</a> do Canva.</li>
+<li>Insere seu nome de <a href="../../../modelagem/lexico/#Usuário">usuário</a> e senha.</li>
+<li>Clica no botão de login para <a href="../../../modelagem/lexico/#Acesso">acessar</a> sua <a href="../../../modelagem/lexico/#Conta">conta</a>.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> usa a plataforma Canva para <a href="../../../modelagem/lexico/#Criar">criar</a> ou gerenciar <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+<li>Após concluir suas atividades, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> localiza a opção de <a href="../../../modelagem/lexico/#Logout">logout</a> no menu de perfil.</li>
+<li>Clica na opção de <a href="../../../modelagem/lexico/#Logout">logout</a> para sair da conta.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> é redirecionado para a página de <a href="../../../modelagem/lexico/#Login">login</a> ou para a página inicial do Canva.</li>
+</ol>
+<h4 id="restricoes_7"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve lembrar suas credenciais para realizar o <a href="../../../modelagem/lexico/#Login">login</a>. Após o <a href="../../../modelagem/lexico/#Logout">logout</a>, é necessário fazer <a href="../../../modelagem/lexico/#Login">login</a> novamente para <a href="../../../modelagem/lexico/#Acesso">acessar</a> a <a href="../../../modelagem/lexico/#Conta">conta</a>.</p>
+<h4 id="pos-condicao_7"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> foi desconectado da sua <a href="../../../modelagem/lexico/#Conta">conta</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva, garantindo que suas informações estejam seguras.</p>
+<h4 id="resultado-esperado_7"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue fazer <a href="../../../modelagem/lexico/#Login">login</a> e <a href="../../../modelagem/lexico/#Logout">logout</a> com sucesso, garantindo o <a href="../../../modelagem/lexico/#Acesso">acesso</a> e a segurança de sua <a href="../../../modelagem/lexico/#Conta">conta</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva.</p>
+<hr />
+<h3 id="9-cenario-edicao-de-um-design-existente"><strong>9. Cenário: Edição de um Design Existente</strong></h3>
+<h4 id="objetivo_8"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja <a href="../../../modelagem/lexico/#Edição">editar</a> um <a href="../../../modelagem/lexico/#Design">design</a> já existente na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva para ajusta-lo às suas novas necessidades.</p>
+<h4 id="contexto_8"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> já criou ou tem acesso a um design na plataforma Canva e agora precisa modificá-lo para atualizá-lo ou adaptá-lo a um novo propósito.</p>
+<h4 id="atores_8"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_8"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_8"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva e ter <a href="../../../modelagem/lexico/#Acesso">acesso</a> ao <a href="../../../modelagem/lexico/#Design">design</a> que deseja <a href="../../../modelagem/lexico/#Edição">editar</a>.</p>
+<h4 id="episodios_8"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> no Canva.</li>
+<li>Navega até a seção "Meus Designs" ou utiliza a barra de pesquisa para localizar o <a href="../../../modelagem/lexico/#Design">design</a> existente.</li>
+<li>Clica no <a href="../../../modelagem/lexico/#Design">design</a> desejado para abri-lo na interface de <a href="../../../modelagem/lexico/#Edição">edição</a>.</li>
+<li>Realiza as modificações necessárias, como alteração de texto, imagens, cores e layout.</li>
+<li>Visualiza as mudanças em tempo real para garantir que o <a href="../../../modelagem/lexico/#Design">design</a> atende às novas necessidades.</li>
+<li>Salva as alterações e, se necessário, exporta o <a href="../../../modelagem/lexico/#Design">design</a> modificado nos formatos desejados.</li>
+</ol>
+<h4 id="restricoes_8"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve garantir que todas as <a href="../../../modelagem/lexico/#Alterações">alterações</a> estejam de acordo com os requisitos do projeto ou com a nova finalidade do design.</p>
+<h4 id="pos-condicao_8"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O design foi <a href="../../../modelagem/lexico/#Edição">editado</a> com sucesso e está pronto para ser usado conforme o novo propósito.</p>
+<h4 id="resultado-esperado_8"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue <a href="../../../modelagem/lexico/#Edição">editar</a> o <a href="../../../modelagem/lexico/#Design">design</a> existente de maneira eficaz, adaptando-o às suas novas necessidades e garantindo que o resultado final esteja de acordo com as expectativas.</p>
+<hr />
+<h3 id="10-cenario-download-de-um-design"><strong>10. Cenário: Download de um Design</strong></h3>
+<h4 id="objetivo_9"><strong>OBJETIVO</strong></h4>
+<p>Um <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja <a href="../../../modelagem/lexico/#Baixar">baixar</a> um <a href="../../../modelagem/lexico/#Design">design</a> da <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva para utilizá-lo fora da plataforma, como para impressão ou <a href="../../../modelagem/lexico/#Compartilhamento">compartilhamento</a>.</p>
+<h4 id="contexto_9"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> terminou de <a href="../../../modelagem/lexico/#Criar">criar</a> ou <a href="../../../modelagem/lexico/#Edição">editar</a> um <a href="../../../modelagem/lexico/#Design">design</a> na plataforma Canva e agora precisa <a href="../../../modelagem/lexico/#Baixar">baixá-lo</a> para uso offline ou compartilhamento em outras plataformas.</p>
+<h4 id="atores_9"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_9"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_9"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva e ter um <a href="../../../modelagem/lexico/#Design">design</a> finalizado e pronto para o download.</p>
+<h4 id="episodios_9"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> no Canva.</li>
+<li>Navega até o <a href="../../../modelagem/lexico/#Design">design</a> finalizado que deseja baixar, acessando-o através da seção "Meus Designs" ou utilizando a barra de pesquisa.</li>
+<li>Clica no <a href="../../../modelagem/lexico/#Design">design</a> desejado e clica no botão de "Download" no canto superior direito da interface.</li>
+<li>Escolhe o formato de arquivo desejado (por exemplo, PNG, JPEG, PDF) e ajusta as configurações de qualidade, resolução ou margens, se necessário.</li>
+<li>Confirma as opções e inicia o download do arquivo.</li>
+<li>O design é baixado para o dispositivo do usuário, ficando disponível para uso offline.</li>
+</ol>
+<h4 id="restricoes_9"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve garantir que escolheu o formato de <a href="../../../modelagem/lexico/#Arquivo">arquivo</a> correto e configurou as opções de download conforme a finalidade do design.</p>
+<h4 id="pos-condicao_9"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O design foi <a href="../../../modelagem/lexico/#Baixar">baixado</a> com sucesso e está pronto para ser usado conforme o necessário.</p>
+<h4 id="resultado-esperado_9"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue <a href="../../../modelagem/lexico/#Baixar">baixar</a> o <a href="../../../modelagem/lexico/#Design">design</a> no formato desejado, com a qualidade adequada, pronto para o uso offline ou compartilhado.</p>
+<hr />
+<h3 id="11-acesso-a-um-template-pronto"><strong>11. Acesso a um <a href="../../../modelagem/lexico/#Templates">Template</a> Pronto</strong></h3>
+<h4 id="objetivo_10"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja acessar um <a href="../../../modelagem/lexico/#Templates">template</a> pronto na plataforma Canva para iniciar a criação de um <a href="../../../modelagem/lexico/#Design">design</a> personalizado.</p>
+<h4 id="contexto_10"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está na plataforma Canva e deseja utilizar um <a href="../../../modelagem/lexico/#Templates">template</a> pré-definido como base para criar um novo <a href="../../../modelagem/lexico/#Design">design</a>.
+<strong>ATORES</strong>#### </p>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_10"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_10"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva.</p>
+<h4 id="episodios_10"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> no Canva.</li>
+<li>Na página inicial, o usuário navega até a seção de "Templates" ou utiliza a barra de pesquisa para buscar um <a href="../../../modelagem/lexico/#Templates">template</a> específico.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> explora as categorias disponíveis, como "Cartões de Visita," "Apresentações," "Postagens para Redes Sociais," entre outras.</li>
+<li>Seleciona o <a href="../../../modelagem/lexico/#Templates">template</a> que melhor atende às suas necessidades.</li>
+<li>Abre o <a href="../../../modelagem/lexico/#Templates">template</a> escolhido, visualizando uma prévia do <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+<li>Clica no botão "Usar este template" para iniciar a personalização do <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+</ol>
+<h4 id="restricoes_10"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve garantir que escolheu um <a href="../../../modelagem/lexico/#Templates">template</a> adequado ao seu propósito antes de iniciar a personalização.</p>
+<h4 id="pos-condicao_10"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O usuário tem o <a href="../../../modelagem/lexico/#Templates">template</a> pronto aberto na interface de edição do Canva, pronto para ser personalizado conforme desejado.</p>
+<h4 id="resultado-esperado_10"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O usuário consegue acessar e abrir um <a href="../../../modelagem/lexico/#Templates">template</a> pronto na plataforma Canva, facilitando o início da criação de um <a href="../../../modelagem/lexico/#Design">design</a> personalizado.</p>
+<hr />
+<h3 id="12-gerenciamento-de-pastas-e-projetos-no-canva"><strong>12. Gerenciamento de Pastas e Projetos no Canva</strong></h3>
+<h4 id="objetivo_11"><strong>OBJETIVO</strong></h4>
+<p>O usuário deseja organizar seus projetos de <a href="../../../modelagem/lexico/#Design">design</a> criando e gerenciando pastas na plataforma Canva.</p>
+<h4 id="contexto_11"><strong>CONTEXTO</strong></h4>
+<p>O usuário possui vários projetos na plataforma Canva e deseja organizá-los de forma eficiente para facilitar o acesso e a gestão.</p>
+<h4 id="atores_10"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_11"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_11"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva e ter <a href="../../../modelagem/lexico/#Projetos">projetos</a> criados.</p>
+<h4 id="episodios_11"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> no Canva.</li>
+<li><a href="../../../modelagem/lexico/#Acesso">Acessa</a> a seção "Meus Designs" ou utiliza a barra de pesquisa para localizar os projetos que deseja organizar.</li>
+<li>Identifica a necessidade de organizar os projetos em pastas.</li>
+<li>Clica na opção "Criar nova pasta" e dá um nome à nova pasta, como "Projetos de Marketing" ou "Apresentações 2024".</li>
+<li>Após criar a pasta, o usuário arrasta e solta os projetos desejados dentro da pasta ou seleciona os projetos e usa a opção "Mover para a pasta" no menu de contexto.</li>
+<li>O usuário também pode criar subpastas dentro das pastas principais para uma organização mais detalhada.</li>
+<li>Se necessário, o usuário renomeia, exclui ou move as pastas conforme as necessidades de organização.</li>
+<li>Para localizar rapidamente um projeto específico, o usuário utiliza a barra de pesquisa ou navega pelas pastas organizadas.</li>
+</ol>
+<h4 id="restricoes_11"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve organizar os projetos de maneira lógica para facilitar o acesso futuro. O Canva pode ter limitações no número de subpastas ou no número de projetos por pasta, dependendo do plano de assinatura.</p>
+<h4 id="pos-condicao_11"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>Os projetos estão organizados em pastas, permitindo que o <a href="../../../modelagem/lexico/#Usuário">usuário</a> acesse e gerencie seus <a href="../../../modelagem/lexico/#Design">designs</a> de forma mais eficiente.</p>
+<h4 id="resultado-esperado_11"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue criar, organizar e gerenciar pastas para seus projetos na plataforma Canva, melhorando a eficiência na navegação e no gerenciamento dos <a href="../../../modelagem/lexico/#Design">designs</a>.</p>
+<hr />
+<h3 id="13-utilizacao-de-recursos-de-inteligencia-artificial-no-canva"><strong>13. Utilização de Recursos de Inteligência Artificial no Canva</strong></h3>
+<h4 id="objetivo_12"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja utilizar os recursos de inteligência artificial (IA) do Canva para aprimorar seus <a href="../../../modelagem/lexico/#Design">designs</a>, como a geração de textos automáticos ou a criação de elementos gráficos personalizados.</p>
+<h4 id="contexto_12"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está trabalhando em um projeto de <a href="../../../modelagem/lexico/#Design">design</a> no Canva e deseja explorar as ferramentas de IA disponíveis para acelerar o processo criativo e melhorar a qualidade do <a href="../../../modelagem/lexico/#Design">design</a>.</p>
+<h4 id="atores_11"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_12"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web, plataforma Canva.</p>
+<h4 id="pre-condicao_12"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva e ter um <a href="../../../modelagem/lexico/#Projetos">projeto</a> aberto.</p>
+<h4 id="episodios_12"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> no Canva e abre um projeto.</li>
+<li>No painel de ferramentas, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> identifica a seção de "Recursos de IA" ou uma ferramenta específica de IA, como "Gerador de Texto" ou "Criação Automática de Elementos Gráficos".</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> seleciona o recurso de IA que deseja utilizar, como a geração de texto automático para uma manchete ou a sugestão de paletas de cores personalizadas.</li>
+<li>Se utilizando da IA, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> insere palavras-chave ou instruções sobre o que deseja gerar (por exemplo, "slogan para campanha de verão" ou "ilustração abstrata para fundo").</li>
+<li>A IA processa as informações e apresenta sugestões ou gera os elementos solicitados.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> revisa as sugestões e, se necessário, faz ajustes manuais para alinhar o resultado com o objetivo do projeto.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> integra os elementos gerados pela IA ao <a href="../../../modelagem/lexico/#Design">design</a> e continua a personalização conforme necessário.</li>
+<li>Se satisfeito com o resultado, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> salva o projeto final ou faz uma exportação.</li>
+</ol>
+<h4 id="restricoes_12"><strong>RESTRIÇÕES</strong></h4>
+<p>Os recursos de IA podem ter limitações em termos de complexidade de geração ou em quantidade de opções oferecidas, dependendo do plano de assinatura do Canva.</p>
+<h4 id="pos-condicao_12"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Design">design</a> do projeto foi aprimorado com a ajuda dos recursos de IA, economizando tempo e aumentando a qualidade do resultado.</p>
+<h4 id="resultado-esperado_12"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O u<a href="../../../modelagem/lexico/#Usuário">usuário</a>suário consegue utilizar eficazmente os recursos de inteligência artificial do Canva, como a geração automática de texto ou a criação de elementos gráficos, melhorando a eficiência do processo de <a href="../../../modelagem/lexico/#Design">design</a> e o resultado final.</p>
+<hr />
+<h3 id="14-personalizar-configuracoes-de-conta-no-canva"><strong>14. Personalizar Configurações de Conta no Canva</strong></h3>
+<h4 id="objetivo_13"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja personalizar as configurações de sua conta no Canva para adaptar a plataforma às suas preferências e necessidades específicas.</p>
+<h4 id="contexto_13"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está logado em sua conta no Canva e quer ajustar configurações como idioma, notificações, métodos de pagamento, ou privacidade para otimizar sua experiência na plataforma.</p>
+<h4 id="atores_12"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_13"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<h4 id="pre-condicao_13"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva.</p>
+<h4 id="episodios_13"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz login na plataforma Canva e acessa a página inicial.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> localiza o menu de configurações de conta, geralmente acessível através do ícone de perfil ou das opções de menu.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> clica na opção "Configurações de Conta" para abrir a página de configurações.</li>
+<li>Na página de configurações, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> navega entre as diferentes categorias, como "Informações Pessoais", "Notificações", "Segurança", "Preferências de Idioma", ou "Faturamento e Pagamentos".</li>
+<li>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> seleciona a categoria que deseja personalizar. Por exemplo:</p>
+<ul>
+<li>
+<p>Para alterar o idioma da plataforma, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa "Preferências de Idioma" e escolhe o idioma desejado.</p>
+</li>
+<li>
+<p>Para ajustar as notificações, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa "Notificações" e escolhe quais tipos de alertas deseja receber por email ou no aplicativo.</p>
+</li>
+<li>
+<p>Para atualizar métodos de pagamento, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa "Faturamento e Pagamentos" e adiciona ou modifica as opções de pagamento.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Após fazer as alterações desejadas, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> salva as configurações.</p>
+</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> revisa as mudanças feitas para garantir que as configurações estão corretas e de acordo com suas preferências.</li>
+<li>Caso necessário, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz novos ajustes ou retorna à página inicial do Canva.</li>
+</ol>
+<h4 id="restricoes_13"><strong>RESTRIÇÕES</strong></h4>
+<p>Algumas opções de personalização podem estar disponíveis apenas para <a href="../../../modelagem/lexico/#Usuário">usuários</a> com planos de assinatura específicos, como o Canva Pro.</p>
+<h4 id="pos-condicao_13"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>As configurações da conta do <a href="../../../modelagem/lexico/#Usuário">usuário</a> no Canva são atualizadas conforme as preferências definidas.</p>
+<h4 id="resultado-esperado_13"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue personalizar as configurações de sua conta no Canva, adaptando a plataforma às suas preferências e melhorando sua experiência de uso.</p>
+<hr />
+<h3 id="15-acessar-suporte-e-atendimento-ao-cliente-no-canva"><strong>15. Acessar Suporte e Atendimento ao Cliente no Canva</strong></h3>
+<h4 id="objetivo_14"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja acessar o suporte e atendimento ao cliente do Canva para resolver dúvidas, problemas técnicos, ou obter informações sobre a plataforma. </p>
+<h4 id="contexto_14"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está utilizando a plataforma Canva e encontra dificuldades ou questões que não consegue resolver sozinho. Ele decide buscar ajuda através dos canais de suporte disponíveis.</p>
+<h4 id="atores_13"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+<li>Representante de Suporte do Canva</li>
+</ul>
+<h4 id="recursos_14"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<h4 id="pre-condicao_14"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva.</p>
+<h4 id="episodios_14"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz login na plataforma Canva e acessa a página inicial.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> localiza a seção de "Ajuda" ou "Suporte", geralmente disponível no rodapé da página ou no menu de perfil.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> clica na opção "Ajuda" para acessar a central de suporte do Canva.</li>
+<li>
+<p>Na central de suporte, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> pode:</p>
+<ul>
+<li>
+<p>Explorar artigos e tutoriais disponíveis na base de conhecimento do Canva para encontrar uma solução para sua dúvida.</p>
+</li>
+<li>
+<p>Utilizar a barra de pesquisa para digitar palavras-chave relacionadas ao problema ou questão.</p>
+</li>
+</ul>
+<p>-Acessar as perguntas frequentes (FAQ) para verificar se a dúvida já foi respondida.</p>
+</li>
+<li>
+<p>Se o <a href="../../../modelagem/lexico/#Usuário">usuário</a> não encontrar a solução nas opções anteriores, ele pode optar por:</p>
+<ul>
+<li>
+<p>Entrar em contato com o suporte ao cliente via <a href="../../../modelagem/lexico/#Chat">chat</a> ao vivo, se disponível.</p>
+</li>
+<li>
+<p>Enviar uma solicitação de suporte por email, detalhando o problema e aguardando a resposta da <a href="../../../modelagem/lexico/#Equipe">equipe</a>.</p>
+</li>
+<li>
+<p>Acessar a comunidade do Canva para interagir com outros <a href="../../../modelagem/lexico/#Usuário">usuários</a> e buscar soluções colaborativas.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> escolhe o canal de atendimento mais adequado para sua necessidade e segue as instruções fornecidas para entrar em contato com o suporte.</p>
+</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> aguarda a resposta do suporte e, caso solicitado, segue as orientações fornecidas para resolver o problema.</li>
+<li>Caso necessário, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz novos ajustes ou retorna à página inicial do Canva.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> confirma que o problema foi resolvido ou, se necessário, continua o diálogo com o suporte até a conclusão.</li>
+</ol>
+<h4 id="restricoes_14"><strong>RESTRIÇÕES</strong></h4>
+<p>O tempo de resposta do suporte pode variar dependendo do canal escolhido e do plano de assinatura do <a href="../../../modelagem/lexico/#Usuário">usuário</a>.</p>
+<h4 id="pos-condicao_14"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> recebe o suporte necessário para resolver seu problema ou esclarecer suas dúvidas.</p>
+<h4 id="resultado-esperado_14"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue acessar o suporte e atendimento ao cliente do Canva, resolve seu problema ou obtém a informação necessária, e retoma suas atividades na plataforma com sucesso.</p>
+<h3 id="16-criacao-de-um-design-do-zero"><strong>16. Criação de um Design do Zero</strong></h3>
+<h4 id="objetivo_15"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja criar um <a href="../../../modelagem/lexico/#Design">design</a> do zero na plataforma Canva, sem utilizar <a href="../../../modelagem/lexico/#Templates">templates</a> pré-definidos, para desenvolver um projeto personalizado.</p>
+<h4 id="contexto_15"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> tem uma ideia clara do <a href="../../../modelagem/lexico/#Design">design</a> que deseja criar e prefere começar do zero, sem utilizar <a href="../../../modelagem/lexico/#Templates">templates</a> existentes, para ter total liberdade criativa e personalização.</p>
+<h4 id="atores_14"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+</ul>
+<h4 id="recursos_15"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<h4 id="pre-condicao_15"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva.</p>
+<h4 id="episodios_15"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> na plataforma Canva.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> clica no botão "Criar um design" ou "Design em branco" para iniciar um novo projeto do zero.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> seleciona o tipo de <a href="../../../modelagem/lexico/#Design">design</a> que deseja criar, como "Cartão de Visita", "Banner", "Apresentação", ou "Postagem para Redes Sociais".</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> define as dimensões, orientação, e outras configurações iniciais do <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> acessa as ferramentas de edição, como textos, formas, imagens, e ícones, para começar a construir o <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> adiciona elementos ao <a href="../../../modelagem/lexico/#Design">design</a>, como textos, imagens, gráficos, e outros elementos visuais, de acordo com sua visão criativa.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> personaliza as cores, fontes, tamanhos, e outros detalhes do <a href="../../../modelagem/lexico/#Design">design</a> para refletir sua <a href="../../../modelagem/lexico/#Identidade-Visual">identidade visual</a> ou estilo desejado.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> revisa o <a href="../../../modelagem/lexico/#Design">design</a> em tempo real, fazendo ajustes conforme necessário para alcançar o resultado desejado.</li>
+<li>Após finalizar o <a href="../../../modelagem/lexico/#Design">design</a>, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> salva o projeto e, se necessário, faz uma exportação nos formatos desejados.</li>
+</ol>
+<h4 id="restricoes_15"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter conhecimento básico das ferramentas de edição do Canva para criar um <a href="../../../modelagem/lexico/#Design">design</a> do zero com eficácia.</p>
+<h4 id="pos-condicao_15"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Design">design</a> foi criado do zero com sucesso, refletindo a visão criativa e personalizada do <a href="../../../modelagem/lexico/#Usuário">usuário</a>.</p>
+<h4 id="resultado-esperado_15"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue criar um <a href="../../../modelagem/lexico/#Design">design</a> do zero na plataforma Canva, sem utilizar <a href="../../../modelagem/lexico/#Templates">templates</a> pré-definidos, desenvolvendo um projeto personalizado e único.</p>
+<h3 id="17-feedback-de-um-design"><strong>17. <a href="../../../modelagem/lexico/#Feedback">Feedback</a> de um Design</strong></h3>
+<h4 id="objetivo_16"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deseja obter <a href="../../../modelagem/lexico/#Feedback">feedback</a> sobre um <a href="../../../modelagem/lexico/#Design">design</a> criado na plataforma Canva para avaliar a qualidade, eficácia, e impacto do projeto.</p>
+<h4 id="contexto_16"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> finalizou um <a href="../../../modelagem/lexico/#Design">design</a> na plataforma Canva e deseja compartilhá-lo com colegas, clientes, ou amigos para receber opiniões, sugestões, e críticas construtivas.</p>
+<h4 id="atores_15"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+<li>Revisores, colegas, clientes, amigos</li>
+</ul>
+<h4 id="recursos_16"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<h4 id="pre-condicao_16"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter finalizado um <a href="../../../modelagem/lexico/#Design">design</a> na plataforma Canva e estar pronto para compartilhá-lo com outras pessoas.</p>
+<h4 id="episodios_16"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz login na plataforma Canva e acessa o <a href="../../../modelagem/lexico/#Design">design</a> que deseja compartilhar.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> clica no botão "Compartilhar" ou "Convidar para Editar" para gerar um link de compartilhamento ou convidar revisores para colaborar no <a href="../../../modelagem/lexico/#Design">design</a>.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> copia o link de compartilhamento ou insere os emails dos revisores para enviar o convite.</li>
+<li>Os revisores recebem o link ou convite e acessam o <a href="../../../modelagem/lexico/#Design">design</a> para visualizá-lo e fornecer <a href="../../../modelagem/lexico/#Feedback">feedback</a>.</li>
+<li>Os revisores analisam o <a href="../../../modelagem/lexico/#Design">design</a>, avaliam a qualidade, eficácia, e impacto do projeto, e compartilham suas opiniões, sugestões, e críticas construtivas.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> revisa os <a href="../../../modelagem/lexico/#Feedback">feedback</a>s recebidos, considera as sugestões e críticas, e decide se deseja fazer ajustes no <a href="../../../modelagem/lexico/#Design">design</a> com base nas recomendações.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> agradece aos revisores pelo <a href="../../../modelagem/lexico/#Feedback">feedback</a> e finaliza o <a href="../../../modelagem/lexico/#Design">design</a> conforme necessário.</li>
+</ol>
+<h4 id="restricoes_16"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar aberto a receber <a href="../../../modelagem/lexico/#Feedback">feedback</a> construtivo e críticas sobre o <a href="../../../modelagem/lexico/#Design">design</a>, mesmo que nem todas as opiniões sejam positivas.</p>
+<h4 id="pos-condicao_16"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> recebeu <a href="../../../modelagem/lexico/#Feedback">feedback</a> sobre o <a href="../../../modelagem/lexico/#Design">design</a>, avaliou as sugestões e críticas, e decidiu se fará ajustes no projeto.</p>
+<h4 id="resultado-esperado_16"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> obteve <a href="../../../modelagem/lexico/#Feedback">feedback</a> sobre o <a href="../../../modelagem/lexico/#Design">design</a> criado na plataforma Canva, avaliou as opiniões recebidas, e decidiu se fará alterações no projeto com base nas recomendações.</p>
+<h3 id="18-criacao-de-materiais-educacionais-interativos"><strong>18. Criação de Materiais Educacionais Interativos</strong></h3>
+<h4 id="objetivo_17"><strong>OBJETIVO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> é um professor o aluno e deseja utilizar as ferramentas de Ensino do Canva para criar materiais educacionais interativos e envolventes.</p>
+<h4 id="contexto_17"><strong>CONTEXTO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> está envolvido no ensino e deseja criar materiais educacionais interativos, como apresentações, infográficos, cartazes, ou atividades, para engajar os alunos e facilitar o aprendizado.</p>
+<h4 id="atores_16"><strong>ATORES</strong></h4>
+<ul>
+<li><a href="../../../modelagem/lexico/#Usuário">Usuário</a></li>
+<li>Alunos</li>
+<li>Professores</li>
+</ul>
+<h4 id="recursos_17"><strong>RECURSOS</strong></h4>
+<p><a href="../../../modelagem/lexico/#Computador">Computador</a> ou <a href="../../../modelagem/lexico/#Smartphone">smartphone</a>, acesso à internet, navegador web ou aplicativo móvel, conta ativa no Canva.</p>
+<h4 id="pre-condicao_17"><strong>PRÉ-CONDIÇÃO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve estar <a href="../../../modelagem/lexico/#Login">logado</a> na <a href="../../../modelagem/lexico/#Plataforma">plataforma</a> Canva e ter conhecimento sobre os recursos de Ensino disponíveis.</p>
+<h4 id="episodios_17"><strong>EPISÓDIOS</strong></h4>
+<ol>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> faz <a href="../../../modelagem/lexico/#Login">login</a> na plataforma Canva e acessa a seção de Ensino.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> explora as ferramentas disponíveis para criar materiais educacionais interativos, como apresentações, infográficos, cartazes, ou atividades.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> seleciona o tipo de material educacional que deseja criar e começa a adicionar <a href="../../../modelagem/lexico/#Conteúdo">conteúdo</a> relevante, como textos, imagens, gráficos, ou vídeos.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> personaliza o <a href="../../../modelagem/lexico/#Design">design</a>, ajustando cores, fontes, layouts, e outros detalhes para tornar o material mais envolvente e atraente.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> utiliza recursos interativos, como links, botões, vídeos, ou quizzes, para tornar o material educacional mais dinâmico e interativo.</li>
+<li>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> revisa o material educacional em tempo real, fazendo ajustes conforme necessário para melhorar a qualidade e eficácia do <a href="../../../modelagem/lexico/#Conteúdo">conteúdo</a>.</li>
+<li>Após finalizar o material educacional, o <a href="../../../modelagem/lexico/#Usuário">usuário</a> salva o projeto e, se necessário, faz uma exportação nos formatos desejados.</li>
+</ol>
+<h4 id="restricoes_17"><strong>RESTRIÇÕES</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> deve ter conhecimento sobre os princípios de <a href="../../../modelagem/lexico/#Design">design</a> educacional e as melhores práticas para criar materiais educacionais interativos.</p>
+<h4 id="pos-condicao_17"><strong>PÓS-CONDIÇÃO</strong></h4>
+<p>O material educacional interativo foi criado com sucesso, pronto para ser utilizado no ensino e aprendizado.</p>
+<h4 id="resultado-esperado_17"><strong>RESULTADO ESPERADO</strong></h4>
+<p>O <a href="../../../modelagem/lexico/#Usuário">usuário</a> consegue criar materiais educacionais interativos e envolventes na plataforma Canva, utilizando as ferramentas disponíveis para facilitar o ensino e o aprendizado.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../lexicos_corrigido/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Léxicos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Léxicos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../modelagem/casos_de_uso/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Especificação de Casos de Uso">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Especificação de Casos de Uso
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.footer", "content.code.copy", "content.tabs.link", "header.autohide", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

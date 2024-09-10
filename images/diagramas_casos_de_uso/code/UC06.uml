@@ -1,0 +1,31 @@
+@startuml
+start
+:1. Usuário navega pelas funcionalidades;
+
+if (Falha na conexão com a internet?) then (Sim)
+  :1.1. Sistema exibe mensagem de erro;
+  note right: Fluxo de Exceção
+  stop
+else (Não)
+  :2. Sistema sinaliza recursos Premium;
+  :3. Usuário visualiza descrição e benefícios;
+
+  if (Usuário é Pro?) then (Sim)
+    if (Recurso Premium disponível?) then (Sim)
+      :3.1. Usuário Pro utiliza o recurso;
+    else (Não)
+      :3.2. Sistema exibe mensagem de indisponibilidade;
+      note right: Fluxo de Exceção
+    endif
+  else (Não)
+    if (Usuário Gratuito deseja assinar?) then (Sim)
+      :3.3. Sistema redireciona para a página de assinatura;
+      note right: Fluxo Alternativo
+    else (Não)
+      :3.4. Sistema exibe mensagem informativa (upgrade opcional);
+      note right: Fluxo de Exceção
+    endif
+  endif
+endif
+stop
+@enduml

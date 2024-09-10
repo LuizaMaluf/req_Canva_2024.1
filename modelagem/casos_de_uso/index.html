@@ -1,0 +1,3246 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../analise/correcoes/cenarios_corrigido/">
+      
+      
+        <link rel="next" href="../../analise/correcoes/backlog_corrigido/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Especificação de Casos de Uso - Canva - Requisitos de Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#especificacao-de-casos-de-uso" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Canva - Requisitos de Software" class="md-header__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../images/logoCanva.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Canva - Requisitos de Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Especificação de Casos de Uso
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pre-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+    
+  
+  Pre-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../elicitacao/brainstorming/" class="md-tabs__link">
+          
+  
+    
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../analise/correcoes/lexicos_corrigido/" class="md-tabs__link">
+          
+  
+    
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../analise/verf_argumentacao/" class="md-tabs__link">
+          
+  
+    
+  
+  Análise
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pos-rastreabilidade/forward/" class="md-tabs__link">
+          
+  
+    
+  
+  Pós-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../sugestao-requisito/sugestao_de_requisito/" class="md-tabs__link">
+        
+  
+    
+  
+  Sugestão de Requisito
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../atas/reuniao01/" class="md-tabs__link">
+          
+  
+    
+  
+  Reuniões
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../entregas/entrega1/" class="md-tabs__link">
+          
+  
+    
+  
+  Entregas
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Canva - Requisitos de Software" class="md-nav__button md-logo" aria-label="Canva - Requisitos de Software" data-md-component="logo">
+      
+  <img src="../../images/logoCanva.png" alt="logo">
+
+    </a>
+    Canva - Requisitos de Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LuizaMaluf/req_Canva_2024.1" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    req_Canva_2024.1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Pictures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/argumentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Argumentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/correcoes/moscow_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MoSCoW
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/first_things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/analise_protocolo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de Protocolo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/correcoes/lexicos_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/correcoes/cenarios_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Especificação de Casos de Uso
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Especificação de Casos de Uso
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artefatos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Artefatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uc-01-criar-um-novo-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      UC-01: Criar um Novo Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-uc-02-editar-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. UC-02: Editar um Design Existente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-uc-03-compartilhar-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. UC-03: Compartilhar um Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-uc-04-baixar-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. UC-04: Baixar um Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-uc-05-acessar-templates-prontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. UC-05: Acessar Templates Prontos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-uc-06-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. UC-06: Exploração de Recursos Premium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-uc-07-adaptacao-do-design-para-diversos-formatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. UC-07: Adaptação do Design para diversos formatos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-uc-08-logar-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8. UC-08: Logar na plataforma Canva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-uc-09-logout-da-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9. UC-09: Logout da plataforma Canva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-uc-010-gerenciar-pastas-e-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.10. UC-010: Gerenciar Pastas e projetos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-uc-11-colaborar-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.11. UC-11: Colaborar em tempo real
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-uc-12-utilizar-recursos-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.12. UC-12: Utilizar Recursos de Inteligência Artificial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-uc-13-acessar-recursos-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.13. UC-13: Acessar Recursos de Aprendizado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-uc-14-personalizar-configuracoes-de-conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.14. UC-14: Personalizar Configurações de Conta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-uc-15-acessar-suporte-e-atendimento-ao-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.15. UC-15: Acessar Suporte e Atendimento ao Cliente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116-uc-16-acessar-recursos-de-colaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.16. UC-16: Acessar Recursos de Colaboração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-uc-17-acessar-recursos-de-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.17. UC-17: Acessar Recursos de Marketing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-uc-18-acessar-recursos-de-design-grafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.18. UC-18: Acessar Recursos de Design Gráfico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-uc-19-acessar-recursos-de-fotografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.19. UC-19: Acessar Recursos de Fotografia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120-uc-20-acessar-recursos-de-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.20. UC-20: Acessar Recursos de Vídeo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-uc-21-acessar-recursos-de-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.21. UC-21: Acessar Recursos de Áudio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modelo-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modelo de Casos de Uso:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Modelo de Casos de Uso:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Atores:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-fluxo-basico-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Fluxo Básico de Eventos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fluxos-alternativos-e-excepcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Fluxos Alternativos e Excepcionais:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-consideracoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Considerações Finais:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Considerações Finais:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-beneficios-da-especificacao-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Benefícios da Especificação de Casos de Uso:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/correcoes/backlog_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog do Produto e Histórias de Usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/correcoes/esp_suplementar_corrigido/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../istar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iStar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nfr-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Análise
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Análise
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_argumentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Argumentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_esp_suplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_nfr-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_lexico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_cenario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação do Backlog do Produto e Histórias de Usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/verf_casos_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação da Especificação de Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analise/istar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inspeção do iStar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pós-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pós-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pos-rastreabilidade/forward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forward-From
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pos-rastreabilidade/backward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backward-From
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sugestao-requisito/sugestao_de_requisito/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sugestão de Requisito
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reuniões
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reuniões
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao05/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao08/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao09/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 12
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao13/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 13
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao14/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 14
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/reuniao15/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião 15
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Entregas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#origem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Origem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artefatos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Artefatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uc-01-criar-um-novo-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      UC-01: Criar um Novo Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-uc-02-editar-um-design-existente" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. UC-02: Editar um Design Existente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-uc-03-compartilhar-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. UC-03: Compartilhar um Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-uc-04-baixar-um-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. UC-04: Baixar um Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-uc-05-acessar-templates-prontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. UC-05: Acessar Templates Prontos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-uc-06-exploracao-de-recursos-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. UC-06: Exploração de Recursos Premium
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-uc-07-adaptacao-do-design-para-diversos-formatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. UC-07: Adaptação do Design para diversos formatos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-uc-08-logar-na-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8. UC-08: Logar na plataforma Canva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-uc-09-logout-da-plataforma-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.9. UC-09: Logout da plataforma Canva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-uc-010-gerenciar-pastas-e-projetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.10. UC-010: Gerenciar Pastas e projetos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-uc-11-colaborar-em-tempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.11. UC-11: Colaborar em tempo real
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-uc-12-utilizar-recursos-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.12. UC-12: Utilizar Recursos de Inteligência Artificial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-uc-13-acessar-recursos-de-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.13. UC-13: Acessar Recursos de Aprendizado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-uc-14-personalizar-configuracoes-de-conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.14. UC-14: Personalizar Configurações de Conta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-uc-15-acessar-suporte-e-atendimento-ao-cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.15. UC-15: Acessar Suporte e Atendimento ao Cliente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116-uc-16-acessar-recursos-de-colaboracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.16. UC-16: Acessar Recursos de Colaboração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-uc-17-acessar-recursos-de-marketing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.17. UC-17: Acessar Recursos de Marketing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-uc-18-acessar-recursos-de-design-grafico" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.18. UC-18: Acessar Recursos de Design Gráfico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-uc-19-acessar-recursos-de-fotografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.19. UC-19: Acessar Recursos de Fotografia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120-uc-20-acessar-recursos-de-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.20. UC-20: Acessar Recursos de Vídeo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-uc-21-acessar-recursos-de-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.21. UC-21: Acessar Recursos de Áudio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modelo-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Modelo de Casos de Uso:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Modelo de Casos de Uso:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Atores:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-fluxo-basico-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Fluxo Básico de Eventos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fluxos-alternativos-e-excepcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Fluxos Alternativos e Excepcionais:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-consideracoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Considerações Finais:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Considerações Finais:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-beneficios-da-especificacao-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Benefícios da Especificação de Casos de Uso:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="especificacao-de-casos-de-uso"><strong>Especificação de Casos de Uso</strong></h1>
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<!--
+Se alguém for mudar essa tabela, peço que mantenha o formato dela para melhorar
+a visualização e compreensão.
+
+Caio Alexandre
+-->
+
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15/08/2024</td>
+<td>Criação do documento e especificação do que são casos de uso.</td>
+<td>Henrique Quenino</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>15/08/2024</td>
+<td>Adição dos 11 primeiros casos de uso durante análise de protocolo.</td>
+<td>Henrique Quenino</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>16/08/2024</td>
+<td>Revisão e correção de casos de uso.</td>
+<td>Henrique Quenino</td>
+<td>0.3</td>
+</tr>
+<tr>
+<td>16/08/2024</td>
+<td>Adição de 9 casos de uso.</td>
+<td>Henrique Quenino</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>17/08/2024</td>
+<td>Revisão e correção de casos de uso.</td>
+<td>Henrique Quenino e Luiza Maluf</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>19/08/2024</td>
+<td>Adição de diagramas de casos de uso.</td>
+<td>Gabriel Moura</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>20/08/2024</td>
+<td>Revisão final do documento.</td>
+<td>Gabriel Moura e Henrique Quenino</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="origem">Origem</h2>
+<p>Os casos de uso foram criados com base na elicitação, mais especificamente tendo em vista a <a href="../../elicitacao/analise_protocolo/">análise de protocolo</a>, já que por meio dela foi possível identificar as principais funcionalidades do aplicativo Canva.</p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Realizou-se por meio do contacto direto com o Canva, onde foi possível obter informações sobre o funcionamento do aplicativo e as principais funcionalidades oferecidas aos usuários. A partir dessas informações, foram identificados os principais casos de uso do Canva.</p>
+<h2 id="introducao">Introdução</h2>
+<p>A seção de casos de uso do aplicativo Canva descreve as principais
+funcionalidades do sistema. Cada caso de uso representa uma interação específica
+entre o usuário e o sistema, detalhando os passos necessários para realizar uma
+determinada tarefa ou obter um resultado desejado. Os casos de uso são
+apresentados em um formato padronizado, incluindo descrição, atores envolvidos,
+fluxo básico de eventos, fluxos alternativos e exceções, além de diagramas de
+casos de uso para visualização.</p>
+<h2 id="artefatos">Artefatos</h2>
+<h3 id="casos-de-uso">Casos de Uso</h3>
+<h4 id="uc-01-criar-um-novo-design"><strong>UC-01: Criar um Novo Design</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve o processo de criação de um novo
+  design no aplicativo Canva, incluindo a seleção de um formato ou modelo, a
+  adição de elementos visuais, texto e outros recursos, bem como a customização
+  do design de acordo com as preferências do usuário.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC01.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário seleciona a opção "Criar um Design" na tela inicial.</li>
+<li>O sistema apresenta opções de formatos e modelos pré-definidos.</li>
+<li>O usuário escolhe um formato ou modelo.</li>
+<li>O sistema cria um novo design com o formato/modelo selecionado.</li>
+<li>O usuário é direcionado para a interface de edição do novo design.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode optar por criar um design com dimensões personalizadas.</li>
+<li>O usuário pode iniciar um design a partir de um template vazio.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Formato ou modelo selecionado não está disponível.</li>
+<li>Limite de designs atingido para Usuários Gratuitos.</li>
+</ol>
+</li>
+</ul>
+<h4 id="12-uc-02-editar-um-design-existente"><strong>1.2. UC-02: Editar um Design Existente</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a ação de editar um design existente no Canva, permitindo ao usuário modificar elementos visuais, texto, cores, fontes e outros aspectos do design de forma intuitiva e prática.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC02.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção "Seus Designs".</li>
+<li>O usuário seleciona o design que deseja editar.</li>
+<li>O sistema abre o design na interface de edição.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode duplicar o design antes de editar.</li>
+<li>O usuário pode acessar o histórico de revisões do design.</li>
+<li>O usuário pode adicionar colaboradores para edição em tempo real.</li>
+<li>O usuário pode acessar recursos de inteligência artificial para sugestões de design.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Design inexistente ou sem permissão de edição.</li>
+<li>Falha na conexão com a internet durante o processo.</li>
+</ol>
+</li>
+</ul>
+<h4 id="13-uc-03-compartilhar-um-design"><strong>1.3. UC-03: Compartilhar um Design</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de compartilhamento de design no Canva, permitindo que os usuários compartilhem seus projetos com outras pessoas através de diferentes métodos, como links, redes sociais ou download direto.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC03.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário abre o design que deseja compartilhar.</li>
+<li>O usuário clica no botão "Compartilhar".</li>
+<li>O sistema apresenta opções de compartilhamento (link, email, redes sociais).</li>
+<li>O usuário escolhe o método de compartilhamento.</li>
+<li>O sistema gera o link/mensagem de compartilhamento.</li>
+<li>O usuário compartilha o link/mensagem.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode definir permissões de acesso ao compartilhar (visualizar, editar, comentar).</li>
+<li>O usuário pode definir uma data de expiração para o compartilhamento.</li>
+<li>O usuário pode adicionar uma senha de acesso ao compartilhamento.</li>
+<li>O usuário pode compartilhar diretamente em redes sociais.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Limite de compartilhamentos atingido para Usuários Gratuitos.</li>
+<li>Compartilhamento em redes sociais requer autenticação adicional.</li>
+</ol>
+</li>
+</ul>
+<h4 id="14-uc-04-baixar-um-design"><strong>1.4. UC-04: Baixar um Design</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve o processo de download de um design criado no Canva, possibilitando que os usuários salvem seus trabalhos em diferentes formatos, como imagem ou PDF, para uso posterior.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC04.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário abre o design que deseja baixar.</li>
+<li>O usuário clica no botão "Baixar".</li>
+<li>O sistema apresenta opções de formato de arquivo (PNG, JPG, PDF, etc.).</li>
+<li>O usuário escolhe o formato desejado.</li>
+<li>O sistema gera o arquivo e inicia o download.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>Opções de download adicionais (resolução, qualidade) podem ser apresentadas dependendo do tipo de arquivo.</li>
+<li>Alguns formatos ou opções de download podem ser exclusivos para Usuários Pro.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Limite de downloads atingido para Usuários Gratuitos.</li>
+</ol>
+</li>
+</ul>
+<h4 id="15-uc-05-acessar-templates-prontos"><strong>1.5. UC-05: Acessar Templates Prontos</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a templates prontos no Canva, permitindo que os usuários escolham modelos pré-definidos para criar designs de forma rápida e eficiente.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC05.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário navega pela página inicial ou utiliza a barra de pesquisa.</li>
+<li>O sistema apresenta opções de templates por categoria, formato ou palavra-chave.</li>
+<li>O usuário seleciona um template.</li>
+<li>O sistema abre o template na interface de edição. </li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode favoritar um template para acesso rápido.</li>
+<li>O usuário pode visualizar designs relacionados ao template selecionado.</li>
+<li>O usuário pode acessar templates exclusivos para Usuários Pro.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Template não disponível ou removido.</li>
+<li>Limite de templates acessados atingido para Usuários Gratuitos.</li>
+</ol>
+</li>
+</ul>
+<h4 id="16-uc-06-exploracao-de-recursos-premium"><strong>1.6. UC-06: Exploração de Recursos Premium</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a exploração dos recursos premium oferecidos pelo Canva, incluindo imagens, elementos gráficos, templates exclusivos e outras funcionalidades avançadas disponíveis para assinantes pagos.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC06.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva (Gratuito e Pro)</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário navega pelas funcionalidades da plataforma.</li>
+<li>O sistema identifica e sinaliza os recursos exclusivos para usuários Premium. </li>
+<li>O usuário visualiza a descrição e benefícios do recurso Premium. </li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>Usuário Gratuito pode optar por assinar o plano Premium.</li>
+<li>Usuário Pro utiliza o recurso Premium.</li>
+<li>Usuário Pro pode acessar recursos</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Recurso Premium não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="17-uc-07-adaptacao-do-design-para-diversos-formatos"><strong>1.7. UC-07: Adaptação do Design para diversos formatos</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de redimensionamento de um design existente para diferentes formatos, como redes sociais, banners, cartões de visita, entre outros, garantindo a consistência visual e a qualidade do projeto.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC07.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário abre um design existente.</li>
+<li>O usuário utiliza a função "Redimensionar" (botão ou menu).</li>
+<li>O sistema apresenta opções de formatos pré-definidos. </li>
+<li>O usuário seleciona o novo formato.</li>
+<li>O sistema redimensiona o design automaticamente, ajustando os elementos.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode optar por redimensionar manualmente, definindo dimensões personalizadas.</li>
+<li>O usuário pode salvar o design em diferentes formatos para uso posterior.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Distorção de elementos visuais após o redimensionamento automático, necessitando ajustes manuais.</li>
+<li>Falha na conexão com a internet durante o processo.</li>
+</ol>
+</li>
+</ul>
+<h4 id="18-uc-08-logar-na-plataforma-canva"><strong>1.8. UC-08: Logar na plataforma Canva</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve o processo de login na plataforma Canva, permitindo que os usuários acessem suas contas de forma segura e acessem recursos exclusivos disponíveis para usuários cadastrados.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC08.png" /></li>
+<li><strong>Ator:</strong> Usuário Anônimo, Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a tela inicial do aplicativo.</li>
+<li>O usuário informa seus dados de login (e-mail e senha) ou utiliza credenciais de redes sociais.</li>
+<li>O sistema valida as informações.</li>
+<li>O usuário é redirecionado para a página inicial da plataforma.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode optar por "Esqueci minha senha" para recuperar o acesso.</li>
+<li>O sistema pode solicitar autenticação de dois fatores.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Dados de login inválidos.</li>
+</ol>
+</li>
+</ul>
+<h4 id="19-uc-09-logout-da-plataforma-canva"><strong>1.9. UC-09: Logout da plataforma Canva</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve o processo de logout da plataforma Canva, permitindo que os usuários encerrem suas sessões de forma segura e garantam a privacidade de suas informações.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC09.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário clica na foto de perfil ou ícone de usuário.</li>
+<li>O usuário seleciona a opção "Sair".</li>
+<li>O sistema encerra a sessão do usuário.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode optar por "Permanecer Conectado" para manter a sessão ativa.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+</ol>
+</li>
+</ul>
+<h4 id="110-uc-010-gerenciar-pastas-e-projetos"><strong>1.10. UC-010: Gerenciar Pastas e projetos</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de gerenciamento de pastas e projetos no Canva, permitindo que os usuários organizem seus designs em pastas, criem novas pastas, movam designs entre pastas e excluam pastas e designs.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC10.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção "Pastas e Projetos".</li>
+<li>O sistema exibe a lista de pastas existentes e designs associados.</li>
+<li>O usuário cria uma nova pasta.</li>
+<li>O usuário move designs para a nova pasta.</li>
+<li>O usuário exclui uma pasta e seus designs associados.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode renomear uma pasta existente.</li>
+<li>O usuário pode mover designs entre pastas existentes.</li>
+<li>O usuário pode restaurar designs excluídos da lixeira.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Exclusão acidental de designs sem possibilidade de recuperação.</li>
+<li>Limite de pastas ou designs atingido.</li>
+<li>O usuário tenta criar uma pasta com um nome já existente no mesmo nível da estrutura de pastas.</li>
+<li>O usuário tenta realizar uma ação em uma pasta/projeto sem a devida permissão (ex: deletar um projeto compartilhado onde ele possui apenas permissão de visualização).</li>
+</ol>
+</li>
+</ul>
+<h4 id="111-uc-11-colaborar-em-tempo-real"><strong>1.11. UC-11: Colaborar em tempo real</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de colaboração em tempo real no Canva, permitindo que os usuários trabalhem em um design simultaneamente, visualizando as alterações em tempo real e interagindo com outros colaboradores.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC11.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário abre um design existente.</li>
+<li>O usuário clica no botão "Compartilhar para Colaboração".</li>
+<li>O sistema gera um link de colaboração.</li>
+<li>O usuário compartilha o link com outros colaboradores.</li>
+<li>Os colaboradores acessam o link e visualizam o design em tempo real.</li>
+<li>Os colaboradores podem editar, comentar ou visualizar o design.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode definir permissões de colaboração (visualizar, editar, comentar).</li>
+<li>O usuário pode encerrar a colaboração a qualquer momento.</li>
+<li>O usuário pode visualizar o histórico de edições e comentários.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Limite de colaboradores atingido.</li>
+<li>Conflitos de edição entre colaboradores.</li>
+</ol>
+</li>
+</ul>
+<h4 id="112-uc-12-utilizar-recursos-de-inteligencia-artificial"><strong>1.12. UC-12: Utilizar Recursos de Inteligência Artificial</strong></h4>
+<ul>
+<li>
+<p><strong>Descrição:</strong> Este caso de uso descreve a utilização de recursos de inteligência artificial no Canva, como sugestões de design, detecção de cores, recomendações de fontes e outros recursos automatizados que auxiliam os usuários na criação de designs visualmente atraentes.</p>
+</li>
+<li>
+<p><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC12.png" /></p>
+</li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de edição de um design.</li>
+<li>O sistema identifica elementos visuais e texto no design.</li>
+<li>O sistema sugere cores, fontes, imagens ou elementos gráficos com base no conteúdo do design.</li>
+<li>O usuário aceita ou rejeita as sugestões.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode solicitar sugestões específicas para um elemento visual ou texto.</li>
+<li>O usuário pode desativar os recursos de inteligência artificial.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Sugestões inadequadas ou imprecisas.</li>
+</ol>
+</li>
+</ul>
+<h4 id="113-uc-13-acessar-recursos-de-aprendizado"><strong>1.13. UC-13: Acessar Recursos de Aprendizado</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de aprendizado no Canva, como tutoriais, dicas, guias e cursos online, que auxiliam os usuários a explorar as funcionalidades da plataforma, aprimorar suas habilidades de design e obter inspiração para seus projetos.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC13.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Aprendizado".</li>
+<li>O sistema exibe uma lista de tutoriais, dicas e cursos disponíveis.</li>
+<li>O usuário seleciona um recurso de aprendizado.</li>
+<li>O sistema abre o recurso selecionado para visualização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode filtrar os recursos por categoria, nível de dificuldade ou interesse.</li>
+<li>O usuário pode marcar recursos como favoritos para acesso rápido.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Recurso de aprendizado não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="114-uc-14-personalizar-configuracoes-de-conta"><strong>1.14. UC-14: Personalizar Configurações de Conta</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de personalização das configurações de conta no Canva, permitindo que os usuários atualizem suas informações pessoais, preferências de design, notificações, privacidade e outras configurações relacionadas à sua conta.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC14.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Configurações de Conta".</li>
+<li>O sistema exibe opções de personalização disponíveis.</li>
+<li>O usuário atualiza suas informações pessoais (nome, e-mail, senha, etc.).</li>
+<li>O usuário configura suas preferências de design (cores, fontes, estilos).</li>
+<li>O usuário define suas preferências de notificações (e-mail, push).</li>
+<li>O usuário ajusta suas configurações de privacidade (compartilhamento, visibilidade).</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode ativar/desativar recursos de inteligência artificial.</li>
+<li>O usuário pode definir permissões de colaboração padrão.</li>
+<li>O usuário pode configurar a autenticação de dois fatores.</li>
+</ol>
+</li>
+<li>
+<p><strong>Fluxo de Exceções:</strong></p>
+<ol>
+<li>Falha na conexão com a internet durante o processo.</li>
+<li>Dados inválidos ou incompletos.</li>
+<li>Configurações não salvas corretamente.</li>
+</ol>
+</li>
+</ul>
+<h4 id="115-uc-15-acessar-suporte-e-atendimento-ao-cliente"><strong>1.15. UC-15: Acessar Suporte e Atendimento ao Cliente</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso ao suporte e atendimento ao cliente no Canva, permitindo que os usuários obtenham ajuda, tirem dúvidas, relatem problemas, solicitem recursos ou forneçam feedback sobre a plataforma.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC15.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Suporte e Atendimento".</li>
+<li>O sistema exibe opções de contato (chat, e-mail, telefone).</li>
+<li>O usuário seleciona o método de contato preferido.</li>
+<li>O sistema inicia o atendimento ao cliente.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode acessar a base de conhecimento ou FAQ.</li>
+<li>O usuário pode enviar feedback ou sugestões de melhorias.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Tempo de espera prolongado para atendimento.</li>
+<li>Resolução inadequada do problema ou dúvida.</li>
+</ol>
+</li>
+</ul>
+<h4 id="116-uc-16-acessar-recursos-de-colaboracao"><strong>1.16. UC-16: Acessar Recursos de Colaboração</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de colaboração no Canva, como comentários, revisões, aprovações, marcações, compartilhamento de projetos e outras ferramentas que facilitam a comunicação e o trabalho em equipe.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC16.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Colaboração".</li>
+<li>O sistema exibe opções de colaboração disponíveis.</li>
+<li>O usuário seleciona um recurso de colaboração.</li>
+<li>O sistema abre o recurso selecionado para utilização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode adicionar comentários em designs compartilhados.</li>
+<li>O usuário pode solicitar revisões ou aprovações de projetos.</li>
+<li>O usuário pode marcar outros colaboradores em designs.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Recurso de colaboração não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="117-uc-17-acessar-recursos-de-marketing"><strong>1.17. UC-17: Acessar Recursos de Marketing</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de marketing no Canva, como modelos de cartões de visita, banners, flyers, posts para redes sociais, apresentações, entre outros, que auxiliam os usuários a criar materiais promocionais de forma rápida e profissional.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC17.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Marketing".</li>
+<li>O sistema exibe opções de templates disponíveis por categoria (negócios, eventos, vendas, etc.).</li>
+<li>O usuário seleciona um template de marketing.</li>
+<li>O sistema abre o template selecionado para edição.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode personalizar o template de acordo com suas necessidades.</li>
+<li>O usuário pode salvar o design em diferentes formatos para uso posterior.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Template de marketing não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar template exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="118-uc-18-acessar-recursos-de-design-grafico"><strong>1.18. UC-18: Acessar Recursos de Design Gráfico</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de design gráfico no Canva, como ícones, ilustrações, formas, texturas, fundos, paletas de cores, fontes, entre outros, que auxiliam os usuários a criar designs visualmente atraentes e profissionais.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC18.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Design Gráfico".</li>
+<li>O sistema exibe opções de recursos disponíveis por categoria (ícones, ilustrações, formas, etc.).</li>
+<li>O usuário seleciona um recurso de design gráfico.</li>
+<li>O sistema abre o recurso selecionado para utilização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode pesquisar recursos por palavra-chave ou categoria.</li>
+<li>O usuário pode favoritar recursos para acesso rápido.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Recurso de design gráfico não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="119-uc-19-acessar-recursos-de-fotografia"><strong>1.19. UC-19: Acessar Recursos de Fotografia</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de fotografia no Canva, como imagens, fotos, ilustrações, fundos, texturas, filtros, efeitos, entre outros, que auxiliam os usuários a criar designs visualmente atraentes e profissionais.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC19.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Fotografia".</li>
+<li>O sistema exibe opções de recursos disponíveis por categoria (imagens, fotos, ilustrações, etc.).</li>
+<li>O usuário seleciona um recurso de fotografia.</li>
+<li>O sistema abre o recurso selecionado para utilização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode pesquisar recursos por palavra-chave ou categoria.</li>
+<li>O usuário pode favoritar recursos para acesso rápido.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Recurso de fotografia não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="120-uc-20-acessar-recursos-de-video"><strong>1.20. UC-20: Acessar Recursos de Vídeo</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de vídeo no Canva, como vídeos, animações, transições, efeitos, trilhas sonoras, narrações, entre outros, que auxiliam os usuários a criar designs audiovisuais atraentes e profissionais.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC20.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Vídeo".</li>
+<li>O sistema exibe opções de recursos disponíveis por categoria (vídeos, animações, transições, etc.).</li>
+<li>O usuário seleciona um recurso de vídeo.</li>
+<li>O sistema abre o recurso selecionado para utilização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode pesquisar recursos por palavra-chave ou categoria.</li>
+<li>O usuário pode favoritar recursos para acesso rápido.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Recurso de vídeo não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h4 id="121-uc-21-acessar-recursos-de-audio"><strong>1.21. UC-21: Acessar Recursos de Áudio</strong></h4>
+<ul>
+<li><strong>Descrição:</strong> Este caso de uso descreve a funcionalidade de acesso a recursos de áudio no Canva, como músicas, efeitos sonoros, narrações, trilhas sonoras, entre outros, que auxiliam os usuários a criar designs audiovisuais atraentes e profissionais.</li>
+<li><strong>Diagrama:</strong> <img alt="**Diagrama**" src="../../images/diagramas_casos_de_uso/images/UC21.png" /></li>
+<li><strong>Ator:</strong> Usuário Canva</li>
+<li><strong>Fluxo Básico de Eventos:</strong><ol>
+<li>O usuário acessa a seção de "Recursos de Áudio".</li>
+<li>O sistema exibe opções de recursos disponíveis por categoria (músicas, efeitos sonoros, narrações, etc.).</li>
+<li>O usuário seleciona um recurso de áudio.</li>
+<li>O sistema abre o recurso selecionado para utilização.</li>
+</ol>
+</li>
+<li><strong>Fluxo Alternativo:</strong><ol>
+<li>O usuário pode pesquisar recursos por palavra-chave ou categoria.</li>
+<li>O usuário pode favoritar recursos para acesso rápido.</li>
+</ol>
+</li>
+<li><strong>Fluxo de Exceções:</strong><ol>
+<li>Falha na conexão com o internet durante o processo.</li>
+<li>Recurso de áudio não disponível no momento.</li>
+<li>Usuário Gratuito tenta acessar recurso exclusivo para Usuários Pro.</li>
+</ol>
+</li>
+</ul>
+<h3 id="2-modelo-de-casos-de-uso"><strong>2. Modelo de Casos de Uso:</strong></h3>
+<h4 id="21-atores"><strong>2.1. Atores:</strong></h4>
+<ul>
+<li>Usuário Anônimo: Qualquer pessoa que acessa o aplicativo Canva sem estar logado.</li>
+<li>Usuário Canva: Pessoa cadastrada na plataforma, podendo ser um Usuário Gratuito ou Usuário Pro (assinante).</li>
+</ul>
+<h4 id="22-fluxo-basico-de-eventos"><strong>2.2. Fluxo Básico de Eventos:</strong></h4>
+<p>Descrito em cada caso de uso (UC-XX).</p>
+<h4 id="23-fluxos-alternativos-e-excepcionais"><strong>2.3. Fluxos Alternativos e Excepcionais:</strong></h4>
+<p>Descritos em cada caso de uso (UC-XX).</p>
+<h3 id="3-consideracoes-finais"><strong>3. Considerações Finais:</strong></h3>
+<h4 id="31-beneficios-da-especificacao-de-casos-de-uso"><strong>3.1. Benefícios da Especificação de Casos de Uso:</strong></h4>
+<ul>
+<li>Define o comportamento esperado do sistema do ponto de vista do usuário.</li>
+<li>Facilita a comunicação entre desenvolvedores, designers e stakeholders.</li>
+<li>Auxilia na identificação de requisitos funcionais e não funcionais.</li>
+<li>Serve como base para testes e validação do sistema.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../../analise/correcoes/cenarios_corrigido/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Cenários">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Cenários
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../analise/correcoes/backlog_corrigido/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Backlog do Produto e Histórias de Usuários">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Backlog do Produto e Histórias de Usuários
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.expand", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.path", "navigation.footer", "content.code.copy", "content.tabs.link", "header.autohide", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
